@@ -1,0 +1,55 @@
+{
+    "blogList":[
+        {
+        "blogObject": 
+            {
+                "blogId": "Type: Number",
+                "title": "Type: String", 
+                "author": "Type: String",
+                "date": "Type: Number",
+                "month": "Type: String",
+                "year": "Type: Number",
+                "category": {
+                    "categoryId": "Type: Number",
+                    "categoryCode": "Type: String",
+                    "categoryImg": "Type: String Size: (270 x 300)"
+                },
+                "initContent": "Type: String",
+                "generalImageLib": {
+                    "heroImgURL": "Type: String Size: (1089 x 728)" ,
+                    "bannerImgURL": "Type: String Size: (1920 x 1044)",
+                    "authorImgURL": "Type: String Size: (876 x 1000)",
+                    "titleImgURL": "Type: String Size: (1170 x 710)",
+                    "smallTitleImgURL": "Type: String Size: (370 x 467)",
+                    "mostReadImgURL": "Type: String Size: (370 x 225)"
+                },
+                "blogImageLib": {
+                    "fullwidthImg": [{
+                                        "imgId": "Type: Number",
+                                        "imgURL": "Type: String Size: (1486 x 460)"
+                                    }],
+                    "halfwidthImg": [{
+                                    "imgId": "Type: Number",
+                                    "imgURL": "Type: String Size: (440 x 290)"
+                                }],
+                
+                    "blogYTImageLib": [{
+                                    "YTLinkId": "Type: Number",
+                                    "YTLink": "Type: String",
+                                    "YTImgURL": "Type: String Size: (1770 x 542)"
+                                }]
+                },
+                "blogParagraphs": [{
+                    "paraId": "Type: Number",
+                    "paraText": "Type: String"
+                }],
+                "blockQuotes": [{
+                    "blockQuoteId": "Type: Number",
+                    "blockQuoteText": "Type: String",
+                    "blockQuoteImgURL": "Type: String Size:(658 x 151)"
+                }]
+            
+            }
+        }
+    ]
+}

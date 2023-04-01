@@ -1,0 +1,13 @@
+import React from "react";
+
+const SmallArticleWrapper=(props)=>{
+    return(
+        <React.Fragment>
+            <div className="more_posts">
+                <div className="row">{props.children}</div>
+            </div>
+        </React.Fragment>
+    )
+}
+
+export default SmallArticleWrapper;
