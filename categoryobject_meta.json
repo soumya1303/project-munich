@@ -3,7 +3,7 @@
     
             "code": "Type: String", 
             "desc": "Type: String",
-            "imgURL": "Type: String Size: (270 x 300)"
-            
+            "imgURL": "Type: String Size: (270 x 300)",
+            "postCount":"Type Number"
     }]
 }

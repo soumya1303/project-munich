@@ -4,7 +4,7 @@ import React from "react";
 const AboutAuthor = (props)=>{
     return (
     <React.Fragment>
-        <h4 className="widget_title">About Author</h4>
+        <h4 className="widget_title">Yours Truly</h4>
         <div className="sidebar_author">
             <img src={props.authorImg} alt="img" />									
             <p className="intro">{props.authorIntro}</p>
@@ -14,7 +14,7 @@ const AboutAuthor = (props)=>{
                     <a href="#">
                         <i className="ion-social-facebook"></i>
                         <div className="name">Facebook</div>
-                        <div className="off_text">{props.fbLikes} Likes</div>
+                        <div className="off_text">{props.fbFollower} Likes</div>
                     </a>
                 </div>
 
@@ -22,7 +22,7 @@ const AboutAuthor = (props)=>{
                     <a href="#">
                         <i className="ion-social-twitter"></i>
                         <div className="name">Twitter</div>
-                        <div className="off_text">{props.twitterLikes} Follower</div>
+                        <div className="off_text">{props.twitterFollower} Follower</div>
                     </a>
                 </div>
 
@@ -30,7 +30,7 @@ const AboutAuthor = (props)=>{
                     <a href="#">
                         <i className="ion-social-instagram"></i>
                         <div className="name">Instagram</div>
-                        <div className="off_text">{props.instaLikes} Follower</div>
+                        <div className="off_text">{props.instaFollower} Follower</div>
                     </a>
                 </div>
             </div>

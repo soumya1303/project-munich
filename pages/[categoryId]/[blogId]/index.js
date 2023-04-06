@@ -49,7 +49,7 @@ const Blog=()=>{
                 <MousePointer />
                 <BodyContent>
                     <TopContent>
-                        <MainNavigation imgSource="/images/logo1.png"/>
+                        <MainNavigation imgSource="/images/common/logo.png"/>
                     </TopContent>
                     <BlogTitle blogTitle="blog" />
                     <MainContentWrapper>
@@ -82,10 +82,18 @@ const Blog=()=>{
                                             <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
                                             <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p6}/>
                                         </MainBlogSectionWrapper>
-                                        <YouTubeLink ytVidURL={dummyBlogContent.blogYTVideos.ytVidURL} ytImgURL={dummyBlogContent.blogYTImages.ytImgURL}/>
+                                        <ImageGallaryWrapper>
+                                            <SingleImage imgURL={dummyBlogContent.blogImages.img1}/>
+                                            <DuelImage imgURL={dummyBlogContent.blogImages.img2} />
+                                            <DuelImage imgURL={dummyBlogContent.blogImages.img3} />
+                                        </ImageGallaryWrapper>
                                         <MainBlogSectionWrapper>
                                             <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
                                             <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p6}/>
+                                        </MainBlogSectionWrapper>
+                                        <YouTubeLink ytVidURL={dummyBlogContent.blogYTVideos.ytVidURL} ytImgURL={dummyBlogContent.blogYTImages.ytImgURL}/>
+                                        <MainBlogSectionWrapper>
+                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
                                         </MainBlogSectionWrapper>
                                     </MainBlogBodyWrapper> 
                                     <MainBlogFooter />
@@ -135,14 +143,14 @@ const Blog=()=>{
                     </MainContentWrapper>
 
                     <FooterComponent 
-                        logoImgSource="/images/logo-white.png"
+                        logoImgSource="/images/common/logo-white.png"
                         instaImgURL1="/images/insta/1.jpg"
                         instaImgURL2="/images/insta/2.jpg"
                         instaImgURL3="/images/insta/3.jpg"
                         instaImgURL4="/images/insta/4.jpg"
                         instaImgURL5="/images/insta/5.jpg"
                         instaImgURL6="/images/insta/6.jpg"
-                        imageLogoBig="/images/logo-big.png"
+                        imageLogoBig="/images/common/logo-big.png"
                     />
 
                 </BodyContent>

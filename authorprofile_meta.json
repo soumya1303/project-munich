@@ -1,0 +1,11 @@
+{
+    "authorProfile": {
+    
+            "name": "Type: String", 
+            "introInitContent": "Type: String",
+            "imgURL": "Type: String Size: (252 x 267)",
+            "fbFollower":"Type Number",
+            "twtrFollower":"Type Number",
+            "instaFollower":"Type Number"
+    }
+}

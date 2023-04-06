@@ -36,7 +36,7 @@ const Category = ()=>{
             <BodyContent>
                 
                 <TopContent>
-                    <MainNavigation imgSource="/images/logo-white.png"/>
+                    <MainNavigation imgSource="/images/common/logo-white.png"/>
                     <ThemeSliderWrapper>
                         <SwiperContainerWrapper>
                             <SwiperWrapper>
@@ -136,14 +136,14 @@ const Category = ()=>{
 
                 </MainContentWrapper>
                 <FooterComponent 
-                    logoImgSource="/images/logo-white.png"
+                    logoImgSource="/images/common/logo-white.png"
                     instaImgURL1="/images/insta/1.jpg"
                     instaImgURL2="/images/insta/2.jpg"
                     instaImgURL3="/images/insta/3.jpg"
                     instaImgURL4="/images/insta/4.jpg"
                     instaImgURL5="/images/insta/5.jpg"
                     instaImgURL6="/images/insta/6.jpg"
-                    imageLogoBig="/images/logo-big.png"
+                    imageLogoBig="/images/common/logo-big.png"
                 />
             </BodyContent>
 

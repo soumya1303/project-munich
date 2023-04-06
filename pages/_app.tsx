@@ -68,6 +68,8 @@ import "/styles/ionicons/css/ionicons.css";
 import "/styles/plugins/swiper/swiper.css";
 import "/styles/font-awesome/css/font-awesome.css";
 
+
+
 import type { AppProps } from "next/app";
 
 const App = ({ Component, pageProps }: AppProps)=> {

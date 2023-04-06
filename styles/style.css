@@ -135,19 +135,19 @@ img{
     color: #9a9a9a;
 }
 .bg_image_1{
-    background-image: url(/images/bg1.png);
+    background-image: url(/images/common/bg1.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg_image_2{
-    background-image: url(/images/bg2.png);
+    background-image: url(/images/common/bg2.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg_image_3{
-    background-image: url(/images/bg3.jpg);
+    background-image: url(/images/common/bg3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,7 +162,7 @@ img{
 
 .page-header .page-header-content {
     position: relative;
-    background-image: url(/images/bg5.jpg);
+    background-image: url(/images/common/bg5.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ img{
     padding-bottom: 60px;
 }
 .slider_text .blog_post{
-    background: url(/images/slider/texture.png);
+    background: url(/images/common/texture.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -487,7 +487,7 @@ img{
     left: 0;
     top:  0;
     z-index: 4;
-    /* background-color:#59815b; */
+    /* background-color:#59815b; [SG Temp] */
     transition: 2s cubic-bezier(.858, .01, .068, .99);
 }
 .enable_page .swiper-slide-active [data-swiper="overlay-left"]:before{
@@ -827,7 +827,7 @@ blockquote{
     font-weight: 600;
     line-height: 30px;
     color: #59815b;
-    background: url(/images/blockquote_bg.png);
+    background: url(/images/common/blockquote_bg.png);
     padding: 40px 30px;
     background-position: center;
     background-repeat: no-repeat;
@@ -835,7 +835,7 @@ blockquote{
     margin: 30px 50px;
 }
 blockquote:after{
-    content: url(/images/comma.png);
+    content: url(/images/common/comma.png);
     position: absolute;
     right: 15px;
     bottom: -15px;
@@ -1790,7 +1790,7 @@ ul.comment_area .comment_block .reply i{
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(/images/bg4.jpg);
+    background: url(/images/common/bg4.jpg);
     background-repeat: no-repeat;
     background-size: 45% 100%;
     z-index: -1;
@@ -1846,7 +1846,7 @@ ul.comment_area .comment_block .reply i{
     top: 0;
     width: 140%;
     height: 100%;
-    background: url(/images/bg3.jpg);
+    background: url(/images/common/bg3.jpg);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;
