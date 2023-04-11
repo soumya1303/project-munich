@@ -34,13 +34,20 @@ const Home = (props)=> {
 
   const categoryListArr = props.categoryList.categoryListArr;
   const blogList = props.blogList.blogListArr;
-  const recentThreeBlogs= [];
+  const mostRecentThreeBlogs= [];
+  const recentThreeBlogs=[];
+  const earlierBlogs=[];
+
   var i=0;
 
   blogList.forEach((b)=>{
     
     if(i<3){
+      mostRecentThreeBlogs.push(b);
+    }else if (i<6){
       recentThreeBlogs.push(b);
+    }else if (i<10){
+      earlierBlogs.push(b);
     }
     i=i+1;
   });
@@ -60,9 +67,11 @@ const Home = (props)=> {
               <ThemeSlider>
                 <SliderTextWrapper>
                     {
-                      recentThreeBlogs.map((b)=>{
+                      mostRecentThreeBlogs.map((b)=>{
                         return <SwipeSlide 
-                        key={b.id}
+                        key={b.blogId}
+                        blogId={b.blogId}
+                        catId={b.catId}
                         date={b.date.toString()} 
                         month={`${b.month} ${b.year.toString().slice(2,4)}`}
                         title={b.title}
@@ -75,14 +84,13 @@ const Home = (props)=> {
                 </SliderTextWrapper>
                 <SliderImageWrapper>
                     {
-                      recentThreeBlogs.map((b)=>{
+                      mostRecentThreeBlogs.map((b)=>{
                         return <SwipeSlideImage key={b.blogId} imgSource={b.generalImageLib.authorImgURL}/>
                       })
                     }
                     
                 </SliderImageWrapper>
               </ThemeSlider>
-
             </TopContent> 
 
             <FeaturCategoryWrapper>
@@ -92,6 +100,7 @@ const Home = (props)=> {
                     return <FeatureCategoryItem 
                             key={c.catId}
                             imgSource={c.imgURL}
+                            featureCategoryId={c.catId}
                             featureCategory={c.catDesc}
                             postCount={c.postCount}
                             />
@@ -107,6 +116,8 @@ const Home = (props)=> {
                     recentThreeBlogs.map((b)=>{
                       return <BigArticle 
                               key={b.blogId}
+                              blogId={b.blogId}
+                              catId={b.catId}
                               date={b.date.toString()}
                               month={`${b.month} ${b.year.toString().slice(2,4)}`}
                               author={b.author}
@@ -125,9 +136,11 @@ const Home = (props)=> {
                 <MorePostWrapper>
 
                     {
-                      blogList.map((b)=>{
+                      earlierBlogs.map((b)=>{
                         return <SmallArticleWrapper 
                                 key={b.blogId}
+                                blogId={b.blogId}
+                                catId={b.catId}
                                 date={b.date.toString()}
                                 month={`${b.month} ${b.year.toString().slice(2,4)}`}
                                 author={b.author}
@@ -145,7 +158,7 @@ const Home = (props)=> {
               <SideBar 
                 authorProfie={props.authorProfie}
                 categoryList={props.categoryList.categoryListArr}
-                recentBlogList={recentThreeBlogs}
+                recentBlogList={mostRecentThreeBlogs}
               />
 
             </MainContentWrapper>

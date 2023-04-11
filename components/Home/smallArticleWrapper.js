@@ -4,6 +4,8 @@ import SmallArticle from "./smallArticle";
 const SmallArticleWrapper = (props)=>{
     return(<div className="col-lg-6 col-md-6">
                 <SmallArticle 
+                blogId={props.blogId}
+                catId={props.catId}
                 imgSource={props.imgSource} 
                 date={props.date} 
                 month={props.month} 

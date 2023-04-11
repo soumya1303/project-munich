@@ -10,11 +10,8 @@
                 "month": "Type: String",
                 "year": "Type: Number",
                 "readCount": "Type: Number",
-                "category": {
-                    "categoryId": "Type: Number",
-                    "categoryCode": "Type: String",
-                    "categoryImg": "Type: String Size: (270 x 300)"
-                },
+                "categoryId": "Type: Number",
+                "relatedBlogId":["Type: Number"],
                 "initContent": "Type: String",
                 "generalImageLib": {
                     "bannerImgURL": "Type: String Size: (1920 x 1044)",

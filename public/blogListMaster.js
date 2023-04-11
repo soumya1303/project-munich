@@ -1,20 +1,228 @@
 const blogList={
     blogListArr:[
         {
-            blogId:1002001,
+            blogId:1011,
+            title:"Montenegro in 48 Hours",
+            author:"Madhurima Ranu",
+            date:6,
+            month:"FEB",
+            year:2019,
+            readCount:8,
+            catKey: 1003,
+            catId:"europe",
+            relatedBlogId:[1010, 1008, 1003],
+            initContent:"Honestly, if you ask me, had Montenegro been ever in my travel list, I would have said certainly not. Reading an article about Sveti Stefan in a travel magazine fascinated me to look out ...",
+            generalImageLib:{
+                bannerImgURL: "/images/category/europe/blogs/montenegro/bannerImgURL.jpg",
+                authorImgURL: "/images/category/europe/blogs/montenegro/authorImgURL.jpg",
+                titleImgURL: "/images/category/europe/blogs/montenegro/titleImgURL.jpg",
+                smallTitleImgURL: "/images/category/europe/blogs/montenegro/smallTitleImgURL.jpg",
+                mostReadImgURL: "/images/category/europe/blogs/montenegro/mostReadImgURL.jpg",
+                similarPostImgURL:"/images/category/europe/blogs/montenegro/similarPostImgURL.jpg",
+            },
+            blogImageLib:[{
+                blockId:1,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/europe/blogs/montenegro/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/europe/blogs/montenegro/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/europe/blogs/montenegro/content/hwImgURL2.jpg"
+                }
+            },
+            
+            {
+                blockId:2,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/europe/blogs/montenegro/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/europe/blogs/montenegro/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/europe/blogs/montenegro/content/hwImgURL2.jpg"
+                }
+            }],
+            blogYTImageLib:[
+                {   
+                    blockId:1,
+                    YTLinks:{
+                        YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
+                        YTImgURL: "/images/category/europe/blogs/montenegro/content/ytImgURL.jpg"
+                    }
+                }
+            ],
+            blogParagraphs: [
+                {
+                    paraId: 1,
+                    paraText: "Honestly, if you had asked me 6 months back, if Montenegro had ever been in my travel list, I would have said certainly not. Reading an article about Sveti Stefan in a travel magazine fascinated me to look out for this small but extremely beautiful Balkan country. Located in the south-eastern part of the Europe, Montenegro for most of the 20th century was part of Yugoslavia and then part of the federated union of Serbia and Montenegro. A hidden gem delineated by craggy mountains, medieval villages, vast fresh water lakes sprawling across the borders of Albania and the spectacular Adraitic coastline, Montenegro is truly a feast for eyes."
+                },
+                {
+                    paraId: 2,
+                    paraText: "Day 1 Start from the northern end of the country and drive along the scenic route along the bay of Kotor. The first stop is the beautiful medieval town of Perast. They say, Perast seems like a fragment of Venice, which has just floated across to the Adriatic and harboured itself to the Boka Bay. \nFamous for Our Lady of the Rock and Island of St. George, it also hosts many Hotels and spa resorts and small restaurants, serving mouth-watering fish delicacies. Don’t forget to read more about this beautiful town and a very interesting folklore, in my blog The Old town of Perast."
+                },
+                {
+                    paraId: 3,
+                    paraText: "Few miles down the bay lies the old city of Kotor, built between 12th – 14th century. \nTravel Tip:  If you aren’t driving, you can take the blue line bus from Perast, that leave every hour past 30 from the centre of Perast to Kotor (and leaves Kotor every hour at 15 minutes past the hour) The fare is €1 each way. On Sundays the frequency goes down and there’s only one bus every two hours. \nInterwinding streets and squares mark the old town and within the city walls in the centre lies the cathedral of Sveti Tripon. The architecture is purely influenced by the Roman culture."
+                },
+                
+                {
+                    paraId: 4,
+                    paraText: "The city walls also lead unto the fortress of San Giovanni, a stunning medieval castle sited on the hill of St. John, which renders the exceptional and outstanding views of the orange roofed town and the bay. \nCaution: It is perched 1200m high on the hill and involves climbing more than 1200 stairs, pretty challenging hike."
+                },
+                {
+                    paraId: 5,
+                    paraText: "TIPS : For souvenir shopping, avoid the shops next to entrance to the city wall and head towards the cathedral. You will find many hidden boutiques, shops and cafes hidden in the corners, with not so many tourists flocking  around. \nAfter a refreshing cup of tea or coffee, make your way to the Kotor bus terminus which is around 10mins walk from the city wall entrance and take a bus to Budva. It is around 27kms from Kotor and takes around 30-45 minutes, depending on the service you take. \nTravel Tip: The bus leaves almost every 30ish minutes from Kotor and takes between 30 – 45mins to reach Budva. Use the Croatia (I could find more reliable times here on the Croatian transport site rather than a Montenegrin site ) transport site to find more info."
+                },
+                {
+                    paraId: 6,
+                    paraText: "Budva, the metropolis town, with more than 17 beaches, sprawling hotels and resorts, historic monuments, a grand marina and numerous sea food restaurants serving fresh fishes, lobsters, octopus, squids straight from the bay. Also, as the cultural hub of Montenegro, Budva is famous for its theatres and local performances during the summer months. Stari Grad, which means the old town hosts many art and craft boutiques and galleries for the art enthusiasts."
+                },
+                {
+                    paraId: 7,
+                    paraText: "The Old Town of Budva is almost as crazy as a maze, it has narrow interwinding streets with most of the corners leading to another two or three alternative paths! So easy to get lost here but even getting lost and discovering the city bits by bits is fun to travellers like me. If you are staying overnight in Kotor or Budva, do try and find an old boutique hotel for the authentic local experience. Combining traditional style with modern facilities, these stone buildings will take you back in time to the 18th century and some even back to the 13th century. \nHotel Monte Cristo, is a 13th century stone building now restored with stylish furnishing. Or, Palazzo Radomiri Heritage Boutique Hotel, which is beautifully transformed from an early 18th century Baroque palace. If, the UNESCO protected old town of Kotor is in your mind, don’t worry and head to the Boutique Hotel Hippocampus. You can actually live within the fort walls."
+                },
+                {
+                    paraId: 8,
+                    paraText: "Day 2, Head further south, the first stop is Sveti Stefan, the most photographed and hyped site in Montenegro. It is also the most expensive town on its own and the most beautiful of all what you have seen till now in Montenegro. No less than a fairy tale, this fortified islet village is charming and mesmerising and is home to riches of the rich. Don’t be surprised that this is not open to public, it  is a 5 star hotel resort owned by Aman Resorts. It is home to 50 exclusive cottages and suites and 8 grand suites at Villa Miloc⌄er, overlooking pink sandy beaches and turquoise blue Adriatic Sea. A sight to remember for rest of your life. One of the 5 National parks, lake Skadar is the biggest in Balkan Peninsula and boast of its diversity of flora and fauna. Surrounded by mountains and covered by wetland, it is home to migratory birds like Dalmation pelican, Herons and Seagulls and Carp, bleak and Eel like fishes. You can either boat around the lake from Virpazar or alternatively use the popular viewpoint, Pavlova Strana or the horseshoe bend at the northwest corner of the lake. If you are driving, it can be reached on M2.3, 5kms past Meterizi on the right where you see the sign for Rijeka Crnojevica. \nTravel Tips: \nPark at Virpazar where you will also find local eateries and restaurant (and a toilet) before you head to the lake. The boat tours also have stand here but do not go with the first one who approaches you. Take time to decide which tour would you like to take. Anything between 1-2 hours is enough. \nTrain connection to the station in Virpazar is available from Podgorica and so is the bus connection. If you are taking the bus, don’t ask for Skadar as there is a similar please in Albania across the lake…Ask for Virpazar or the Skadar National Park and the driver may drop you few hundred meters from the park entrance, if you are lucky ofc."
+                },
+                {
+                    paraId: 9,
+                    paraText: "That’s all from the beautiful country of Montenegro for now…Stay tuned for more offbeat places like this, which would leave you wowed but won’t break the bank!"
+                }
+
+            ],
+            blockQuotes: [{
+                blockQuoteId: 1,
+                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            }]
+
+        },
+        {
+            blogId:1010,
+            title:"Whirlwind Barcelona",
+            author:"Madhurima Ranu",
+            date:12,
+            month:"DEC",
+            year:2018,
+            readCount:8,
+            catKey: 1003,
+            catId:"europe",
+            relatedBlogId:[1011, 1008, 1003],
+            initContent:"Antoni Gaudi’s one of the very famous but incomplete work, Sagrada Familia is an unfinished Catholic Church but and hardly appears like any other church you’ll have seen...",
+            generalImageLib:{
+                bannerImgURL: "/images/category/europe/blogs/barcelona/whirlwind-barcelona/bannerImgURL.jpg",
+                authorImgURL: "/images/category/europe/blogs/barcelona/whirlwind-barcelona/authorImgURL.jpg",
+                titleImgURL: "/images/category/europe/blogs/barcelona/whirlwind-barcelona/titleImgURL.jpg",
+                smallTitleImgURL: "/images/category/europe/blogs/barcelona/whirlwind-barcelona/smallTitleImgURL.jpg",
+                mostReadImgURL: "/images/category/europe/blogs/barcelona/whirlwind-barcelona/mostReadImgURL.jpg",
+                similarPostImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/similarPostImgURL.jpg",
+            },
+            blogImageLib:[{
+                blockId:1,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwImgURL2.jpg"
+                }
+            },
+            
+            {
+                blockId:2,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwImgURL2.jpg"
+                }
+            }],
+            blogYTImageLib:[
+                {   
+                    blockId:1,
+                    YTLinks:{
+                        YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
+                        YTImgURL: "/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/ytImgURL.jpg"
+                    }
+                }
+            ],
+            blogParagraphs: [
+                {
+                    paraId: 1,
+                    paraText: "Sagrada Familia: Antoni Gaudi’s one of the very famous but incomplete work, Sagrada Familia is an unfinished Catholic Church but and hardly appears like any other church you’ll have seen in your life. Stained Glass windows, tall columns supporting high ornated ceilings and Gaudi’s signature artistic style dominates this signature building."
+                },
+                {
+                    paraId: 2,
+                    paraText: "Park Güell: Another of Gaudi’s proclaimed creations, not like any usual park, with trees and shrubs you would also find twisted wrought iron gazebo, artistic colonnades, distinctive archways and other mosaic sculptures. You may also notice that hundreds of tourists are flocking around the central stairs leading to the terrace, mostly with their cameras and mobile phones! They are queuing up to get a selfie with the famous giant ceramic dragon."
+                },
+                {
+                    paraId: 3,
+                    paraText: "As beautiful as the entrance, the beautiful mosaic terrace dominates the park. With artfully curved fence and corrugated bench decorated with colourful mosaic work, it offers panoramic view of the city. \nYou can also visit Gaudi’s House-Museum, where he lived from 1906 to 1926. It still holds the original furniture and decorative items as designed by the architect himself. \nTickets: Individual tickets are available from €10 and guided tours from €22. Find the latest ticket information here."
+                },
+                
+                {
+                    paraId: 4,
+                    paraText: "Casa Milà : Looks like a quarry from outside, Casa Mila also locally known as ‘La Padrera’ or ‘the stone quarry’ for its external appearance.	Located on 92, Passeig de Gràcia, it was built between 1906 and 1912 and was home to the Mila family who lived on the main floor and rented the rest. The building still holds some residential apartments today but is open to public for visits during day and night. \nTickets: Are sold in three categories, essential, Premium and the Night experience and are costed at €24, €31 and €34 respectively. Yes, I know what you must be thinking, is it expensive! Here is link to the official site for the latest information."
+                },
+                {
+                    paraId: 5,
+                    paraText: "Casa Batlló: 500m from Casa Mila, if you walk towards the Passeig de Gràcia underground station, at number 43, you will find the next famous Gaudi creation, the Casa Batlló. Famous for the Skull and Bones balconies (Windows and balconies as skull and supporting poles as bones, it is one of the iconic creations. It is a UNESCO World Heritage site and attracts more than 1M visitor every year.  So, I would recommend visit it early around 9am, to avoid crowds to enjoy this magnificent beauty in peace. And, don’t just walk by, go inside to know its true worth. You will be left gobsmacked! \nTicket: Tickets vary so reach out the official website to find the latest details."
+                },
+                {
+                    paraId: 6,
+                    paraText: "Gothic Quarter: A very interesting neighbourhood and full of history and period charm, Gothic Quarter is certainly one of the most talked about attractions of Barcelona. \nNarrow medieval streets with hidden squares at almost every corner, trendy Catalan restaurants and bars, boutique shops selling art and craft items and local bakeries are few of the highlights of this 2000 years old part of the city. A true authentic Catalan experience, don’t miss out on the Gothic Quarter."
+                },
+                {
+                    paraId: 7,
+                    paraText: "Montjuic Castle: It is an old military fortress dating back from 1640 on the Montjuic mountain. Located around 173m above the sea level, it provided the strategic location for a defensive site in the past and today offers the best views of the city. Don’t miss out the parade ground, the terrace and the watch towers. The 155m long sea facing wall provides the best views of the port of Barcelona and the Balearic sea. \nHow to get there: Take metro line 3 to Parallel and then change to the Cable Car (included in the metro ticket) up to Montjuic. Cable car journey to me was the best part of this trip. Note that there are three stops, Parc de Montjuic, Mirador and the Castell de Monjuic on this route. \nTicket:Tickets vary for adults and children. Find the latest ticket information here. \nTIPS: Sunday after 3PM you can enter the attraction completely free of charge.From the cable car facilities, you can very easily walk to the Olympic stadium (1992 Olympics were held here)."
+                },
+                {
+                    paraId: 8,
+                    paraText: "Las Ramblas: The most famous landmark, Las Ramblas is the boulevard that runs from Plaça de Catalunya down to the Columbus Monument at the waterfront. It is a must if you are Barcelona, just one of those things that you have to do. The most happening part of the city, lined by trees and with thousands of tourists shuffling their way through the live statues, street performers, numerous flower sellers, open restaurants/bars, painters and many other artists and art sellers from one end to the other. Try an authentic paella or tapas dishes at the roadside stall or get your caricature done by one of the young artists, this street has all form of surprises to keep you engaged and wowed. It is free to visit. Yeah!!"
+                },
+                {
+                    paraId: 9,
+                    paraText: "Camp Nou: Largest sporting stadium in the Europe and the third largest football stadium in the world, Camp Nou is home to the Barcelona Football club. For all the football fans, a must stop for you!It is located about 550ms east of the Las Ramblas and can be reached walking from Jaume I underground station. From Barcelona’s city centre you can take metro line 3, in the direction of Zona Universitària and Les Corts/ Palau Reial/Maria Cristina  is probably the closest station. Other options are Badal on line 5 and Collblanc on line 5 or line 6/9 to reach to the stadium."
+                }
+
+            ],
+            blockQuotes: [{
+                blockQuoteId: 1,
+                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            }]
+
+        },
+        {
+            blogId:1009,
             title:"Cotswold Lavender Fields",
             author:"Madhurima Ranu",
             date:17,
-            month:"JUN",
-            year:2020,
+            month:"SEP",
+            year:2018,
             readCount:9,
-            category: {
-                catId:1002,
-                catCode: "brit",
-                catDesc: "Britain",
-                imgURL:"/images/category/britain/britain.jpg",
-                postCount:13
-            },
+            catKey: 1002,
+            catId:"brit",
+            relatedBlogId:[],
             initContent:"Oils, candles, foaming bath bubbles or just the dried bunch, this gorgeous little purple flower is just magical.  Delicately fragrant and fragile, Lavender is used ...",
             generalImageLib:{
                 bannerImgURL: "/images/category/britain/blogs/cotswold/bannerImgURL.jpg",
@@ -108,21 +316,124 @@ const blogList={
             }]
 
         },
+
         {
-            blogId:1004003,
+            blogId:1008,
+            title:"Perast & Our Lady of the Rocks",
+            author:"Madhurima Ranu",
+            date:6,
+            month:"AUG",
+            year:2018,
+            readCount:8,
+            catKey: 1003,
+            catId:"europe",
+            relatedBlogId:[1011, 1010, 1003],
+            initContent:"An hour and half drive from Dubrovnik or just 15mins north of Kotor lies the fairy tale medieval village of Perast. Backdrop adorned by the jagged Dinaric Alps and the foreground...",
+            generalImageLib:{
+                bannerImgURL: "/images/category/europe/blogs/perast/bannerImgURL.jpg",
+                authorImgURL: "/images/category/europe/blogs/perast/authorImgURL.jpg",
+                titleImgURL: "/images/category/europe/blogs/perast/titleImgURL.jpg",
+                smallTitleImgURL: "/images/category/europe/blogs/perast/smallTitleImgURL.jpg",
+                mostReadImgURL: "/images/category/europe/blogs/perast/mostReadImgURL.jpg",
+                similarPostImgURL:"/images/category/europe/blogs/perast/similarPostImgURL.jpg",
+            },
+            blogImageLib:[{
+                blockId:1,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/europe/blogs/perast/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/europe/blogs/perast/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/europe/blogs/perast/content/hwImgURL2.jpg"
+                }
+            },
+            {
+                blockId:2,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/europe/blogs/perast/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/europe/blogs/perast/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/europe/blogs/perast/content/hwImgURL2.jpg"
+                }
+            }],
+            blogYTImageLib:[
+                {   
+                    blockId:1,
+                    YTLinks:{
+                        YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
+                        YTImgURL: "/images/category/europe/blogs/perast/content/ytImgURL.jpg"
+                    }
+                }
+            ],
+            blogParagraphs: [
+                {
+                    paraId: 1,
+                    paraText: "An hour and half drive from Dubrovnik or just 15mins north of Kotor lies the fairy tale medieval village of Perast. Backdrop adorned by the jagged Dinaric Alps and the foreground delineated by the deep blue of the Adriatic Sea, it truly is an epitome of beauty. There are more than 15 churches and around 17 palaces in this village but my personal view is, one doesn’t come here to visit the tourist spots, one comes here to ‘not do much’ and sit on the shores with a drink in one hand a book in another. Some of these old buildings are converted into luxurious hotels and spas for an unforgettable stay so perfect destination if you are after relaxation and rejuvenation."
+                },
+                {
+                    paraId: 2,
+                    paraText: "You can walk around the town in less than 2 hours and there is indeed only a handful of places that would interest a tourist. "
+                },
+                {
+                    paraId: 3,
+                    paraText: "The earliest evidence of this historic bond, that survived the test of time, still lies at the Ujung Kulon National Park, West Java. An archaeological relic of Lord Ganesha, The Elephant God, from the 1st century AD was found on the summit of Mount Raksa in Panaotan Island. By the time Fa Hsien, the great Chinese scholar, reached the Balinese shore in 414 AD, Hinduism was already well entrenched in the archipelago."
+                },
+                
+                {
+                    paraId: 4,
+                    paraText: "Our Lady of the Rock: One of the two islets on the bay of Boka Kotorska, Our Lady of the Rock is a manmade island created by rocks and seized ships. There are many legends surrounding this beautiful island and I cannot help but write one such interesting tale here:"
+                },
+                {
+                    paraId: 5,
+                    paraText: "According to folklore, two fisherman brothers returning from their trip in 1452, finds an icon of Virgin Mary and Christ on a sea cliff. They bring it home but the next day, it disappears from home and reappears at the cliff. They once again bring it home but the next day it disappears as before. Seeing this, the brothers realize that Virgin Mary wishes to stay there and vows to build a church there. For centuries, fisherman on return from their trips and captain on return from their successful voyages repeat the customs to throw rocks and even old seized ships to that same cliff, thereby building the island which you can see today. \nThe custom from the folklore is still alive today and is celebrated as Fasinada on the 22nd of July.There are small boats offering you ride from the shore to the Lady of the rock for around €5. Entrance to the museum is €1. Inside the museum, you’ll be able to get a guided tour for about €1 donation. The museum hosts archaeological finds from the city of Perast as well as sacred relics from the prehistoric age. \TIPS: Shorts and bare shoulders dresses are not allowed unless you have something to cover off your legs and shoulders. Also keep in mind that you cannot hire a scarf, shawl or stole at the entrance."
+                },
+                {
+                    paraId: 6,
+                    paraText: "St. Nikola Church: You cannot miss this prominent 17th century church and the 55m tall bell tower from any part of the town. The church was started around 1616 but has never been finished. You can climb the bell tower and from the top it offers amazing aerial view of the bay."
+                },
+                {
+                    paraId: 7,
+                    paraText: "Island of St. George: Island of St. George is not permittable for tourists and you can only get a glimpse from your boat ride. Decked by tall Cypress trees, this private island hosts an active monastery."
+                },
+                {
+                    paraId: 8,
+                    paraText: "Perast Museum: This museum is located in one of the most beautiful buildings of Perast, the Bujovic Palace. A magnificent 18th century palace with an imposing porch consisting of five arcades and beautiful terraces with stone balusters is one of the most beautiful baroque edifices on the Adriatic Coast. Numerous exhibits, documents and paintings presented in several exhibitions are witnesses of the tumultuous and rich history of Perast, from its establishment through the rule of the Republic of Venice to the rule of France and Austria-Hungary in the area. \nPaintings, historic and maritime artefacts and collectibles from families, seafarers and other adventurers who have made Perast their home. The most interesting things were the ceremonial swords and the maps from the 17th century."
+                },
+                {
+                    paraId: 9,
+                    paraText: "With its wonderful location on the Kotor bay and the fantasy island of Our Lady of the Rocks, this small village is surely fascinating. This is the tiny medieval town where the mountain meets the sea, literally… Don’t miss out if you are in an around The Old Town of Perast"
+                }
+
+            ],
+            blockQuotes: [{
+                blockQuoteId: 1,
+                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            }]
+
+        },
+
+        {
+            blogId:1007,
             title:"The India Connection",
             author:"Soumyadeep Ghosh",
             date:11,
-            month:"APR",
+            month:"JUN",
             year:2018,
             readCount:4,
-            category: {
-                catId:1004,
-                catCode: "asiaothr",
-                catDesc: "Asia and Others",
-                imgURL:"/images/category/asiaandafrica/asiaandafrica.jpg",
-                postCount:7
-            },
+            catKey: 1004,
+            catId:"asiaandothers",
+            relatedBlogId:[1001, 1002],
             initContent:"As the winter approaches in India and one senses the chill in the northern wind, families would gather at the seaside temple town of Konark, in the eastern state of Odisha...",
             generalImageLib:{
                 bannerImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/bannerImgURL.jpg",
@@ -167,7 +478,7 @@ const blogList={
                     blockId:1,
                     YTLinks:{
                         YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
-                        YTImgURL: "/public/images/category/asiaandafrica/blogs/bali/indiaandbali/content/ytImgURL.jpg"
+                        YTImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/content/ytImgURL.jpg"
                     }
                 }
             ],
@@ -219,20 +530,16 @@ const blogList={
         },
         
         {
-            blogId:1001001,
+            blogId:1006,
             title:"The Sin City",
             author:"Madhurima Ranu",
-            date:31,
-            month:"JAN",
+            date:7,
+            month:"MAY",
             year:2018,
             readCount:14,
-            category: {
-                catId:1001,
-                catCode: "usa",
-                catDesc: "United States",
-                imgURL:"/images/category/usa/usa.jpg",
-                postCount:3
-            },
+            catKey: 1001,
+            catId:"usa",
+            relatedBlogId:[1004, 1005],
             initContent:"Wynn once said “Las Vegas is sort of like how God would do it if he had money...Neon lights, flashy cars, elaborate attires, night clubs, casinos, all in middle of the Mojave ...",
             generalImageLib:{
                 bannerImgURL: "/images/category/usa/blogs/las-vegas/bannerImgURL.jpg",
@@ -325,21 +632,226 @@ const blogList={
                 blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
             }]
         },
+        
         {
-            blogId:1003001,
+            blogId:1005,
+            title:"Las Vegas - Dare You Miss",
+            author:"Madhurima Ranu",
+            date:2,
+            month:"APR",
+            year:2018,
+            readCount:11,
+            catKey: 1001,
+            catId:"usa",
+            relatedBlogId:[1004, 1006],
+            initContent:"Night! What night?! This city never sleeps and so whether it is middle of the day or the midnight, the hustle bustle, the glitter and the glamour and the romance and the charisma ...",
+            generalImageLib:{
+                bannerImgURL: "/images/category/usa/blogs/las-vegas/vegas-dareumiss/bannerImgURL.jpg",
+                authorImgURL: "/images/category/usa/blogs/las-vegas/vegas-dareumiss/authorImgURL.jpg",
+                titleImgURL: "/images/category/usa/blogs/las-vegas/vegas-dareumiss/titleImgURL.jpg",
+                smallTitleImgURL: "/images/category/usa/blogs/las-vegas/vegas-dareumiss/smallTitleImgURL.jpg",
+                mostReadImgURL: "/images/category/usa/blogs/las-vegas/vegas-dareumiss/mostReadImgURL.jpg",
+                similarPostImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/similarPostImgURL.jpg",
+            },
+            blogImageLib:[{
+                blockId:1,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwImgURL2.jpg"
+                }
+            },
+            {
+                blockId:2,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwImgURL2.jpg"
+                }
+            }],
+            blogYTImageLib:[
+                {   
+                    blockId:1,
+                    YTLinks:{
+                        YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
+                        YTImgURL: "/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/ytImgURL.jpg"
+                    }
+                }
+            ],
+            blogParagraphs: [
+                {
+                    paraId: 1,
+                    paraText: "Night! What night?! This city never sleeps and so whether it is middle of the day or the midnight, the hustle bustle, the glitter and the glamour and the romance and the charisma of this city never fades away. Take a stroll on the strip middle of the night and you can’t differentiate day from the night."
+                },
+                {
+                    paraId: 2,
+                    paraText: "Remember the scene from the Ocean’s 11, with Brad Pitt, Matt Demon and the famous fountain show. It is really as mesmerising in real life as in reel. Timings: Mon – Fri: Every 1/2hr from 3 – 8 p.m.(Sat 12-8pm) & every 15 minutes from 8 p.m. – midnight. Sundays: Fountain show begins at 11 a.m. and run every half hour until 7 p.m."
+                },
+                {
+                    paraId: 3,
+                    paraText: "The city simply never sleeps and neither does the enthusiasm of its people die with the setting sun. Whether it is noon, 12 midnight or 4am in the morning you will still find the casino floors full of people with hopeful eyes waiting for the win of the life time, the smiling waitress waiting for that hefty tip or the counterfeit Elvis on the street ever ready to be photographed with you. Whether it’s a warm sunny noon or spine-chilling cold winter evening, you will find the scantily dressed showgirl working for the generous cents along the strip. You could also spot a green giant stuffed man, feigned as the famous Hulk ever ready to amuse the kids and the other passersby. The list goes on and on..."
+                },
+                {
+                    paraId: 4,
+                    paraText: "Here is Vegas’s sweetest attraction and the most fun attraction…The M&M museum. I wanted all the toys and the ingeniously designed M&M dispensers, there was a motor cyclist, an aircraft, a police man and a stuffed toy to list a few…I couldn’t choose one, wish I could have it all. Here is the child in me, excited with the sight of colourful M&Ms even when I don’t like chocolates. I did buy some pressies for my young cousins and they were equally delighted. An absolute must, if you are out with a young one."
+                },
+                {
+                    paraId: 5,
+                    paraText: "Time to head down to the musical and gaming capital of this city ‘The Fremont Street’. A pedestrian area in downtown Vegas famous for its energy, colours and music. While you stroll down the street you will notice numerous street performers or art sellers trying to catch your attention…I stopped to look over some of them and God! they are surely talented! Iconic wedding chapels, street food cafes, the famous gold and silver Pawn shop as featured in the famous TV show, the Pawn Stars and many such famous and sometime infamous spots adorn the downtown. Eat in one of the roadside cafes for a unique Fremont Street experience or dine in the famous and renowned Golden Nugget Hotel and Casino."
+                },
+                {
+                    paraId: 6,
+                    paraText: "Don’t miss the thrilling Slotzilla zip line experience, superhero style! Priced between $25-$45 (as of 2017). Or, dare to take the walking dead experience if you are brave enough to face zombies, errr I wasn’t. I can’t bear the thought of zombies, but I never claimed to be the adventurous sorts."
+                },
+                {
+                    paraId: 7,
+                    paraText: "Top Tip: Plan the Fremont Street visit for an evening as you wouldn’t want to miss out on the Viva Vision light show. It is displayed on a 1,500-foot-long and 90-foot-wide video screen and is set to music. The best part is…it is free for visitors! Yeahhhh! The show runs every hour from 6pm and lasts for about 6 mins."
+                },
+                {
+                    paraId: 8,
+                    paraText: "Visit to Freemont street is must even if you are in Vegas for a day. Don’t forget to read the ‘Stop over at Vegas’ blog if you only have 24hours in the city."
+                },
+                {
+                    paraId: 9,
+                    paraText: "And, this is all I have for this famous, incredible and most extraordinary city from my bucket list. VEGAS, it is!"
+                }
+
+            ],
+            blockQuotes: [{
+                blockQuoteId: 1,
+                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            }]
+        },
+
+        {
+            blogId:1004,
+            title:"Making Of Las Vegas",
+            author:"Soumyadeep Ghosh",
+            date:13,
+            month:"MAR",
+            year:2018,
+            readCount:3,
+            catKey: 1001,
+            catId:"usa",
+            relatedBlogId:[1005, 1006],
+            initContent:"It will take some effort not to notice her, even from 10000 feet up in the sky, as your flight starts to descend to The McCarran International Airport. An oasis of glittering ...",
+            generalImageLib:{
+                bannerImgURL: "/images/category/usa/blogs/las-vegas/making-of-las-vegas/bannerImgURL.jpg",
+                authorImgURL: "/images/category/usa/blogs/las-vegas/making-of-las-vegas/authorImgURL.jpg",
+                titleImgURL: "/images/category/usa/blogs/las-vegas/making-of-las-vegas/titleImgURL.jpg",
+                smallTitleImgURL: "/images/category/usa/blogs/las-vegas/making-of-las-vegas/smallTitleImgURL.jpg",
+                mostReadImgURL: "/images/category/usa/blogs/las-vegas/making-of-las-vegas/mostReadImgURL.jpg",
+                similarPostImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/similarPostImgURL.jpg",
+            },
+            blogImageLib:[{
+                blockId:1,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwImgURL2.jpg"
+                }
+            },
+            {
+                blockId:2,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwImgURL2.jpg"
+                }
+            }],
+            blogYTImageLib:[
+                {   
+                    blockId:1,
+                    YTLinks:{
+                        YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
+                        YTImgURL: "/images/category/usa/blogs/las-vegas/content/ytImgURL.jpg"
+                    }
+                }
+            ],
+            blogParagraphs: [
+                {
+                    paraId: 1,
+                    paraText: "It will take some effort not to notice her, even from 10000 feet up in the sky, as your flight starts to descend to The McCarran International Airport. An oasis of glittering lights in the middle of the Mojave Desert, home to ‘The Strip’ and the famous ‘the Cirque du Soleil’, the Drive-In wedding chapels and a visual spectacle complete with its own Eiffel Tower, Pyramids, and Venetian canals. Welcome to Las Vegas or simply Vegas as millions of her admirers love to call her. \nHowever, Las Vegas does not even remotely resemble to what it is today when 110 acres of land were auctioned off by the railroad company on 15 May in 1905. The completion of the San Pedro, Los Angeles & Salt Lake Railroad, linking Southern California with Salt Lake City, established Las Vegas as a railroad town. The availability of water made her an ideal re-fuelling point and a pit stop.  In a city occupied mostly by railroad workers and ranchers, the spirit of the Wild West started to blossom. And with it came insinuations for prostitution, gambling and drinking despite Nevada ‘s 1910 ban on gambling."
+                },
+                {
+                    paraId: 2,
+                    paraText: "But it was not until July 1930 when president Herbert Hoover signed the appropriation bill for the Boulder Dam, 37 miles south east off Las Vegas, when her luck really took off. No event in the history of Las Vegas had more profound impact on the city – both financially as well as culturally. \nBy 1930, Las Vegas had only about 5,200 residents. Nearly all of its small hotels, stores, and other businesses were concentrated on one main thoroughfare, Fremont Street. The town was infamous for its lax enforcement of liquor laws during Prohibition and its backstreet brothels. In 1931, when the work on the dam started, the population swelled to 25000 with majority of the newcomers looking for a job at the dam site.  However, the demographic of the work force dominated by males with no strings attached to the area created a perfect market for large-scale adult entertainment. A combination of local business owners and Mafia crime lords helped develop the casinos and showgirl theatres to entertain the migrant workers."
+                },
+                {
+                    paraId: 3,
+                    paraText: "As the city’s reputation started to dwindle with large scale organised crime, illegal flesh trades and rampant liquor sales, especially during the time of Prohibition, the setting up of the Boulder City deflated the enthusiasm of the city’s business communities even further. When Secretary of the Interior Ray Lyman Wilbur visited the dam site and Las Vegas in 1929, he caught one of his sub-ordinates with liquor in his breath after a visit to infamous Block 16 at Freemont street."
+                },
+                {
+                    paraId: 4,
+                    paraText: "Soon after, Wilber proclaimed that the government hopes to house its workers in a wholesome American community of flowers, schools and playgrounds instead of Las Vegas, which Wilbur termed as a boisterous frontier town. He announced that the construction workforce of 5,000 would live in a new town his department would build, closer to the construction site. Originally designated the Boulder Canyon Federal Reservation, it was later called The Boulder City, a major tourist attraction of today, enroute to the south rim of the Grand Canyon."
+                },
+                {
+                    paraId: 5,
+                    paraText: "Fortunately for Las Vegas, Wilber’s moral compass could not deflate her newly acquired fame as the gambling capital of the wild west. The legalization of casino gambling by the Nevada Legislature in March 1931 proved to be a masterstroke. The act allowed Las Vegas to open and operate legal casinos, also increased revenues from dam workers who came into town after work or on payday. Construction began on Boulder City in March 1931 by Six Companies Inc., the firm the federal government had awarded the contract to build the Dam. The dam's total payroll was $500,000 per month to all its workers."
+                },
+                {
+                    paraId: 6,
+                    paraText: "Las Vegas businesses successfully lobbied the federal government to mandate the Six Companies to pay all its workers in U.S. dollars and not in company scrips that are accepted only in stores in Boulder City. Despite of the dam authorities putting up restrictions on its workers to visit the city, they would find new ways to dodge rules to come to Vegas to “buy good times”. The Hoover Dam Project quickly became a national tourist attraction as well. Thousands of these visitors would spend money in Las Vegas hotels, casinos, and other businesses. In 1932 alone, 100,000 people visited the dam construction site, and 200,000 visited Las Vegas. By 1934, 265,000 people went to the dam site and 300,000 went to Las Vegas. In the 1930s, an estimated seventy-five percent of those visiting the dam also stopped at Las Vegas. "
+                },
+                {
+                    paraId: 7,
+                    paraText: "Influx of tourists from all over the country created the demand for good hotels - The first hotel, El Rancho Vegas, opened up on Highway 91 in 1941. In the late 1940s, the success of El Rancho Vegas inspired others to open up hotels along Highway 91, which would later evolve into the Strip. East Coast mobsters Benjamin “Bugsy” Siegel and Meyer Lansky were amongst these hotel builders, opening the Hollywood-inspired Flamingo Hotel in 1946. This was followed by the Last Frontier (1942), Thunderbird (1948) and The El Cortez on the Fremont Street. However, these were mostly funded by drug trafficking money."
+                },
+                {
+                    paraId: 8,
+                    paraText: "The trend started to change in 1966 when billionaire businessman Howard Hughes bought over a dozen hotels, slowly pushing out mobster-owned hotels that dominated the city. In 1989, Steve Wynn started a new trend in hotel design and construction: The Mega Hotel. He opened the Mirage, the first glamorous resort hotel in Las Vegas. Transformed over the next two decades, the Strip saw many developments inspired by iconic cities, such as New York, Paris, Rome, Luxor etc. Casino business were booming, tourists would flock to Vegas to see Frank Sinatra, Elvis Presley or Cirque du Soleil perform. By 1990, Las Vegas had more than 86,000 hotel rooms, with 13 of the 20 largest hotels on earth."
+                },
+                {
+                    paraId: 9,
+                    paraText: "The story of Vegas, from a tiny railway stopover in the middle of the Mojave Desert to becoming The Entertainment Capital of the World is remarkable. The story is written in blood and sweat of the workers at the dam, as much as, it is written in tears of those faceless young women who kept entertaining strangers every passing night. The story of Vegas is about Elvis Presley’s performance in 1969 that turned his career around as much as it is about the human endeavour to build the first railway track in the middle of most desolate south Californian desert. \nThe rest, as they say, is History."
+                }
+
+            ],
+            blockQuotes: [{
+                blockQuoteId: 1,
+                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            }]
+        },
+        
+        {
+            blogId:1003,
             title:"The Unfinished Temple",
             author:"Madhurima Ranu",
             date:2,
             month:"FEB",
             year:2017,  
             readCount:14,
-            category: {
-                catId:1003,
-                catCode: "europe",
-                catDesc: "Mainland Europe",
-                imgURL:"/images/category/europe/europe.jpg",
-                postCount:21
-            },
+            catKey: 1003,
+            catId:"europe",
+            relatedBlogId:[1008, 1010, 1011],
             initContent:"My ideas are of an indisputable logic; the only thing that makes me doubt them is the fact that they have not been put into practice before - Antoni Gaudi. Barcelona, one of the famous ...",
             generalImageLib:{
                 bannerImgURL: "/images/category/europe/blogs/barcelona/sagrada/bannerImgURL.jpg",
@@ -434,20 +946,16 @@ const blogList={
 
         },
         {
-            blogId:1004002,
+            blogId:1002,
             title:"The Musical Bali",
             author:"Madhurima Ranu",
             date:17,
             month:"JUN",
             year:2016,
             readCount:6,
-            category: {
-                catId:1004,
-                catCode: "asiaothr",
-                catDesc: "Asia and Others",
-                imgURL:"/images/category/asiaandafrica/asiaandafrica.jpg",
-                postCount:7
-            },
+            catKey: 1004,
+            catId:"asiaandothers",
+            relatedBlogId:[1001, 1007],
             initContent:"Bali has a very rich and illustrious cultural heritage and even though most of the Indonesian island is Muslim dominated, Bali has remained ...",
             generalImageLib:{
                 bannerImgURL: "/images/category/asiaandafrica/blogs/bali/musical/bannerImgURL.jpg",
@@ -543,20 +1051,16 @@ const blogList={
 
         },
         {
-            blogId:1004001,
+            blogId:1001,
             title:"Island of The Gods",
             author:"Madhurima Ranu",
             date:6,
             month:"APR",
             year:2016,
             readCount:6,
-            category: {
-                catId:1004,
-                catCode: "asiaothr",
-                catDesc: "Asia and Others",
-                imgURL:"/images/category/asiaandafrica/asiaandafrica.jpg",
-                postCount:7
-            },
+            catKey: 1004,
+            catId:"asiaandothers",
+            relatedBlogId:[1002, 1007],
             initContent:"Island of Gods, Bali is part of the Indonesian archipelago and just 8 degrees south of equator. Pure tropical bliss with temperatures averaging 22 degs. in the central and ...",
             generalImageLib:{
                 bannerImgURL: "/images/category/asiaandafrica/blogs/bali/bannerImgURL.jpg",

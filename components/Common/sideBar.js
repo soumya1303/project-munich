@@ -38,6 +38,7 @@ const SideBar = (props)=>{
                             return (
                                 <CategoryItem 
                                     key={c.catId}
+                                    catId={c.catId}
                                     categoryName={c.catDesc}
                                     postCount={c.postCount}
                                 />
@@ -53,6 +54,8 @@ const SideBar = (props)=>{
                             return (
                                 <MostReadPost 
                                     key={b.blogId}
+                                    blogId={b.blogId}
+                                    catId={b.catId}
                                     imgSource={b.generalImageLib.mostReadImgURL}
                                     title={b.title}
                                 />

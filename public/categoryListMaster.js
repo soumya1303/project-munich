@@ -1,32 +1,32 @@
 const categoryList = {
     categoryListArr:[
         {
-            catId:1001,
-            catCode: "usa",
+            catKey:1001,
+            catId: "usa",
             catDesc: "United States",
             imgURL:"/images/category/usa/usa.jpg",
             postCount:3
         },
         {
-            catId:1002,
-            catCode: "brit",
+            catKey:1002,
+            catId: "brit",
             catDesc: "Britain",
             imgURL:"/images/category/britain/britain.jpg",
-            postCount:13
+            postCount:1
         },
         {
-            catId:1003,
-            catCode: "europe",
+            catKey:1003,
+            catId: "europe",
             catDesc: "Mainland Europe",
             imgURL:"/images/category/europe/europe.jpg",
-            postCount:21
+            postCount:4
         },
         {
-            catId:1004,
-            catCode: "asiaothr",
+            catKey:1004,
+            catId: "asiaandothers",
             catDesc: "Asia and Others",
             imgURL:"/images/category/asiaandafrica/asiaandafrica.jpg",
-            postCount:7
+            postCount:3
         }
     ]
 } 

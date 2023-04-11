@@ -35,12 +35,12 @@ import FooterComponent from "../../../components/Common/footerComponent";
 import FakeBlogContent from "../../../public/fakeBlogContent"; /* To be deleted later */
 import dummyBlogContent from "../../../public/dummyBlogContent";
 
+import blogList from "../../../public/blogListMaster";
+import categoryList from "../../../public/categoryListMaster";
+import authorProfie from "../../../public/authorProfile";
 
-const Blog=()=>{
 
-    const router = useRouter();
-    const blogId = router.query.blogId;
-    console.log(dummyBlogContent);
+const Blog=(props)=>{
 
 
     return(
@@ -51,23 +51,23 @@ const Blog=()=>{
                     <TopContent>
                         <MainNavigation imgSource="/images/common/logo.png"/>
                     </TopContent>
-                    <BlogTitle blogTitle="blog" />
+                    <BlogTitle blogTitle="BLOG" />
                     <MainContentWrapper>
                         <TitleImage 
-                            imgSource="/images/blog/1.jpg"
-                            date="30"
-                            month="June"
+                            imgSource={props.blogItem.generalImageLib.titleImgURL}
+                            date={props.blogItem.date.toString()}
+                            month={`${b.month} ${b.year.toString().slice(2,4)}`}
                         />
                         <GridLayoutWrapper>
                             <GridLayoutLeftWrapper>
                                 <MainBlogWrapper>
                                     <MainBlogHeader 
-                                        blogHeader={dummyBlogContent.blogHeader}
+                                        blogHeader={props.blogItem.title}
                                     />
                                     <MainBlogBodyWrapper>
-                                        
-                                        <MainBlogSectionWrapper>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p1}/>
+
+                                    <MainBlogSectionWrapper>
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[0]}/>
                                             <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p2}/>
                                             <BlockQuoteWrapper blockQuoteContent = {dummyBlogContent.blogBlockQuotes.bq1} />
                                             <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p3}/>
@@ -95,6 +95,36 @@ const Blog=()=>{
                                         <MainBlogSectionWrapper>
                                             <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
                                         </MainBlogSectionWrapper>
+                                        
+                                        {/* <MainBlogSectionWrapper>
+                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p1}/>
+                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p2}/>
+                                            <BlockQuoteWrapper blockQuoteContent = {dummyBlogContent.blogBlockQuotes.bq1} />
+                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p3}/>
+                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p4}/>
+                                        </MainBlogSectionWrapper>
+                                        <ImageGallaryWrapper>
+                                            <SingleImage imgURL={dummyBlogContent.blogImages.img1}/>
+                                            <DuelImage imgURL={dummyBlogContent.blogImages.img2} />
+                                            <DuelImage imgURL={dummyBlogContent.blogImages.img3} />
+                                        </ImageGallaryWrapper>
+                                        <MainBlogSectionWrapper>
+                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
+                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p6}/>
+                                        </MainBlogSectionWrapper>
+                                        <ImageGallaryWrapper>
+                                            <SingleImage imgURL={dummyBlogContent.blogImages.img1}/>
+                                            <DuelImage imgURL={dummyBlogContent.blogImages.img2} />
+                                            <DuelImage imgURL={dummyBlogContent.blogImages.img3} />
+                                        </ImageGallaryWrapper>
+                                        <MainBlogSectionWrapper>
+                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
+                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p6}/>
+                                        </MainBlogSectionWrapper>
+                                        <YouTubeLink ytVidURL={dummyBlogContent.blogYTVideos.ytVidURL} ytImgURL={dummyBlogContent.blogYTImages.ytImgURL}/>
+                                        <MainBlogSectionWrapper>
+                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
+                                        </MainBlogSectionWrapper> */}
                                     </MainBlogBodyWrapper> 
                                     <MainBlogFooter />
                                 </MainBlogWrapper>
@@ -165,3 +195,30 @@ const Blog=()=>{
 }
 
 export default Blog;
+
+const getStaticPaths = (context)=>{
+
+}
+
+
+const getStaticProps = (context)=>{
+
+    const blogId = context.params.blogId;
+    
+    const blogItem = blogList.blogListArr.forEach((b)=>{
+        if (b.blogId === blogId){
+            return b
+        }
+
+        return ({
+            props:{
+                blogItem:blogItem,
+                categoryListArr: categoryList.categoryListArr,
+                authorProfie:authorProfie
+            }
+        })
+    })
+
+}
+
+export {getStaticPaths, getStaticProps}
