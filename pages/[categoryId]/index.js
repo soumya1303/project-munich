@@ -7,6 +7,7 @@ import MousePointer from "../../components/Category/mousePointer";
 import BodyContent from "../../components/Category/bodyContent";
 import TopContent from "../../components/Category/topContent";
 import MainNavigation from "../../components/Category/mainNavigation";
+//import MainNavigation from "../../components/Common/mainNavigation";
 import ThemeSliderWrapper from "../../components/Category/themeSliderWrapper";
 import SwiperContainerWrapper from "../../components/Category/swiperContainerWrapper";
 import SwiperWrapper from "../../components/Category/swiperWrapper";

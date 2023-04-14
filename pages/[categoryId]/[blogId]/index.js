@@ -7,6 +7,7 @@ import MousePointer from "../../../components/Blog/mousePointer";
 import BodyContent from "../../../components/Blog/bodyContent";
 import TopContent from "../../../components/Blog/topContent";
 import MainNavigation from "../../../components/Blog/mainNavigation";
+//import MainNavigation from "../../../components/Common/mainNavigation";
 import BlogTitle from "../../../components/Blog/blogTitle";
 import MainContentWrapper from "../../../components/Blog/mainContentWrapper";
 import TitleImage from "../../../components/Blog/titleImage";
@@ -31,7 +32,6 @@ import SimilarPost from "../../../components/Blog/similarPost";
 import SideBar from "../../../components/Common/sideBar";
 import FooterComponent from "../../../components/Common/footerComponent";
 
-
 import FakeBlogContent from "../../../public/fakeBlogContent"; /* To be deleted later */
 import dummyBlogContent from "../../../public/dummyBlogContent";
 
@@ -42,6 +42,7 @@ import authorProfie from "../../../public/authorProfile";
 
 const Blog=(props)=>{
 
+    console.log(props.similarBlogList);
 
     return(
         <React.Fragment>
@@ -51,80 +52,56 @@ const Blog=(props)=>{
                     <TopContent>
                         <MainNavigation imgSource="/images/common/logo.png"/>
                     </TopContent>
-                    <BlogTitle blogTitle="BLOG" />
+                    <BlogTitle blogTitle={props.blogItem.title} />
                     <MainContentWrapper>
                         <TitleImage 
                             imgSource={props.blogItem.generalImageLib.titleImgURL}
                             date={props.blogItem.date.toString()}
-                            month={`${b.month} ${b.year.toString().slice(2,4)}`}
+                            month={`${props.blogItem.month} ${props.blogItem.year.toString().slice(2,4)}`}
                         />
                         <GridLayoutWrapper>
+                            
                             <GridLayoutLeftWrapper>
                                 <MainBlogWrapper>
-                                    <MainBlogHeader 
+                                    {/* <MainBlogHeader 
                                         blogHeader={props.blogItem.title}
-                                    />
+                                    /> */}
                                     <MainBlogBodyWrapper>
 
-                                    <MainBlogSectionWrapper>
-                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[0]}/>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p2}/>
-                                            <BlockQuoteWrapper blockQuoteContent = {dummyBlogContent.blogBlockQuotes.bq1} />
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p3}/>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p4}/>
+                                        <MainBlogSectionWrapper>
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[0].paraText}/>
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[1].paraText}/>
+                                            <BlockQuoteWrapper blockQuoteContent = {props.blogItem.blockQuotes[0].blockQuoteText} />
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[2].paraText}/>
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[3].paraText}/>
                                         </MainBlogSectionWrapper>
                                         <ImageGallaryWrapper>
-                                            <SingleImage imgURL={dummyBlogContent.blogImages.img1}/>
-                                            <DuelImage imgURL={dummyBlogContent.blogImages.img2} />
-                                            <DuelImage imgURL={dummyBlogContent.blogImages.img3} />
+                                            <SingleImage imgURL={props.blogItem.blogImageLib[0].fullwidthImg.fwImgURL}/>
+                                            <DuelImage imgURL={props.blogItem.blogImageLib[0].halfwidthImg1.hwImgURL} />
+                                            <DuelImage imgURL={props.blogItem.blogImageLib[0].halfwidthImg2.hwImgURL} />
                                         </ImageGallaryWrapper>
                                         <MainBlogSectionWrapper>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p6}/>
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[4].paraText}/>
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[5].paraText}/>
                                         </MainBlogSectionWrapper>
                                         <ImageGallaryWrapper>
-                                            <SingleImage imgURL={dummyBlogContent.blogImages.img1}/>
-                                            <DuelImage imgURL={dummyBlogContent.blogImages.img2} />
-                                            <DuelImage imgURL={dummyBlogContent.blogImages.img3} />
+                                            <SingleImage imgURL={props.blogItem.blogImageLib[1].fullwidthImg.fwImgURL}/>
+                                            <DuelImage imgURL={props.blogItem.blogImageLib[1].halfwidthImg1.hwImgURL} />
+                                            <DuelImage imgURL={props.blogItem.blogImageLib[1].halfwidthImg2.hwImgURL} />
                                         </ImageGallaryWrapper>
                                         <MainBlogSectionWrapper>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p6}/>
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[6].paraText}/>
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[7].paraText}/>
                                         </MainBlogSectionWrapper>
-                                        <YouTubeLink ytVidURL={dummyBlogContent.blogYTVideos.ytVidURL} ytImgURL={dummyBlogContent.blogYTImages.ytImgURL}/>
+                                        <YouTubeLink 
+                                            ytVidURL={props.blogItem.blogYTImageLib[0].YTLinks.YTLink} 
+                                            ytImgURL={props.blogItem.blogYTImageLib[0].YTLinks.YTImgURL}
+                                        />
                                         <MainBlogSectionWrapper>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[8].paraText}/>
                                         </MainBlogSectionWrapper>
                                         
-                                        {/* <MainBlogSectionWrapper>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p1}/>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p2}/>
-                                            <BlockQuoteWrapper blockQuoteContent = {dummyBlogContent.blogBlockQuotes.bq1} />
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p3}/>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p4}/>
-                                        </MainBlogSectionWrapper>
-                                        <ImageGallaryWrapper>
-                                            <SingleImage imgURL={dummyBlogContent.blogImages.img1}/>
-                                            <DuelImage imgURL={dummyBlogContent.blogImages.img2} />
-                                            <DuelImage imgURL={dummyBlogContent.blogImages.img3} />
-                                        </ImageGallaryWrapper>
-                                        <MainBlogSectionWrapper>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p6}/>
-                                        </MainBlogSectionWrapper>
-                                        <ImageGallaryWrapper>
-                                            <SingleImage imgURL={dummyBlogContent.blogImages.img1}/>
-                                            <DuelImage imgURL={dummyBlogContent.blogImages.img2} />
-                                            <DuelImage imgURL={dummyBlogContent.blogImages.img3} />
-                                        </ImageGallaryWrapper>
-                                        <MainBlogSectionWrapper>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p6}/>
-                                        </MainBlogSectionWrapper>
-                                        <YouTubeLink ytVidURL={dummyBlogContent.blogYTVideos.ytVidURL} ytImgURL={dummyBlogContent.blogYTImages.ytImgURL}/>
-                                        <MainBlogSectionWrapper>
-                                            <ParagraphWrapper textContent={dummyBlogContent.blogParagraphs.p5}/>
-                                        </MainBlogSectionWrapper> */}
+                                        
                                     </MainBlogBodyWrapper> 
                                     <MainBlogFooter />
                                 </MainBlogWrapper>
@@ -132,42 +109,27 @@ const Blog=(props)=>{
                                 <SimilarPostMainWrapper>
                                     <SimilarPostHeading />
                                     <SimilarPostWrapper>
-                                        <SimilarPost 
-                                            imgURL="/images/blog/related1.jpg"
-                                            title="To me Life is either a daring adventure or nothing"
-                                        />
-                                        <SimilarPost 
-                                            imgURL="/images/blog/related2.jpg"
-                                            title="Life begins at the end of your comfort zone"
-                                        />
+
+                                        {
+                                            props.similarBlogList.map((sb)=>{
+                                                return <SimilarPost 
+                                                            key={sb.blogId}
+                                                            imgURL={sb.generalImageLib.similarPostImgURL}
+                                                            title={sb.title}
+                                                        />
+                                            })
+                                        }
+                                        
                                     </SimilarPostWrapper>
                                 </SimilarPostMainWrapper>
                             </GridLayoutLeftWrapper>
 
                             <SideBar 
-                                authorImg="/images/author.png"
-                                authorIntro="blah blah blah blah blah blah"
-                                fbLikes="10K"
-                                twitterLikes="8K"
-                                instaLikes="11K"
-                                title1="Let’s escape in the  cityscape"
-                                title2="Failure doesn’t define  anything"
-                                title3="Bohemian mountain towards Us"
-                                categoryName1="Travel Hacks"
-                                postCount1="5"
-                                categoryName2="South Asia"
-                                postCount2="5"
-                                categoryName3="Photography"
-                                postCount3="5"
-                                categoryName4="Wildlife Adventure"
-                                postCount4="5"
-                                imgSource1="/images/popular/1.jpg"
-                                mostReadtitle1="Beautiful afternoon boating in Morine Lake"
-                                imgSource2="/images/popular/2.jpg"
-                                mostReadtitle2="Beautiful afternoon boating in Morine Lake"
-                                imgSource3="/images/popular/3.jpg"
-                                mostReadtitle3="Beautiful afternoon boating in Morine Lake"
+                                authorProfie={props.authorProfie}
+                                categoryList={props.categoryList}
+                                recentBlogList={props.recentBlogList}
                             />
+
                         </GridLayoutWrapper>
 
                     </MainContentWrapper>
@@ -197,7 +159,67 @@ const Blog=(props)=>{
 export default Blog;
 
 const getStaticPaths = (context)=>{
-
+    return({
+        paths:[
+            {params:{
+                        blogId:"1011",
+                        categoryId:"europe"
+                    }
+            },
+            {params:{
+                        blogId:"1010",
+                        categoryId:"europe"
+                    }
+            },
+            {params:{
+                        blogId:"1009",
+                        categoryId:"brit"
+                    }
+            },
+            {params:{
+                        blogId:"1008",
+                        categoryId:"europe"
+                    }
+            },
+            {params:{
+                        blogId:"1007",
+                        categoryId:"asiaandothers"
+                    }
+            },
+            {params:{
+                        blogId:"1006",
+                        categoryId:"usa"
+            }
+            },
+            {params:{
+                        blogId:"1005",
+                        categoryId:"usa"
+                    }
+            },
+            {params:{
+                        blogId:"1004",
+                        categoryId:"usa"
+                    }
+            },
+            {params:{
+                        blogId:"1003",
+                        categoryId:"europe"
+                    }
+            },
+            {params:{
+                        blogId:"1002",
+                        categoryId:"asiaandothers"
+                    }
+            },
+            {params:{
+                        blogId:"1001",
+                        categoryId:"asiaandothers"
+                    }
+            }, 
+             
+        ],
+        fallback:false
+    })
 }
 
 
@@ -205,18 +227,46 @@ const getStaticProps = (context)=>{
 
     const blogId = context.params.blogId;
     
-    const blogItem = blogList.blogListArr.forEach((b)=>{
-        if (b.blogId === blogId){
-            return b
-        }
+    const blogItem = blogList.blogListArr.filter((b)=>{
+        return b.blogId.toString()===blogId
+    })
 
-        return ({
-            props:{
-                blogItem:blogItem,
-                categoryListArr: categoryList.categoryListArr,
-                authorProfie:authorProfie
-            }
-        })
+    const recentBlogListArr = [];
+    var i=0;
+
+    blogList.blogListArr.forEach((b)=>{
+        if (i<3){
+            recentBlogListArr.push(b)
+        }
+        i++;
+    })
+
+    const similarBloglistArr=[];
+
+    // blogItem.relatedBlogId.forEach((e)=>{
+    //     blogList.blogListArr.forEach((b)=>{
+    //         if (b.blogId === e)
+    //                 {
+    //                     similarBloglistArr.push(b);
+    //                 }
+    //     })
+    // })
+
+    blogList.blogListArr.forEach((b)=>{
+
+        if (b.relatedBlogId.includes(Number(blogId))){
+            similarBloglistArr.push(b);
+        }
+    })
+
+    return ({
+        props:{
+            blogItem:blogItem[0],
+            categoryList: categoryList.categoryListArr,
+            recentBlogList: recentBlogListArr,
+            similarBlogList: similarBloglistArr,
+            authorProfie:authorProfie
+        }
     })
 
 }

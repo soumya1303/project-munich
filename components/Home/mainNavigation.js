@@ -12,13 +12,13 @@ return(
                 <div className="nav-inner">
                     <div id="mobile-toggle" className="mobile-btn"></div>
                     <ul className="main-menu">
-                        <li className="menu-item active"><a href="index.html">Home</a>
+                        <li className="menu-item active"><a href="#">Home</a>
                             <ul className="sub-menu">
                                 <li className="menu-item"><a href="index-2.html">Home 2</a></li>
                                 <li className="menu-item"><a href="index-3.html">Home 3</a></li>
                             </ul>
                         </li>
-                        <li className="menu-item"><a href="#">Posts</a>
+                        <li className="menu-item"><a href="#">Regions</a>
                             <ul className="sub-menu">
                                 <li className="menu-item"><a href="blog-details.html">Blog Details</a></li>
                                 <li className="menu-item"><a href="blog-details-fullwidth.html">Blog Details Fullwidth</a></li>

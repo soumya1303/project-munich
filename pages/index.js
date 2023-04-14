@@ -5,6 +5,7 @@ import MainBody from "../components/Home/mainBody";
 import PreLoader from "../components/Home/preLoader";
 import MousePointer from "../components/Home/mousePointer";
 import MainNavigation from "../components/Home/mainNavigation";
+//import MainNavigation from "../components/Common/mainNavigation";
 import BodyContent from "../components/Home/bodyContent";
 import TopContent from "../components/Home/topContent";
 import SocialHandleTopContainer from "../components/Home/socialHandleTopContainer";
