@@ -5,75 +5,31 @@ import Script from 'next/script'
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-/* JQuery */
+/* JQuery Fontawesome Bootstrap AOS Swipper import from /node_module */
+/*
 import $ from "jquery";
-
-/* Fontawesome CSS */
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-
-/* Bootstrap CSS */
 import "bootstrap/dist/css/bootstrap.css";
-
-/* Animate on Scroll (AOS) */
 import AOS from "aos";
 import 'aos/dist/aos.css';
-
-/* Swiper */
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import "swiper/swiper.css";
 import "swiper/swiper-bundle.min.css";
-
-
-
-/* Ionic Core and Ionicon */
-/*
-import { JSX as LocalJSX} from '@ionic/core'
-import {JSX as IoniconsJSX} from 'ionicons'
-import { HTMLAttributes, ReactText } from 'react'
-
-type ToReact<T> = {
-  [P in keyof T]?: T[P] & Omit<HTMLAttributes<Element>, 'className'> & {
-    class?: string;
-    key?: ReactText;
-  }
-}
-
-declare global {
-  export namespace JSX {
-    interface IntrinsicElements extends ToReact<LocalJSX.IntrinsicElements & IoniconsJSX.IntrinsicElements> {}
-  }
-}
-import { defineCustomElements as ionDefineCustomElements } from '@ionic/core/loader';
-
-import '@ionic/core/css/core.css';
-import '@ionic/core/css/normalize.css';
-import '@ionic/core/css/structure.css';
-import '@ionic/core/css/typography.css';
-
-import '@ionic/core/css/padding.css';
-import '@ionic/core/css/float-elements.css';
-import '@ionic/core/css/text-alignment.css';
-import '@ionic/core/css/text-transformation.css';
-import '@ionic/core/css/flex-utils.css';
-import '@ionic/core/css/display.css';
 */
 
 /* Custom CSS */
-
 import "/styles/style.css";
 import "/styles/menu.css";
 import "/styles/ionicons/css/ionicons.css";
 import "/styles/plugins/swiper/swiper.css";
 import "/styles/font-awesome/css/font-awesome.css";
 
-
-
 import type { AppProps } from "next/app";
 
 const App = ({ Component, pageProps }: AppProps)=> {
-
+  /*
   const router = useRouter();
 
   config.autoAddCss = false;
@@ -90,17 +46,10 @@ const App = ({ Component, pageProps }: AppProps)=> {
     );
   }, [])
   
-  
-  /*
   useEffect(() => {
-    ionDefineCustomElements(window)
-  }, [])
-  */
-  useEffect(() => {
-    // console.log($("#input").val())
     setTimeout(()=>{console.log($("#input").val())}, 100);
   }, [])
-  
+  */
   
   return (
   
@@ -120,12 +69,11 @@ const App = ({ Component, pageProps }: AppProps)=> {
         <Link rel="apple-touch-icon" href="/images/apple-touch-icon-144x144.png"   />
   
       </Head>  
+      <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></Script>
+      <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" ></Script>
       <Script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossOrigin="anonymous"></Script>
       <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossOrigin="anonymous"></Script>
       <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"  integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossOrigin="anonymous"></Script>
-      <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" ></Script>
-      <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></Script>
-      
       <Component {...pageProps} />
 
   </React.Fragment>

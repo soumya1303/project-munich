@@ -2,47 +2,46 @@ import React from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
 
-import MainBody from "../../../components/Blog/mainBody";
-import MousePointer from "../../../components/Blog/mousePointer";
-import BodyContent from "../../../components/Blog/bodyContent";
-import TopContent from "../../../components/Blog/topContent";
-import MainNavigation from "../../../components/Blog/mainNavigation";
-//import MainNavigation from "../../../components/Common/mainNavigation";
-import BlogTitle from "../../../components/Blog/blogTitle";
-import MainContentWrapper from "../../../components/Blog/mainContentWrapper";
-import TitleImage from "../../../components/Blog/titleImage";
-import GridLayoutWrapper from "../../../components/Blog/gridLayoutWrapper";
-import GridLayoutLeftWrapper from "../../../components/Blog/gridLayoutLeftWrapper";
-import MainBlogWrapper from "../../../components/Blog/mainBlogWrapper";
-import MainBlogHeader from "../../../components/Blog/mainBlogHeader";
-import MainBlogBodyWrapper from "../../../components/Blog/mainBlogBodyWrapper";
-import MainBlogSectionWrapper from "../../../components/Blog/mainBlogSectionWrapper";
-import ParagraphWrapper from "../../../components/Common/paragraphWrapper";
-import BlockQuoteWrapper from "../../../components/Common/blockQuoteWrapper";
-import ImageGallaryWrapper from "../../../components/Common/imageGallaryWrapper";
-import SingleImage from "../../../components/Common/singleImage";
-import DuelImage from "../../../components/Common/duelImage";
-import YouTubeLink from "../../../components/Common/youTubeLink";
+import MainBody from "../../../../components/Blog/mainBody";
+import MousePointer from "../../../../components/Blog/mousePointer";
+import BodyContent from "../../../../components/Blog/bodyContent";
+import TopContent from "../../../../components/Blog/topContent";
+import MainNavigation from "../../../../components/Blog/mainNavigation";
+import BlogTitle from "../../../../components/Blog/blogTitle";
+import MainContentWrapper from "../../../../components/Blog/mainContentWrapper";
+import TitleImage from "../../../../components/Blog/titleImage";
+import GridLayoutWrapper from "../../../../components/Blog/gridLayoutWrapper";
+import GridLayoutLeftWrapper from "../../../../components/Blog/gridLayoutLeftWrapper";
+import MainBlogWrapper from "../../../../components/Blog/mainBlogWrapper";
+import MainBlogHeader from "../../../../components/Blog/mainBlogHeader";
+import MainBlogBodyWrapper from "../../../../components/Blog/mainBlogBodyWrapper";
+import MainBlogSectionWrapper from "../../../../components/Blog/mainBlogSectionWrapper";
+import ParagraphWrapper from "../../../../components/Common/paragraphWrapper";
+import BlockQuoteWrapper from "../../../../components/Common/blockQuoteWrapper";
+import ImageGallaryWrapper from "../../../../components/Common/imageGallaryWrapper";
+import SingleImage from "../../../../components/Common/singleImage";
+import DuelImage from "../../../../components/Common/duelImage";
+import YouTubeLink from "../../../../components/Common/youTubeLink";
 
-import MainBlogFooter from "../../../components/Blog/mainBlogFooter";
-import SimilarPostMainWrapper from "../../../components/Blog/similarPostMainWrapper";
-import SimilarPostHeading from "../../../components/Blog/similarPostHeading";
-import SimilarPostWrapper from "../../../components/Blog/similarPostWrapper";
-import SimilarPost from "../../../components/Blog/similarPost";
-import SideBar from "../../../components/Common/sideBar";
-import FooterComponent from "../../../components/Common/footerComponent";
+import MainBlogFooter from "../../../../components/Blog/mainBlogFooter";
+import SimilarPostMainWrapper from "../../../../components/Blog/similarPostMainWrapper";
+import SimilarPostHeading from "../../../../components/Blog/similarPostHeading";
+import SimilarPostWrapper from "../../../../components/Blog/similarPostWrapper";
+import SimilarPost from "../../../../components/Blog/similarPost";
+import SideBar from "../../../../components/Common/sideBar";
+import FooterComponent from "../../../../components/Common/footerComponent";
 
-import FakeBlogContent from "../../../public/fakeBlogContent"; /* To be deleted later */
-import dummyBlogContent from "../../../public/dummyBlogContent";
+import FakeBlogContent from "../../../../public/fakeBlogContent"; /* To be deleted later */
+import dummyBlogContent from "../../../../public/dummyBlogContent";
 
-import blogList from "../../../public/blogListMaster";
-import categoryList from "../../../public/categoryListMaster";
-import authorProfie from "../../../public/authorProfile";
+import blogList from "../../../../public/blogListMaster";
+import categoryList from "../../../../public/categoryListMaster";
+import authorProfie from "../../../../public/authorProfile";
 
 
 const Blog=(props)=>{
 
-    console.log(props.similarBlogList);
+    
 
     return(
         <React.Fragment>
@@ -50,7 +49,7 @@ const Blog=(props)=>{
                 <MousePointer />
                 <BodyContent>
                     <TopContent>
-                        <MainNavigation imgSource="/images/common/logo.png"/>
+                        <MainNavigation imgSource="/images/common/logo.png" catList={props.categoryList}/>
                     </TopContent>
                     <BlogTitle blogTitle={props.blogItem.title} />
                     <MainContentWrapper>
@@ -101,7 +100,6 @@ const Blog=(props)=>{
                                             <ParagraphWrapper textContent={props.blogItem.blogParagraphs[8].paraText}/>
                                         </MainBlogSectionWrapper>
                                         
-                                        
                                     </MainBlogBodyWrapper> 
                                     <MainBlogFooter />
                                 </MainBlogWrapper>
@@ -114,6 +112,8 @@ const Blog=(props)=>{
                                             props.similarBlogList.map((sb)=>{
                                                 return <SimilarPost 
                                                             key={sb.blogId}
+                                                            blogId={sb.blogId}
+                                                            catId={sb.catId}
                                                             imgURL={sb.generalImageLib.similarPostImgURL}
                                                             title={sb.title}
                                                         />
@@ -147,8 +147,8 @@ const Blog=(props)=>{
 
                 </BodyContent>
 
-                <Script id="menu-script" type="module" src="/static/menu.js" defer> </Script>
-                <Script id="custom-script" type="module" src="/static/custom.js" defer> </Script>
+                <Script id="menu-script" type="module" src="/static/menu.js" > </Script>
+                <Script id="custom-script" type="module" src="/static/custom.js" > </Script>
 
             </MainBody>
         

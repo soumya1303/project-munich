@@ -2,30 +2,29 @@ import React from "react";
 import Script from "next/script";
 import {useRouter} from "next/router"; 
 
-import MainBody from "../../components/Category/mainBody";
-import MousePointer from "../../components/Category/mousePointer";
-import BodyContent from "../../components/Category/bodyContent";
-import TopContent from "../../components/Category/topContent";
-import MainNavigation from "../../components/Category/mainNavigation";
-//import MainNavigation from "../../components/Common/mainNavigation";
-import ThemeSliderWrapper from "../../components/Category/themeSliderWrapper";
-import SwiperContainerWrapper from "../../components/Category/swiperContainerWrapper";
-import SwiperWrapper from "../../components/Category/swiperWrapper";
-import SwiperPagination from "../../components/Category/swiperPagination";
-import SwiperSlide from "../../components/Category/swiperSlide";
-import MainContentWrapper from "../../components/Category/mainContentWrapper";
-import MainContentLeftWrapper from "../../components/Category/MainContentLeftWrapper";
-import BigArticleWrapper from "../../components/Category/BigArticleWrapper";
-import BigArticle from "../../components/Category/bigArticle";
-import SmallArticleWrapper from "../../components/Category/SmallArticleWrapper";
-import SmallArticle from "../../components/Category/smallArticle";
-import Pagination from "../../components/Category/Pagination";
-import SideBar from "../../components/Common/sideBar";
-import FooterComponent from "../../components/Common/footerComponent";
+import MainBody from "../../../components/Category/mainBody";
+import MousePointer from "../../../components/Category/mousePointer";
+import BodyContent from "../../../components/Category/bodyContent";
+import TopContent from "../../../components/Category/topContent";
+import MainNavigation from "../../../components/Category/mainNavigation";
+import ThemeSliderWrapper from "../../../components/Category/themeSliderWrapper";
+import SwiperContainerWrapper from "../../../components/Category/swiperContainerWrapper";
+import SwiperWrapper from "../../../components/Category/swiperWrapper";
+import SwiperPagination from "../../../components/Category/swiperPagination";
+import SwiperSlide from "../../../components/Category/swiperSlide";
+import MainContentWrapper from "../../../components/Category/mainContentWrapper";
+import MainContentLeftWrapper from "../../../components/Category/MainContentLeftWrapper";
+import BigArticleWrapper from "../../../components/Category/BigArticleWrapper";
+import BigArticle from "../../../components/Category/bigArticle";
+import SmallArticleWrapper from "../../../components/Category/SmallArticleWrapper";
+import SmallArticle from "../../../components/Category/smallArticle";
+import Pagination from "../../../components/Category/Pagination";
+import SideBar from "../../../components/Common/sideBar";
+import FooterComponent from "../../../components/Common/footerComponent";
 
-import blogList from "../../public/blogListMaster";
-import categoryList from "../../public/categoryListMaster";
-import authorProfie from "../../public/authorProfile";
+import blogList from "../../../public/blogListMaster";
+import categoryList from "../../../public/categoryListMaster";
+import authorProfie from "../../../public/authorProfile";
 
 const Category = (props)=>{
 
@@ -36,7 +35,7 @@ const Category = (props)=>{
                 <BodyContent>
                     
                     <TopContent>
-                        <MainNavigation imgSource="/images/common/logo-white.png"/>
+                        <MainNavigation imgSource="/images/common/logo-white.png" catList={props.categoryList}/>
                         <ThemeSliderWrapper>
                             <SwiperContainerWrapper>
                                 <SwiperWrapper>
@@ -129,8 +128,8 @@ const Category = (props)=>{
                     />
                 </BodyContent>
 
-                <Script id="menu-script" type="module" src="/static/menu.js" defer> </Script>
-                <Script id="custom-script" type="module" src="/static/custom.js" defer> </Script>    
+                <Script id="menu-script" type="module" src="/static/menu.js" > </Script>
+                <Script id="custom-script" type="module" src="/static/custom.js" > </Script>    
 
             </MainBody>
 

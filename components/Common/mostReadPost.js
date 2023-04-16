@@ -6,7 +6,7 @@ const MostReadPost = (props)=>{
             <div className="popular_post_item_wrapper">
             <img src={props.imgSource} alt="img" />
                 <div className="popular_post_item_content">
-                <h4 className="popular_post_item_title"><a href={`/${props.catId}/${props.blogId}`}>{props.title}</a></h4>
+                <h4 className="popular_post_item_title"><a href={`/category/${props.catId}/${props.blogId}`}>{props.title}</a></h4>
                 </div>
             </div>
         </div>

@@ -1232,7 +1232,15 @@ iframe{
 .author_wrapper .author_info h3{
     font-size: 30px;
     margin-bottom: 35px;
+    position: relative; /* SG Temp 15-Apr-2023*/
 }
+.author_wrapper .author_info p{
+    position: relative; /* SG Temp 15-Apr-2023*/
+}
+.author_wrapper .author_info .author_bottom{
+    position: relative; /* SG Temp 15-Apr-2023*/
+}
+
 .author_wrapper .author_bottom{
     display: flex;
     align-items: center;

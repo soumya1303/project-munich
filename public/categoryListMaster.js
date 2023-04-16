@@ -17,7 +17,7 @@ const categoryList = {
         {
             catKey:1003,
             catId: "europe",
-            catDesc: "Mainland Europe",
+            catDesc: "Europe",
             imgURL:"/images/category/europe/europe.jpg",
             postCount:4
         },

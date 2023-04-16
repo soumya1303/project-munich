@@ -5,7 +5,6 @@ import MainBody from "../components/Home/mainBody";
 import PreLoader from "../components/Home/preLoader";
 import MousePointer from "../components/Home/mousePointer";
 import MainNavigation from "../components/Home/mainNavigation";
-//import MainNavigation from "../components/Common/mainNavigation";
 import BodyContent from "../components/Home/bodyContent";
 import TopContent from "../components/Home/topContent";
 import SocialHandleTopContainer from "../components/Home/socialHandleTopContainer";
@@ -26,6 +25,7 @@ import SmallArticleWrapper from "../components/Home/smallArticleWrapper";
 import Pagination from "../components/Home/pagination";
 import SideBar from "../components/Common/sideBar";
 import FooterComponent from "../components/Common/footerComponent";
+
 
 import blogList from "../public/blogListMaster";
 import categoryList from "../public/categoryListMaster";
@@ -63,7 +63,7 @@ const Home = (props)=> {
           <MousePointer />
           <BodyContent>
             <TopContent>
-              <MainNavigation imgSource="/images/common/logo.png"/>
+              <MainNavigation imgSource="/images/common/logo.png" catList={categoryListArr}/>
               <SocialHandleTopContainer />
               <ThemeSlider>
                 <SliderTextWrapper>
@@ -177,8 +177,8 @@ const Home = (props)=> {
           
           </BodyContent>
           
-          <Script id="menu-script" type="module" src="/static/menu.js" defer> </Script>
-          <Script id="custom-script" type="module" src="/static/custom.js" defer> </Script>
+          <Script id="menu-script" type="module" src="/static/menu.js" > </Script>
+          <Script id="custom-script" type="module" src="/static/custom.js" > </Script>
 
       </MainBody>
       

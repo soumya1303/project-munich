@@ -4,14 +4,15 @@
 
 (function ($) {
         'use strict';
-        //alert("Inside customjs");
+        console.log("Executing custom.js");
+        /*
         $(window).on('load', function(){
-            //$("#preloader").removeClass("loader_show");
+            $("#preloader").removeClass("loader_show");
             $("#preloader").addClass("hide");
             $(".loader").addClass("fadeout");
             $("body").addClass("enable_page");
         })
-
+        */
         /* Custom mouse cursor */
         document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
             e.style.left = n.clientX + "px",

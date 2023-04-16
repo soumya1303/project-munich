@@ -12,7 +12,7 @@ Description:
 
 (function ($) {
 	'use strict';
-	//alert("Inside menujs");
+	console.log("Executing menu.js");
 	jQuery(document).ready(function () {
 
 		// menu js start

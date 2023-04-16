@@ -1,4 +1,6 @@
 import React from "react";
+import RenderSubMenu from "./renderSubMenu";
+import Link from "next/link";
 
 const MainNavigation = (props)=>{
 return (<React.Fragment>
@@ -12,20 +14,25 @@ return (<React.Fragment>
 								<div className="nav-inner">
 									<div id="mobile-toggle" className="mobile-btn"></div>
 									<ul className="main-menu">
-										<li className="menu-item"><a href="#">Home</a>
+										<li className="menu-item"><Link href="/">Home</Link>
 											<ul className="sub-menu">
-												<li className="menu-item"><a href="index-2.html">Home 2</a></li>
-												<li className="menu-item"><a href="index-3.html">Home 3</a></li>
+												{/* <li className="menu-item"><a href="index-2.html">Home 2</a></li>
+												<li className="menu-item"><a href="index-3.html">Home 3</a></li> */}
 											</ul>
 										</li>
 										<li className="menu-item active"><a href="#">Regions</a>
 											<ul className="sub-menu">
-												<li className="menu-item active"><a href="blog-details.html">Blog Details</a></li>
-												<li className="menu-item"><a href="blog-details-fullwidth.html">Blog Details Fullwidth</a></li>
+												{
+													props.catList.map((c)=>{
+                                                    	return <RenderSubMenu key={c.catKey} menuId={c.catId} menuItem={c.catDesc}/>
+                                                	})
+												}
+												{/* <li className="menu-item active"><a href="blog-details.html">Blog Details</a></li>
+												<li className="menu-item"><a href="blog-details-fullwidth.html">Blog Details Fullwidth</a></li> */}
 											</ul>
 										</li>
 										<li className="menu-item"><a href="about.html">About Author</a></li>
-										<li className="menu-item"><a href="contact.html">Contact Us</a></li>
+										{/* <li className="menu-item"><a href="contact.html">Contact Us</a></li> */}
 									</ul>
 								</div>
 							</nav>
