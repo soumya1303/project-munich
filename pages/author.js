@@ -30,6 +30,8 @@ import FooterComponent from "../components/Common/footerComponent";
 import authorProfile from "../public/authorProfile";
 import blogList from "../public/blogListMaster";
 import categoryList from "../public/categoryListMaster";
+import instagramToken from "../public/instagramToken";
+import masterURI from "../public/masterURI";
 
 const Author = (props)=>{
 
@@ -41,7 +43,7 @@ const Author = (props)=>{
             <BodyContent>
                 
                 <TopContent>
-                    <MainNavigation imgSource="/images/common/logo.png" catList={props.categoryList}/>
+                    <MainNavigation imgSource="/images/common/logoTopLeft.png" catList={props.categoryList}/>
                 </TopContent>
 
                 <AuthorHeader />
@@ -98,15 +100,11 @@ const Author = (props)=>{
                 </MainContentWrapper>
 
                 <FooterComponent 
-                    logoImgSource="/images/common/logo-white.png"
-                    instaImgURL1="/images/insta/1.jpg"
-                    instaImgURL2="/images/insta/2.jpg"
-                    instaImgURL3="/images/insta/3.jpg"
-                    instaImgURL4="/images/insta/4.jpg"
-                    instaImgURL5="/images/insta/5.jpg"
-                    instaImgURL6="/images/insta/6.jpg"
+                    logoImgSource="/images/common/logoBottomLeft.png"
+                    instagramImgArr={props.instagramImgArr}
                     imageLogoBig="/images/common/logo-big.png"
                 />
+                
             
             </BodyContent>
         
@@ -119,7 +117,7 @@ const Author = (props)=>{
 
 export default Author;
 
-const getStaticProps = ()=>{
+const getStaticProps = async ()=>{
 
     const blogListArr = blogList.blogListArr;
     var i=0;
@@ -135,12 +133,34 @@ const getStaticProps = ()=>{
             
     })
 
+    const resp = await fetch(`${instagramToken.uri}${instagramToken.tokens[1].tokenId}`, {
+        method:"GET",
+      });
+
+    const {data} = await resp.json();
+    
+    const instaGramImgArr = data.filter((d)=>{
+        return d.media_type==="IMAGE"
+        
+    })
+
+    const instaGramImgArrReduced=[];
+    var i=0;
+    instaGramImgArr.forEach((e)=>{
+        if (i<6){
+        instaGramImgArrReduced.push(e);
+        i++;
+        }
+    })
+
     return (
         {
             props:{
+                masterURI:masterURI,
                 authorProfileInfo:authorProfile,
                 recentBlogList:recentThreePostsByAuthor,
                 categoryList:categoryList.categoryListArr,
+                instagramImgArr:instaGramImgArrReduced
             }
         }
     )

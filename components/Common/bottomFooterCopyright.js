@@ -5,7 +5,7 @@ const BottomFooterCopyright = ()=>{
 
     const date = new Date;
     const year = date.getFullYear();
-    const websiteName = "www.lifeinabagpack.com";
+    const websiteName = "www.itswanderfullife.com";
     const programmer = "Soumyadeep Ghosh";
     
     return (

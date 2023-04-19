@@ -10,7 +10,7 @@ Description:
 // import {jQuery} from "jquery";
 
 
-(function ($) {
+jQuery(document).ready(function () {
 	'use strict';
 	console.log("Executing menu.js");
 	jQuery(document).ready(function () {
@@ -76,4 +76,4 @@ Description:
 
  	});
 	
-})(jQuery);
+});

@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const StandardFooterElements = (props)=>{
     return (
         <div className="col-lg-6 col-md-6">
@@ -11,11 +10,8 @@ const StandardFooterElements = (props)=>{
                 <div className="footer_nav">
                     <ul>
                         <li className="menu-item"><a href="#">Home</a></li>
+                        <li className="menu-item"><a href="#">Regions</a></li>
                         <li className="menu-item"><a href="#">About Author</a></li>
-                        <li className="menu-item"><a href="#">Travel</a></li>
-                        <li className="menu-item"><a href="#">Posts</a></li>
-                        <li className="menu-item"><a href="#">Contact Us</a></li>
-                        <li className="menu-item"><a href="#">Photography</a></li>
                     </ul>
                 </div>
             </div>

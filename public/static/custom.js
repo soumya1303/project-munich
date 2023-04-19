@@ -2,7 +2,7 @@
 // import AOS from "aos";
 // import { Swiper, SwiperSlide } from "swiper/react";
 
-(function ($) {
+jQuery(document).ready(function () {
         'use strict';
         console.log("Executing custom.js");
         /*
@@ -183,5 +183,5 @@
         });
     
    
-})(jQuery);
+});
     

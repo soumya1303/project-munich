@@ -20,12 +20,11 @@ const FooterComponent = (props)=>{
             
             <MiddleFooterWrapper>
                 <InstagramWrapper>
-                    <InstagramItem instaImgURL={props.instaImgURL1}/>
-                    <InstagramItem instaImgURL={props.instaImgURL2}/>
-                    <InstagramItem instaImgURL={props.instaImgURL3}/>
-                    <InstagramItem instaImgURL={props.instaImgURL4}/>
-                    <InstagramItem instaImgURL={props.instaImgURL5}/>
-                    <InstagramItem instaImgURL={props.instaImgURL6}/>
+                    {
+                        props.instagramImgArr.map((imgObj)=>{
+                            return (<InstagramItem key={imgObj.id} instaImgURL={imgObj.media_url}/>)
+                        })
+                    }
                 </InstagramWrapper>
                 <StandardFooterElements imageLogoBig={props.imageLogoBig}/>
             </MiddleFooterWrapper>
@@ -38,3 +37,4 @@ const FooterComponent = (props)=>{
 }
 
 export default FooterComponent;
+

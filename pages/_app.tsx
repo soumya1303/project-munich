@@ -50,7 +50,7 @@ const App = ({ Component, pageProps }: AppProps)=> {
     setTimeout(()=>{console.log($("#input").val())}, 100);
   }, [])
   */
-  
+
   return (
   
   <React.Fragment>
@@ -62,6 +62,13 @@ const App = ({ Component, pageProps }: AppProps)=> {
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
         <meta name="description" content="Life in a bagpack" />
         <meta name="author" content="" />
+
+        <meta property="og:image" content={undefined!==pageProps.blogItem ? `${pageProps.masterURI.host.dev}${pageProps.blogItem.generalImageLib.titleImgURL}`:""}/>
+        <meta property="og:title" content={undefined!==pageProps.blogItem ? pageProps.blogItem.title:""}/>
+        <meta property="og:type" content="Blog"/>
+        <meta property="og:description" content={undefined!==pageProps.blogItem ? pageProps.blogItem.initContent : ""}/>
+
+
         <Link rel="shortcut icon"  href="/images/favicon.png" type="image/png" />
         <Link rel="apple-touch-icon" href="/images/apple-touch-icon.png"  />
         <Link rel="apple-touch-icon" href="/images/apple-touch-icon-72x72.png"   />
@@ -69,7 +76,7 @@ const App = ({ Component, pageProps }: AppProps)=> {
         <Link rel="apple-touch-icon" href="/images/apple-touch-icon-144x144.png"   />
   
       </Head>  
-      <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></Script>
+      <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js" ></Script>
       <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" ></Script>
       <Script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossOrigin="anonymous"></Script>
       <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossOrigin="anonymous"></Script>

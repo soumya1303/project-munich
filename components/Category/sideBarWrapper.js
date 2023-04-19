@@ -5,9 +5,7 @@ import "aos/dist/aos.css";
 
 const SideBarWrapper = (props)=>{
 
-    useEffect(()=>{
-        AOS.init();
-    },[]);
+
 
     return (
         <div className="col-lg-4 col-md-5">

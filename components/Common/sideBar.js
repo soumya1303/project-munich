@@ -12,8 +12,6 @@ import MostReadPost from "./mostReadPost";
 
 const SideBar = (props)=>{
 
-    // console.log(props.categoryList);
-    // console.log(props.recentBlogList);
 
     return(
         <React.Fragment>

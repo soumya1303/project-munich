@@ -2,10 +2,13 @@ import React from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
 
-import MainBody from "../../../../components/Blog/mainBody";
-import MousePointer from "../../../../components/Blog/mousePointer";
-import BodyContent from "../../../../components/Blog/bodyContent";
-import TopContent from "../../../../components/Blog/topContent";
+
+import MainBody from "../../../../components/Common/mainBody";
+import MousePointer from "../../../../components/Common/mousePointer";
+import BodyContent from "../../../../components/Common/bodyContent";
+import TopContent from "../../../../components/Common/topContent";
+
+
 import MainNavigation from "../../../../components/Blog/mainNavigation";
 import BlogTitle from "../../../../components/Blog/blogTitle";
 import MainContentWrapper from "../../../../components/Blog/mainContentWrapper";
@@ -37,6 +40,8 @@ import dummyBlogContent from "../../../../public/dummyBlogContent";
 import blogList from "../../../../public/blogListMaster";
 import categoryList from "../../../../public/categoryListMaster";
 import authorProfie from "../../../../public/authorProfile";
+import instagramToken from "../../../../public/instagramToken";
+import masterURI from "../../../../public/masterURI";
 
 
 const Blog=(props)=>{
@@ -49,7 +54,7 @@ const Blog=(props)=>{
                 <MousePointer />
                 <BodyContent>
                     <TopContent>
-                        <MainNavigation imgSource="/images/common/logo.png" catList={props.categoryList}/>
+                        <MainNavigation imgSource="/images/common/logoTopLeft.png" catList={props.categoryList}/>
                     </TopContent>
                     <BlogTitle blogTitle={props.blogItem.title} />
                     <MainContentWrapper>
@@ -101,7 +106,11 @@ const Blog=(props)=>{
                                         </MainBlogSectionWrapper>
                                         
                                     </MainBlogBodyWrapper> 
-                                    <MainBlogFooter />
+                                    <MainBlogFooter 
+                                        masterURI={props.masterURI}
+                                        blogId={props.blogItem.blogId}
+                                        catId={props.blogItem.catId}
+                                    />
                                 </MainBlogWrapper>
                                 
                                 <SimilarPostMainWrapper>
@@ -133,15 +142,10 @@ const Blog=(props)=>{
                         </GridLayoutWrapper>
 
                     </MainContentWrapper>
-
+                    
                     <FooterComponent 
-                        logoImgSource="/images/common/logo-white.png"
-                        instaImgURL1="/images/insta/1.jpg"
-                        instaImgURL2="/images/insta/2.jpg"
-                        instaImgURL3="/images/insta/3.jpg"
-                        instaImgURL4="/images/insta/4.jpg"
-                        instaImgURL5="/images/insta/5.jpg"
-                        instaImgURL6="/images/insta/6.jpg"
+                        logoImgSource="/images/common/logoBottomLeft.png"
+                        instagramImgArr={props.instagramImgArr}
                         imageLogoBig="/images/common/logo-big.png"
                     />
 
@@ -223,7 +227,7 @@ const getStaticPaths = (context)=>{
 }
 
 
-const getStaticProps = (context)=>{
+const getStaticProps = async (context)=>{
 
     const blogId = context.params.blogId;
     
@@ -243,15 +247,6 @@ const getStaticProps = (context)=>{
 
     const similarBloglistArr=[];
 
-    // blogItem.relatedBlogId.forEach((e)=>{
-    //     blogList.blogListArr.forEach((b)=>{
-    //         if (b.blogId === e)
-    //                 {
-    //                     similarBloglistArr.push(b);
-    //                 }
-    //     })
-    // })
-
     blogList.blogListArr.forEach((b)=>{
 
         if (b.relatedBlogId.includes(Number(blogId))){
@@ -259,13 +254,35 @@ const getStaticProps = (context)=>{
         }
     })
 
+    const resp = await fetch(`${instagramToken.uri}${instagramToken.tokens[1].tokenId}`, {
+        method:"GET",
+      });
+
+    const {data} = await resp.json();
+    
+    const instaGramImgArr = data.filter((d)=>{
+        return d.media_type==="IMAGE"
+        
+    })
+
+    const instaGramImgArrReduced=[];
+    var i=0;
+    instaGramImgArr.forEach((e)=>{
+        if (i<6){
+        instaGramImgArrReduced.push(e);
+        i++;
+        }
+    })
+
     return ({
         props:{
+            masterURI:masterURI,
             blogItem:blogItem[0],
             categoryList: categoryList.categoryListArr,
             recentBlogList: recentBlogListArr,
             similarBlogList: similarBloglistArr,
-            authorProfie:authorProfie
+            authorProfie:authorProfie,
+            instagramImgArr:instaGramImgArrReduced
         }
     })
 

@@ -206,7 +206,7 @@ img{
     padding-bottom: 60px;
 }
 .slider_text .blog_post{
-    background: url(/images/common/texture.png);
+    background: url(/images/common/homeWoodTrunkFibre.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1798,7 +1798,7 @@ ul.comment_area .comment_block .reply i{
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(/images/common/bg4.jpg);
+    background: url(/images/common/bgFooterDarkWood.png);
     background-repeat: no-repeat;
     background-size: 45% 100%;
     z-index: -1;
@@ -1806,7 +1806,8 @@ ul.comment_area .comment_block .reply i{
 .footer .footer-above{
     position: absolute;
     left: 6%;
-    top: 70px;
+    /* top:70px; /* SG Temp 19-Apr-2023 */
+    top: 35px;
     height: 100%;
 }
 @media screen and (max-width: 1400px) {
@@ -1921,7 +1922,7 @@ ul.comment_area .comment_block .reply i{
     
 }
 .footer .footer-bottom .copyright p{
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 500;
     line-height: 24px;
     color: #93a094;

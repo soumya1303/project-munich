@@ -26,7 +26,13 @@ const BigArticle = (props)=>{
                         </div>
                         <div className="post_share">
                             <ul className="share_list">
-                                <li data-aos="fade-up" data-aos-duration="500"><a href="#"><i className="ion-social-facebook"></i></a></li>
+                                <li data-aos="fade-up" data-aos-duration="500">
+                                    <a onClick={()=>{
+                                        window.open(`${props.masterURI.facebook.share}${props.masterURI.host.dev}/category/${props.catId}/${props.blogId}`,"", "width=500px, height=400px")
+                                    }}> 
+                                        <i className="ion-social-facebook"></i>
+                                    </a>
+                                </li>
                                 <li data-aos="fade-up" data-aos-duration="700"><a href="#"><i className="ion-social-twitter"></i></a></li>
                                 <li data-aos="fade-up" data-aos-duration="900"><a href="#"><i className="ion-social-rss"></i></a></li>
                                 <li data-aos="fade-up" data-aos-duration="1100"><a href="#"><i className="ion-social-instagram"></i></a></li>
