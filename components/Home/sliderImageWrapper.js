@@ -7,6 +7,7 @@ const SliderImageWrapper = (props)=>{
                 <div className="swiper-wrapper">
                 {props.children}
                 </div>
+                {/* <div className="swiper-pagination"></div> */}
             </div>
         </div>    
     )

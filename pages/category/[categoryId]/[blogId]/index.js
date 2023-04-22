@@ -34,9 +34,6 @@ import SimilarPost from "../../../../components/Blog/similarPost";
 import SideBar from "../../../../components/Common/sideBar";
 import FooterComponent from "../../../../components/Common/footerComponent";
 
-import FakeBlogContent from "../../../../public/fakeBlogContent"; /* To be deleted later */
-import dummyBlogContent from "../../../../public/dummyBlogContent";
-
 import blogList from "../../../../public/blogListMaster";
 import categoryList from "../../../../public/categoryListMaster";
 import authorProfie from "../../../../public/authorProfile";
@@ -45,8 +42,6 @@ import masterURI from "../../../../public/masterURI";
 
 
 const Blog=(props)=>{
-
-    
 
     return(
         <React.Fragment>
@@ -87,6 +82,7 @@ const Blog=(props)=>{
                                         <MainBlogSectionWrapper>
                                             <ParagraphWrapper textContent={props.blogItem.blogParagraphs[4].paraText}/>
                                             <ParagraphWrapper textContent={props.blogItem.blogParagraphs[5].paraText}/>
+                                            
                                         </MainBlogSectionWrapper>
                                         <ImageGallaryWrapper>
                                             <SingleImage imgURL={props.blogItem.blogImageLib[1].fullwidthImg.fwImgURL}/>

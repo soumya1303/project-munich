@@ -1,6 +1,7 @@
 import React from "react";
 import Script from 'next/script';
 
+
 import MainBody from "../components/Common/mainBody";
 import MousePointer from "../components/Common/mousePointer";
 import BodyContent from "../components/Common/bodyContent";
@@ -11,6 +12,7 @@ import SocialHandleTopContainer from "../components/Home/socialHandleTopContaine
 import ThemeSlider from "../components/Home/themeSlider";
 import SliderTextWrapper from "../components/Home/sliderTextWrapper";
 import SwipeSlide from "../components/Home/swiperSlide";
+import SwiperPagination from "../components/Home/swiperPagination";
 import SliderImageWrapper from "../components/Home/sliderImageWrapper";
 import SwipeSlideImage from "../components/Home/swiperSlideImage";
 import FeaturCategoryWrapper from "../components/Home/featureCategoryWrapper";
@@ -35,6 +37,8 @@ import masterURI from "../public/masterURI";
 
 const Home = (props)=> {
 
+  
+
   const categoryListArr = props.categoryList.categoryListArr;
   const blogList = props.blogList.blogListArr;
   const mostRecentThreeBlogs= [];
@@ -45,11 +49,11 @@ const Home = (props)=> {
 
   blogList.forEach((b)=>{
     
-    if(i<3){
+    if(i<2){
       mostRecentThreeBlogs.push(b);
-    }else if (i<6){
+    }else if (i<5){
       recentThreeBlogs.push(b);
-    }else if (i<10){
+    }else if (i<9){
       earlierBlogs.push(b);
     }
     i=i+1;
@@ -85,9 +89,11 @@ const Home = (props)=> {
                     }
                     
                 </SliderTextWrapper>
+                
                 <SliderImageWrapper>
                     {
                       mostRecentThreeBlogs.map((b)=>{
+                         
                         return <SwipeSlideImage key={b.blogId} imgSource={b.generalImageLib.authorImgURL}/>
                       })
                     }

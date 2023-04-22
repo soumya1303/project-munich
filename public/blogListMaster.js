@@ -1,6 +1,110 @@
 const blogList={
     blogListArr:[
         {
+            blogId:1009,
+            title:"Cotswold Lavender Fields",
+            author:"Madhurima Ranu",
+            date:17,
+            month:"JUL",
+            year:2019,
+            readCount:9,
+            catKey: 1002,
+            catId:"brit",
+            relatedBlogId:[],
+            initContent:"Oils, candles, foaming bath bubbles or just the dried bunch, this gorgeous little purple flower is just magical.  Delicately fragrant and fragile, Lavender is used ...",
+            generalImageLib:{
+                bannerImgURL: "/images/category/britain/blogs/cotswold/bannerImgURL.jpg",
+                authorImgURL: "/images/category/britain/blogs/cotswold/authorImgURL.jpg",
+                titleImgURL: "/images/category/britain/blogs/cotswold/titleImgURL.jpg",
+                smallTitleImgURL: "/images/category/britain/blogs/cotswold/smallTitleImgURL.jpg",
+                mostReadImgURL: "/images/category/britain/blogs/cotswold/mostReadImgURL.jpg",
+                similarPostImgURL:"/images/category/britain/blogs/cotswold/similarPostImgURL.jpg",
+            },
+            blogImageLib:[{
+                blockId:1,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/britain/blogs/cotswold/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL2.jpg"
+                }
+            },
+            {
+                blockId:2,
+                fullwidthImg:{
+                    fwImgId:1,
+                    fwImgURL:"/images/category/britain/blogs/cotswold/content/fwImgURL1.jpg"
+                },
+                halfwidthImg1:{
+                    hwImgId:1,
+                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL1.jpg"
+                },
+                halfwidthImg2:{
+                    hwImgId:2,
+                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL2.jpg"
+                }
+            }],
+            blogYTImageLib:[
+                {   
+                    blockId:1,
+                    YTLinks:{
+                        YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
+                        YTImgURL: "/images/category/britain/blogs/cotswold/content/ytImgURL.jpg"
+                    }
+                }
+            ],
+            blogParagraphs: [
+                {
+                    paraId: 1,
+                    paraText: "<b>Oils, candles, foaming bath bubbles </b> or just the dried bunch, this gorgeous little purple flower is just magical.  Delicately fragrant and fragile, Lavender is used in many forms, make a potpourri, or a sleeping bag with dried lavender, or use in oils to calm the senses. Lavender is immensely soothing for a variety of purposes and its delicate aroma makes it perfect for fragrances and perfumes. "
+                },
+                {
+                    paraId: 2,
+                    paraText: "<br />Now, thinking about Lavender, the name that pops straight into our head is Provence. Picturesque landscape lined with lavender fields, setting sun at the horizon and an old chateau reflecting radiance and aroma to all its visitors from near and far. I would brand it an ideal weekend getaway, except that one would have to onboard a flight or the Euro rail that would cost a little more than what my tiny wallet can afford at times."
+                },
+                {
+                    paraId: 3,
+                    paraText: "<br />So, after a little digging around, the fragrance from the nearby Cotswold finally reached my senses. I was excited to acknowledge that I may not necessarily have to spend all that money or the effort to enjoy what I have in mind. Okay, I do get it… you mean to ask, so what about the sunshine? the glass of wine from the nearby vineyard? And the French countryside? But… hey you! Though the English weather is unpredictable, when the sun is out, nothing can beat the wonderful English countryside and the steamy hot English Cuppa. "
+                },
+                {
+                    paraId: 4,
+                    paraText: "<br />So, here I go…around 73miles from Bath Spa or just under an hour from Oxford, a little off the A429, lies the beautiful fields of ‘The Cotswold Lavender’. A far stretched purple flowered field, lined by the English countryside, overlooking Broadway and the Vale of Evesham and offering stunning views of the English countryside.It may not be as elaborate as Provence, but this third generation family farm boasts of 53 acres of Lavender fields, a small distillery, a cosy yet beautiful homely cafe and a farm shop."
+                },
+                {
+                    paraId: 5,
+                    paraText: "Best Time to visit the field is early to mid July and sometimes to late August, though the flowering depends on the weather and arrival of summer. The farm opening and updates on flowering are published very frequently on the website. Visit here for the official website for the latest details."
+                },
+                {
+                    paraId: 6,
+                    paraText: "<br /><h4>How to get here:</h4>Navigation Map: Hill Barn Farm, Snowshill, Broadway, Worcestershire WR12 7JY<br />Admission Fee: £4.00 per adult, £2.00 for children under 15 yrs. Children under 5 yrs go free"
+                },
+                {
+                    paraId: 7,
+                    paraText: "<br />Not only for the photographic opportunities but it doesn’t take much to convince an English countryside lover like me. Miles and miles of farmland, the occasional one-off cottage, pigs, sheep, ponies and other farm animals and … rolling hills as far as you can see, England is voted as the 7th most beautiful country in the world for a reason."
+                },
+                {
+                    paraId: 8,
+                    paraText: "<br />I can sit here for hours with some scones, clotted cream and the scrumptiously delicious strawberry jam…not to forget the good old tea pot! It is therapeutic, relaxing and inspiring, all at the same time. The farm cafe sells lite bites like homemade quiche, sandwich and soup with homemade cakes and scones to finish the meal. The owners are very warm and welcoming and play a perfect host for every incoming visitor."
+                },
+                {
+                    paraId: 9,
+                    paraText: "<br /><h4>Handy tip:</h4> Photography is permitted on the farm and you can carry your dSLRs ok, but if you want to do photoshoots or professional photography, make sure you book it in advance and pay appropriate fees. Drone photography isn’t allowed over and around the farm as it is too close to the Royal Air Force Fairford base. So, in the end I didn’t have to fly to Provence to wander around an aromal Lavender field, instead I took my Mini out for a ride to the neighbourhood and enjoyed an even better views and scenery"
+                }
+
+            ],
+            blockQuotes: [{
+                blockQuoteId: 1,
+                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            }]
+
+        },
+        {
             blogId:1011,
             title:"Montenegro in 48 Hours",
             author:"Madhurima Ranu",
@@ -63,40 +167,40 @@ const blogList={
             blogParagraphs: [
                 {
                     paraId: 1,
-                    paraText: "Honestly, if you had asked me 6 months back, if Montenegro had ever been in my travel list, I would have said certainly not. Reading an article about Sveti Stefan in a travel magazine fascinated me to look out for this small but extremely beautiful Balkan country. Located in the south-eastern part of the Europe, Montenegro for most of the 20th century was part of Yugoslavia and then part of the federated union of Serbia and Montenegro. A hidden gem delineated by craggy mountains, medieval villages, vast fresh water lakes sprawling across the borders of Albania and the spectacular Adraitic coastline, Montenegro is truly a feast for eyes."
+                    paraText: "<br />Honestly, if you had asked me 6 months back, if Montenegro had ever been in my travel list, I would have said certainly not. Reading an article about Sveti Stefan in a travel magazine fascinated me to look out for this small but extremely beautiful Balkan country. Located in the south-eastern part of the Europe, Montenegro for most of the 20th century was part of Yugoslavia and then part of the federated union of Serbia and Montenegro. A hidden gem delineated by craggy mountains, medieval villages, vast fresh water lakes sprawling across the borders of Albania and the spectacular Adraitic coastline, Montenegro is truly a feast for eyes."
                 },
                 {
                     paraId: 2,
-                    paraText: "Day 1 Start from the northern end of the country and drive along the scenic route along the bay of Kotor. The first stop is the beautiful medieval town of Perast. They say, Perast seems like a fragment of Venice, which has just floated across to the Adriatic and harboured itself to the Boka Bay. \nFamous for Our Lady of the Rock and Island of St. George, it also hosts many Hotels and spa resorts and small restaurants, serving mouth-watering fish delicacies. Don’t forget to read more about this beautiful town and a very interesting folklore, in my blog The Old town of Perast."
+                    paraText: "<br /><h4>Day 1 </h4>Start from the northern end of the country and drive along the scenic route along the bay of Kotor. The first stop is the beautiful medieval town of Perast. They say, Perast seems like a fragment of Venice, which has just floated across to the Adriatic and harboured itself to the Boka Bay. Famous for Our Lady of the Rock and Island of St. George, it also hosts many Hotels and spa resorts and small restaurants, serving mouth-watering fish delicacies. Don’t forget to read more about this beautiful town and a very interesting folklore, in my blog The Old town of Perast."
                 },
                 {
                     paraId: 3,
-                    paraText: "Few miles down the bay lies the old city of Kotor, built between 12th – 14th century. \nTravel Tip:  If you aren’t driving, you can take the blue line bus from Perast, that leave every hour past 30 from the centre of Perast to Kotor (and leaves Kotor every hour at 15 minutes past the hour) The fare is €1 each way. On Sundays the frequency goes down and there’s only one bus every two hours. \nInterwinding streets and squares mark the old town and within the city walls in the centre lies the cathedral of Sveti Tripon. The architecture is purely influenced by the Roman culture."
+                    paraText: "<br />Few miles down the bay lies the old city of Kotor, built between 12th – 14th century. \nTravel Tip:  If you aren’t driving, you can take the blue line bus from Perast, that leave every hour past 30 from the centre of Perast to Kotor (and leaves Kotor every hour at 15 minutes past the hour) The fare is €1 each way. On Sundays the frequency goes down and there’s only one bus every two hours. Interwinding streets and squares mark the old town and within the city walls in the centre lies the cathedral of Sveti Tripon. The architecture is purely influenced by the Roman culture."
                 },
                 
                 {
                     paraId: 4,
-                    paraText: "The city walls also lead unto the fortress of San Giovanni, a stunning medieval castle sited on the hill of St. John, which renders the exceptional and outstanding views of the orange roofed town and the bay. \nCaution: It is perched 1200m high on the hill and involves climbing more than 1200 stairs, pretty challenging hike."
+                    paraText: "<br />The city walls also lead unto the fortress of San Giovanni, a stunning medieval castle sited on the hill of St. John, which renders the exceptional and outstanding views of the orange roofed town and the bay. <br /><em>Caution:</em> It is perched 1200m high on the hill and involves climbing more than 1200 stairs, pretty challenging hike."
                 },
                 {
                     paraId: 5,
-                    paraText: "TIPS : For souvenir shopping, avoid the shops next to entrance to the city wall and head towards the cathedral. You will find many hidden boutiques, shops and cafes hidden in the corners, with not so many tourists flocking  around. \nAfter a refreshing cup of tea or coffee, make your way to the Kotor bus terminus which is around 10mins walk from the city wall entrance and take a bus to Budva. It is around 27kms from Kotor and takes around 30-45 minutes, depending on the service you take. \nTravel Tip: The bus leaves almost every 30ish minutes from Kotor and takes between 30 – 45mins to reach Budva. Use the Croatia (I could find more reliable times here on the Croatian transport site rather than a Montenegrin site ) transport site to find more info."
+                    paraText: "<br /><h4>Handy tip:</h4>For souvenir shopping, avoid the shops next to entrance to the city wall and head towards the cathedral. You will find many hidden boutiques, shops and cafes hidden in the corners, with not so many tourists flocking  around. After a refreshing cup of tea or coffee, make your way to the Kotor bus terminus which is around 10mins walk from the city wall entrance and take a bus to Budva. It is around 27kms from Kotor and takes around 30-45 minutes, depending on the service you take. <br /><br /><em>Travel tip: The bus leaves almost every 30ish minutes from Kotor and takes between 30 – 45mins to reach Budva. Use the Croatia (I could find more reliable times here on the Croatian transport site rather than a Montenegrin site ) transport site to find more info.</em>"
                 },
                 {
                     paraId: 6,
-                    paraText: "Budva, the metropolis town, with more than 17 beaches, sprawling hotels and resorts, historic monuments, a grand marina and numerous sea food restaurants serving fresh fishes, lobsters, octopus, squids straight from the bay. Also, as the cultural hub of Montenegro, Budva is famous for its theatres and local performances during the summer months. Stari Grad, which means the old town hosts many art and craft boutiques and galleries for the art enthusiasts."
+                    paraText: "<br />Budva, the metropolis town, with more than 17 beaches, sprawling hotels and resorts, historic monuments, a grand marina and numerous sea food restaurants serving fresh fishes, lobsters, octopus, squids straight from the bay. Also, as the cultural hub of Montenegro, Budva is famous for its theatres and local performances during the summer months. Stari Grad, which means the old town hosts many art and craft boutiques and galleries for the art enthusiasts."
                 },
                 {
                     paraId: 7,
-                    paraText: "The Old Town of Budva is almost as crazy as a maze, it has narrow interwinding streets with most of the corners leading to another two or three alternative paths! So easy to get lost here but even getting lost and discovering the city bits by bits is fun to travellers like me. If you are staying overnight in Kotor or Budva, do try and find an old boutique hotel for the authentic local experience. Combining traditional style with modern facilities, these stone buildings will take you back in time to the 18th century and some even back to the 13th century. \nHotel Monte Cristo, is a 13th century stone building now restored with stylish furnishing. Or, Palazzo Radomiri Heritage Boutique Hotel, which is beautifully transformed from an early 18th century Baroque palace. If, the UNESCO protected old town of Kotor is in your mind, don’t worry and head to the Boutique Hotel Hippocampus. You can actually live within the fort walls."
+                    paraText: "<br />The Old Town of Budva is almost as crazy as a maze, it has narrow interwinding streets with most of the corners leading to another two or three alternative paths! So easy to get lost here but even getting lost and discovering the city bits by bits is fun to travellers like me. If you are staying overnight in Kotor or Budva, do try and find an old boutique hotel for the authentic local experience. Combining traditional style with modern facilities, these stone buildings will take you back in time to the 18th century and some even back to the 13th century. Hotel Monte Cristo, is a 13th century stone building now restored with stylish furnishing. Or, Palazzo Radomiri Heritage Boutique Hotel, which is beautifully transformed from an early 18th century Baroque palace. If, the UNESCO protected old town of Kotor is in your mind, don’t worry and head to the Boutique Hotel Hippocampus. You can actually live within the fort walls."
                 },
                 {
                     paraId: 8,
-                    paraText: "Day 2, Head further south, the first stop is Sveti Stefan, the most photographed and hyped site in Montenegro. It is also the most expensive town on its own and the most beautiful of all what you have seen till now in Montenegro. No less than a fairy tale, this fortified islet village is charming and mesmerising and is home to riches of the rich. Don’t be surprised that this is not open to public, it  is a 5 star hotel resort owned by Aman Resorts. It is home to 50 exclusive cottages and suites and 8 grand suites at Villa Miloc⌄er, overlooking pink sandy beaches and turquoise blue Adriatic Sea. A sight to remember for rest of your life. One of the 5 National parks, lake Skadar is the biggest in Balkan Peninsula and boast of its diversity of flora and fauna. Surrounded by mountains and covered by wetland, it is home to migratory birds like Dalmation pelican, Herons and Seagulls and Carp, bleak and Eel like fishes. You can either boat around the lake from Virpazar or alternatively use the popular viewpoint, Pavlova Strana or the horseshoe bend at the northwest corner of the lake. If you are driving, it can be reached on M2.3, 5kms past Meterizi on the right where you see the sign for Rijeka Crnojevica. \nTravel Tips: \nPark at Virpazar where you will also find local eateries and restaurant (and a toilet) before you head to the lake. The boat tours also have stand here but do not go with the first one who approaches you. Take time to decide which tour would you like to take. Anything between 1-2 hours is enough. \nTrain connection to the station in Virpazar is available from Podgorica and so is the bus connection. If you are taking the bus, don’t ask for Skadar as there is a similar please in Albania across the lake…Ask for Virpazar or the Skadar National Park and the driver may drop you few hundred meters from the park entrance, if you are lucky ofc."
+                    paraText: "<br /><h4>Day 2</h4> Head further south, the first stop is Sveti Stefan, the most photographed and hyped site in Montenegro. It is also the most expensive town on its own and the most beautiful of all what you have seen till now in Montenegro. No less than a fairy tale, this fortified islet village is charming and mesmerising and is home to riches of the rich. Don’t be surprised that this is not open to public, it  is a 5 star hotel resort owned by Aman Resorts. It is home to 50 exclusive cottages and suites and 8 grand suites at Villa Miloc⌄er, overlooking pink sandy beaches and turquoise blue Adriatic Sea. A sight to remember for rest of your life. One of the 5 National parks, lake Skadar is the biggest in Balkan Peninsula and boast of its diversity of flora and fauna. Surrounded by mountains and covered by wetland, it is home to migratory birds like Dalmation pelican, Herons and Seagulls and Carp, bleak and Eel like fishes. You can either boat around the lake from Virpazar or alternatively use the popular viewpoint, Pavlova Strana or the horseshoe bend at the northwest corner of the lake. If you are driving, it can be reached on M2.3, 5kms past Meterizi on the right where you see the sign for Rijeka Crnojevica. <br /><br /><em>Travel tip:Park at Virpazar where you will also find local eateries and restaurant (and a toilet) before you head to the lake. The boat tours also have stand here but do not go with the first one who approaches you. Take time to decide which tour would you like to take. Anything between 1-2 hours is enough. Train connection to the station in Virpazar is available from Podgorica and so is the bus connection. If you are taking the bus, don’t ask for Skadar as there is a similar please in Albania across the lake. Ask for Virpazar or the Skadar National Park and the driver may drop you few hundred meters from the park entrance, if you are lucky ofc.</em>"
                 },
                 {
                     paraId: 9,
-                    paraText: "That’s all from the beautiful country of Montenegro for now…Stay tuned for more offbeat places like this, which would leave you wowed but won’t break the bank!"
+                    paraText: "<br />That’s all from the beautiful country of Montenegro for now. Stay tuned for more offbeat places like this, which would leave you wowed but won’t break the bank!"
                 }
 
             ],
@@ -212,111 +316,6 @@ const blogList={
             }]
 
         },
-        {
-            blogId:1009,
-            title:"Cotswold Lavender Fields",
-            author:"Madhurima Ranu",
-            date:17,
-            month:"SEP",
-            year:2018,
-            readCount:9,
-            catKey: 1002,
-            catId:"brit",
-            relatedBlogId:[],
-            initContent:"Oils, candles, foaming bath bubbles or just the dried bunch, this gorgeous little purple flower is just magical.  Delicately fragrant and fragile, Lavender is used ...",
-            generalImageLib:{
-                bannerImgURL: "/images/category/britain/blogs/cotswold/bannerImgURL.jpg",
-                authorImgURL: "/images/category/britain/blogs/cotswold/authorImgURL.jpg",
-                titleImgURL: "/images/category/britain/blogs/cotswold/titleImgURL.jpg",
-                smallTitleImgURL: "/images/category/britain/blogs/cotswold/smallTitleImgURL.jpg",
-                mostReadImgURL: "/images/category/britain/blogs/cotswold/mostReadImgURL.jpg",
-                similarPostImgURL:"/images/category/britain/blogs/cotswold/similarPostImgURL.jpg",
-            },
-            blogImageLib:[{
-                blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/britain/blogs/cotswold/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL2.jpg"
-                }
-            },
-            {
-                blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/britain/blogs/cotswold/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL2.jpg"
-                }
-            }],
-            blogYTImageLib:[
-                {   
-                    blockId:1,
-                    YTLinks:{
-                        YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
-                        YTImgURL: "/images/category/britain/blogs/cotswold/content/ytImgURL.jpg"
-                    }
-                }
-            ],
-            blogParagraphs: [
-                {
-                    paraId: 1,
-                    paraText: "Oils, candles, foaming bath bubbles or just the dried bunch, this gorgeous little purple flower is just magical.  Delicately fragrant and fragile, Lavender is used in many forms, make a potpourri, or a sleeping bag with dried lavender, or use in oils to calm the senses. Lavender is immensely soothing for a variety of purposes and its delicate aroma makes it perfect for fragrances and perfumes. "
-                },
-                {
-                    paraId: 2,
-                    paraText: "Now, thinking about Lavender, the name that pops straight into our head is Provence. Picturesque landscape lined with lavender fields, setting sun at the horizon and an old chateau reflecting radiance and aroma to all its visitors from near and far. I would brand it an ideal weekend getaway, except that one would have to onboard a flight or the Euro rail that would cost a little more than what my tiny wallet can afford at times."
-                },
-                {
-                    paraId: 3,
-                    paraText: "So, after a little digging around, the fragrance from the nearby Cotswold finally reached my senses. I was excited to acknowledge that I may not necessarily have to spend all that money or the effort to enjoy what I have in mind. Okay, I do get it… you mean to ask, so what about the sunshine? the glass of wine from the nearby vineyard? And the French countryside? But… hey you! Though the English weather is unpredictable, when the sun is out, nothing can beat the wonderful English countryside and the steamy hot English Cuppa. "
-                },
-                {
-                    paraId: 4,
-                    paraText: "So, here I go…around 73miles from Bath Spa or just under an hour from Oxford, a little off the A429, lies the beautiful fields of ‘The Cotswold Lavender’. A far stretched purple flowered field, lined by the English countryside, overlooking Broadway and the Vale of Evesham and offering stunning views of the English countryside.It may not be as elaborate as Provence, but this third generation family farm boasts of 53 acres of Lavender fields, a small distillery, a cosy yet beautiful homely cafe and a farm shop."
-                },
-                {
-                    paraId: 5,
-                    paraText: "Best Time to visit the field is early to mid July and sometimes to late August, though the flowering depends on the weather and arrival of summer. The farm opening and updates on flowering are published very frequently on the website. Visit here for the official website for the latest details."
-                },
-                {
-                    paraId: 6,
-                    paraText: "Where to find: \nHill Barn Farm, Snowshill, Broadway, Worcestershire WR12 7JY.Admission \nFee: £4.00 for Adults (Amazing value!); £2.00 for Children under 15 yrs; Children under 5 yrs go free"
-                },
-                {
-                    paraId: 7,
-                    paraText: "Not only for the photographic opportunities but it doesn’t take much to convince an English countryside lover like me. Miles and miles of farmland, the occasional one-off cottage, pigs, sheep, ponies and other farm animals and … rolling hills as far as you can see, England is voted as the 7th most beautiful country in the world for a reason."
-                },
-                {
-                    paraId: 8,
-                    paraText: "I can sit here for hours with some scones, clotted cream and the scrumptiously delicious strawberry jam…not to forget the good old tea pot! It is therapeutic, relaxing and inspiring, all at the same time. \nThe farm cafe sells lite bites like homemade quiche, sandwich and soup with homemade cakes and scones to finish the meal. The owners are very warm and welcoming and play a perfect host for every incoming visitor."
-                },
-                {
-                    paraId: 9,
-                    paraText: "HANDY TIP: Photography is permitted on the farm and you can carry your dSLRs ok, but if you want to do photoshoots or professional photography, make sure you book it in advance and pay appropriate fees. \nDrone photography isn’t allowed over and around the farm as it is too close to the Royal Air Force Fairford base. \nSo, in the end I didn’t have to fly to Provence to wander around an aromal Lavender field, instead I took my Mini out for a ride to the neighbourhood and enjoyed an even better views and scenery"
-                }
-
-            ],
-            blockQuotes: [{
-                blockQuoteId: 1,
-                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
-            }]
-
-        },
-
         {
             blogId:1008,
             title:"Perast & Our Lady of the Rocks",

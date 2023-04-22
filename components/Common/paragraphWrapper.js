@@ -1,7 +1,10 @@
 import React from "react";
 
 const ParagraphWrapper = (props)=>{
-    return (<p>{props.textContent}</p>)
+    
+    return (
+                <div dangerouslySetInnerHTML={{__html:props.textContent}} />
+            )
 }
 
 export default ParagraphWrapper;

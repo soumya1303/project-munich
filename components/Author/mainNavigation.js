@@ -30,7 +30,7 @@ const MainNavigation = (props)=>{
 											</ul>
 											
 										</li>
-										<li className="menu-item active"><a href="#">About Author</a></li>
+										<li className="menu-item active"><a href="#">Me</a></li>
 										
 									</ul>
 								</div>

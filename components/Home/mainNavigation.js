@@ -25,7 +25,7 @@ return(
                                 </ul>
                         </li>
                         {/* <li className="menu-item"><a href="/author">About Author</a></li> */}
-                        <li className="menu-item"><a href="/author">About Author</a></li>
+                        <li className="menu-item"><a href="/author">Me</a></li>
                     </ul>
                 </div>
             </nav>

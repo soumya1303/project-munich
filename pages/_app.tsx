@@ -5,18 +5,18 @@ import Script from 'next/script'
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-/* JQuery Fontawesome Bootstrap AOS Swipper import from /node_module */
 /*
-import $ from "jquery";
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import "bootstrap/dist/css/bootstrap.css";
+import {$} from "jquery";
 import AOS from "aos";
-import 'aos/dist/aos.css';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { config } from "@fortawesome/fontawesome-svg-core";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import 'aos/dist/aos.css';
 import "swiper/swiper.css";
 import "swiper/swiper-bundle.min.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 */
 
 /* Custom CSS */
@@ -29,27 +29,6 @@ import "/styles/font-awesome/css/font-awesome.css";
 import type { AppProps } from "next/app";
 
 const App = ({ Component, pageProps }: AppProps)=> {
-  /*
-  const router = useRouter();
-
-  config.autoAddCss = false;
-  
-  useEffect(() => {
-    typeof document !== undefined
-      ? require("bootstrap/dist/js/bootstrap.bundle.min.js")
-      : null;
-  }, [router.events]);
-  
-  useEffect(() => {
-    AOS.init(
-      
-    );
-  }, [])
-  
-  useEffect(() => {
-    setTimeout(()=>{console.log($("#input").val())}, 100);
-  }, [])
-  */
 
   return (
   
@@ -69,18 +48,21 @@ const App = ({ Component, pageProps }: AppProps)=> {
         <meta property="og:description" content={undefined!==pageProps.blogItem ? pageProps.blogItem.initContent : ""}/>
 
 
-        <Link rel="shortcut icon"  href="/images/favicon.png" type="image/png" />
+        <Link rel="shortcut icon"    href="/images/favicon.png" type="image/png" />
         <Link rel="apple-touch-icon" href="/images/apple-touch-icon.png"  />
         <Link rel="apple-touch-icon" href="/images/apple-touch-icon-72x72.png"   />
         <Link rel="apple-touch-icon" href="/images/apple-touch-icon-114x114.png"   />
         <Link rel="apple-touch-icon" href="/images/apple-touch-icon-144x144.png"   />
   
       </Head>  
+      
       <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js" ></Script>
       <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" ></Script>
-      <Script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossOrigin="anonymous"></Script>
+      {/* <Script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossOrigin="anonymous"></Script> */}
+      <Script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></Script>
       <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossOrigin="anonymous"></Script>
       <Script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"  integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossOrigin="anonymous"></Script>
+      
       <Component {...pageProps} />
 
   </React.Fragment>
