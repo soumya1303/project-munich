@@ -1,6 +1,6 @@
-import React from "react";
-import Script from 'next/script';
+import React, {useState, useEffect} from "react";
 
+import Script from 'next/script';
 
 import MainBody from "../components/Common/mainBody";
 import MousePointer from "../components/Common/mousePointer";
@@ -28,7 +28,6 @@ import Pagination from "../components/Home/pagination";
 import SideBar from "../components/Common/sideBar";
 import FooterComponent from "../components/Common/footerComponent";
 
-
 import blogList from "../public/blogListMaster";
 import categoryList from "../public/categoryListMaster";
 import authorProfie from "../public/authorProfile";
@@ -37,16 +36,15 @@ import masterURI from "../public/masterURI";
 
 const Home = (props)=> {
 
-  
-
   const categoryListArr = props.categoryList.categoryListArr;
   const blogList = props.blogList.blogListArr;
   const mostRecentThreeBlogs= [];
   const recentThreeBlogs=[];
   const earlierBlogs=[];
 
+  
+  /*
   var i=0;
-
   blogList.forEach((b)=>{
     
     if(i<2){
@@ -58,7 +56,41 @@ const Home = (props)=> {
     }
     i=i+1;
   });
+  */
 
+  /* Pagination code starts here */
+
+  var i=0;
+
+  blogList.forEach((b)=>{
+    
+    if(i<2){
+      mostRecentThreeBlogs.push(b);
+    }else if (i<5){
+      recentThreeBlogs.push(b);
+    }else {
+      earlierBlogs.push(b);
+    }
+    i=i+1;
+  });
+
+  var j=0;
+  const initPaginationItems=[];
+  earlierBlogs.forEach((b)=>{
+      if (j<4){
+        initPaginationItems.push(b);
+      }
+      j++;
+  })
+
+  const [paginationItems, setPaginationItems] = useState(initPaginationItems);
+
+  const handlePagination=(blogItems)=>{
+    setPaginationItems(blogItems);
+  }
+
+
+  /* Pagination code ends here */
 
   return (
     <React.Fragment>
@@ -145,23 +177,26 @@ const Home = (props)=> {
 
                 <MorePostWrapper>
 
-                    {
-                      earlierBlogs.map((b)=>{
-                        return <SmallArticleWrapper 
-                                key={b.blogId}
-                                blogId={b.blogId}
-                                catId={b.catId}
-                                date={b.date.toString()}
-                                month={`${b.month} ${b.year.toString().slice(2,4)}`}
-                                author={b.author}
-                                title={b.title}
-                                imgSource={b.generalImageLib.smallTitleImgURL}
-                                />
-                      })
-                    }
+                      {
+                        //earlierBlogs.map((b)=>{
+                        paginationItems.map((b)=>{
+                          return <SmallArticleWrapper 
+                                  key={b.blogId}
+                                  blogId={b.blogId}
+                                  catId={b.catId}
+                                  date={b.date.toString()}
+                                  month={`${b.month} ${b.year.toString().slice(2,4)}`}
+                                  author={b.author}
+                                  title={b.title}
+                                  imgSource={b.generalImageLib.smallTitleImgURL}
+                                  />
+                        })
+                      }
+
+                      
                 </MorePostWrapper>
                 
-                <Pagination />
+                <Pagination blogList={earlierBlogs} onPageClick={handlePagination}/>
               
               </MainContentLeftWrapper>
 

@@ -70,7 +70,7 @@ const Category = (props)=>{
                         <MainContentLeftWrapper>
                             <BigArticleWrapper>
                                 {
-                                    props.selectBlogList.map((b)=>{
+                                    props.recentBlogList.map((b)=>{
                                         return <BigArticle
                                             key={b.blogId}
                                             blogId={b.blogId}
@@ -91,7 +91,7 @@ const Category = (props)=>{
                             <SmallArticleWrapper>
 
                                     {
-                                        props.selectBlogList.map((b)=>{
+                                        props.recentBlogList.map((b)=>{
                                             return <SmallArticle
                                                 key={b.blogId}
                                                 blogId={b.blogId}
@@ -118,16 +118,7 @@ const Category = (props)=>{
                         />
                         
                     </MainContentWrapper>
-                    {/* <FooterComponent 
-                        logoImgSource="/images/common/logo-white.png"
-                        instaImgURL1="/images/insta/1.jpg"
-                        instaImgURL2="/images/insta/2.jpg"
-                        instaImgURL3="/images/insta/3.jpg"
-                        instaImgURL4="/images/insta/4.jpg"
-                        instaImgURL5="/images/insta/5.jpg"
-                        instaImgURL6="/images/insta/6.jpg"
-                        imageLogoBig="/images/common/logo-big.png"
-                    /> */}
+                    
                     <FooterComponent 
                         logoImgSource="/images/common/logoBottomLeft.png"
                         instagramImgArr={props.instagramImgArr}
@@ -181,18 +172,28 @@ const getStaticProps = async (context)=>
 
     const selectBlogListArr = blogList.blogListArr.filter((b)=>{
         return b.catId === catId
+        
+    })
+    
+    const selectBlogListArrReduced=[];
+    var n=0;
+    selectBlogListArr.forEach((b)=>{
+        if (n<2){
+            selectBlogListArrReduced.push(b)
+        }
+        n++;
     })
 
     const recentBlogListArr = [];
     var i=0;
-
-    blogList.blogListArr.forEach((b)=>{
+    
+    selectBlogListArr.forEach((b)=>{
         if (i<3){
             recentBlogListArr.push(b)
         }
         i++;
     })
-
+    
     const resp = await fetch(`${instagramToken.uri}${instagramToken.tokens[1].tokenId}`, {
         method:"GET",
       });
@@ -205,19 +206,18 @@ const getStaticProps = async (context)=>
     })
 
     const instaGramImgArrReduced=[];
-    var i=0;
+    var j=0;
     instaGramImgArr.forEach((e)=>{
-        if (i<6){
-        instaGramImgArrReduced.push(e);
-        i++;
+        if (j<6){
+            instaGramImgArrReduced.push(e);
+            j++;
         }
     })
-
 
     return(
         {
             props:  {
-                        selectBlogList:selectBlogListArr,
+                        selectBlogList:selectBlogListArrReduced,
                         recentBlogList: recentBlogListArr,
                         categoryList:categoryList.categoryListArr,
                         authorProfie:authorProfie,

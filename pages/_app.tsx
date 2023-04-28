@@ -35,7 +35,7 @@ const App = ({ Component, pageProps }: AppProps)=> {
   <React.Fragment>
     
       <Head>
-        <title>Life In a Bagpack</title>
+        <title>Its Wanderful Life</title>
         <meta charSet="utf-8"></meta>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
