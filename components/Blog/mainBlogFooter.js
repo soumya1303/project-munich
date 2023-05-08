@@ -15,9 +15,9 @@ const MainBlogFooter = (props)=>{
                             </a>
                         </li> 
                         <li data-aos="fade-up" data-aos-duration="700"><a> <i className="ion-social-twitter"></i></a></li>
-                        <li data-aos="fade-up" data-aos-duration="900"><a> <i className="ion-social-dribbble"></i></a></li>
+                        {/* <li data-aos="fade-up" data-aos-duration="900"><a> <i className="ion-social-dribbble"></i></a></li> */}
                         <li data-aos="fade-up" data-aos-duration="1100"><a><i className="ion-social-instagram"></i></a></li>
-                        <li data-aos="fade-up" data-aos-duration="1300"><a><i className="ion-social-pinterest"></i></a></li>
+                        {/* <li data-aos="fade-up" data-aos-duration="1300"><a><i className="ion-social-pinterest"></i></a></li> */}
                     </ul>
                 </div>
                 

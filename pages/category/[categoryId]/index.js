@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Script from "next/script";
 import {useRouter} from "next/router"; 
 
@@ -19,7 +20,7 @@ import BigArticleWrapper from "../../../components/Category/BigArticleWrapper";
 import BigArticle from "../../../components/Category/bigArticle";
 import SmallArticleWrapper from "../../../components/Category/SmallArticleWrapper";
 import SmallArticle from "../../../components/Category/smallArticle";
-import Pagination from "../../../components/Category/Pagination";
+import Pagination from "../../../components/Common/pagination";
 import SideBar from "../../../components/Common/sideBar";
 import FooterComponent from "../../../components/Common/footerComponent";
 
@@ -30,6 +31,25 @@ import instagramToken from "../../../public/instagramToken";
 import masterURI from "../../../public/masterURI";
 
 const Category = (props)=>{
+
+    /* Pagination code starts here */
+
+    var j=0;
+    const initPaginationItems=[];
+    props.recentBlogList.forEach((b)=>{
+      if (j<2){
+        initPaginationItems.push(b);
+      }
+      j++;
+    })
+
+    const [paginationItems, setPaginationItems] = useState(initPaginationItems);
+
+    const handlePagination=(blogItems)=>{
+    setPaginationItems(blogItems);
+    }
+
+    /* Pagination code ends here */
 
     return(
         <React.Fragment>
@@ -91,7 +111,7 @@ const Category = (props)=>{
                             <SmallArticleWrapper>
 
                                     {
-                                        props.recentBlogList.map((b)=>{
+                                        paginationItems.map((b)=>{
                                             return <SmallArticle
                                                 key={b.blogId}
                                                 blogId={b.blogId}
@@ -108,7 +128,7 @@ const Category = (props)=>{
 
                             </SmallArticleWrapper>
 
-                            <Pagination />
+                            <Pagination blogList={props.recentBlogList} onPageClick={handlePagination}/>
                         </MainContentLeftWrapper>
 
                         <SideBar 
@@ -123,6 +143,7 @@ const Category = (props)=>{
                         logoImgSource="/images/common/logoBottomLeft.png"
                         instagramImgArr={props.instagramImgArr}
                         imageLogoBig="/images/common/logo-big.png"
+                        
                     />
                 </BodyContent>
 

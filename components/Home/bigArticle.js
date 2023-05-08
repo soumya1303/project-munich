@@ -37,7 +37,7 @@ const BigArticle = (props)=>{
                                     </a>
                                 </li>
                                 <li data-aos="fade-up" data-aos-duration="700"><a href="#"><i className="ion-social-twitter"></i></a></li>
-                                <li data-aos="fade-up" data-aos-duration="900"><a href="#"><i className="ion-social-rss"></i></a></li>
+                                {/* <li data-aos="fade-up" data-aos-duration="900"><a href="#"><i className="ion-social-rss"></i></a></li> */}
                                 <li data-aos="fade-up" data-aos-duration="1100"><a href="#"><i className="ion-social-instagram"></i></a></li>
 
                             </ul>

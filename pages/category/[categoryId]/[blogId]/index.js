@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
 
@@ -33,6 +34,7 @@ import SimilarPostWrapper from "../../../../components/Blog/similarPostWrapper";
 import SimilarPost from "../../../../components/Blog/similarPost";
 import SideBar from "../../../../components/Common/sideBar";
 import FooterComponent from "../../../../components/Common/footerComponent";
+import Pagination from "../../../../components/Common/pagination";
 
 import blogList from "../../../../public/blogListMaster";
 import categoryList from "../../../../public/categoryListMaster";
@@ -42,6 +44,26 @@ import masterURI from "../../../../public/masterURI";
 
 
 const Blog=(props)=>{
+
+
+    /* Pagination code starts here */
+
+    var j=0;
+    const initPaginationItems=[];
+    props.similarBlogList.forEach((b)=>{
+      if (j<2){
+        initPaginationItems.push(b);
+      }
+      j++;
+    })
+
+    const [paginationItems, setPaginationItems] = useState(initPaginationItems);
+
+    const handlePagination=(blogItems)=>{
+    setPaginationItems(blogItems);
+    }
+
+    /* Pagination code ends here */
 
     return(
         <React.Fragment>
@@ -114,7 +136,7 @@ const Blog=(props)=>{
                                     <SimilarPostWrapper>
 
                                         {
-                                            props.similarBlogList.map((sb)=>{
+                                            paginationItems.map((sb)=>{
                                                 return <SimilarPost 
                                                             key={sb.blogId}
                                                             blogId={sb.blogId}
@@ -127,6 +149,8 @@ const Blog=(props)=>{
                                         
                                     </SimilarPostWrapper>
                                 </SimilarPostMainWrapper>
+                                <Pagination blogList={props.similarBlogList} onPageClick={handlePagination}/>
+
                             </GridLayoutLeftWrapper>
 
                             <SideBar 
@@ -143,6 +167,7 @@ const Blog=(props)=>{
                         logoImgSource="/images/common/logoBottomLeft.png"
                         instagramImgArr={props.instagramImgArr}
                         imageLogoBig="/images/common/logo-big.png"
+                        
                     />
 
                 </BodyContent>

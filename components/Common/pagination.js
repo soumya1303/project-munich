@@ -4,7 +4,7 @@ import PaginationLink  from "./paginationLink";
 const Pagination = (props)=>{
     
     var blogCount = props.blogList.length;
-    var blogsPerPage=4;
+    var blogsPerPage=2;
     
     const pageCount =  blogCount%blogsPerPage === 0 ? blogCount/blogsPerPage : (blogCount-(blogCount%blogsPerPage))/blogsPerPage+1
 
@@ -31,7 +31,7 @@ const Pagination = (props)=>{
     paginatedBlogItemsList.map((page)=>{
         console.log(page)
     })
-
+    
     return(
         <div className="pagination-div">
             <ul className="pagination">

@@ -12,7 +12,7 @@ const BottomFooterCopyright = ()=>{
         <div className="footer-bottom">
             <div className="container">
                 <div className="copyright">
-                    <p> &copy; {year} - {websiteName}. Packed by {programmer}. All Rights Reserved.</p>
+                    <p> &copy; {year} - {websiteName}. Created by {programmer}. All Rights Reserved.</p>
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@ import BigArticle from "../components/Home/bigArticle";
 import NewsLetter from "../components/Home/newsLetter";
 import MorePostWrapper from "../components/Home/morePostWrapper";
 import SmallArticleWrapper from "../components/Home/smallArticleWrapper";
-import Pagination from "../components/Home/pagination";
+import Pagination from "../components/Common/pagination";
 import SideBar from "../components/Common/sideBar";
 import FooterComponent from "../components/Common/footerComponent";
 
@@ -41,22 +41,6 @@ const Home = (props)=> {
   const mostRecentThreeBlogs= [];
   const recentThreeBlogs=[];
   const earlierBlogs=[];
-
-  
-  /*
-  var i=0;
-  blogList.forEach((b)=>{
-    
-    if(i<2){
-      mostRecentThreeBlogs.push(b);
-    }else if (i<5){
-      recentThreeBlogs.push(b);
-    }else if (i<9){
-      earlierBlogs.push(b);
-    }
-    i=i+1;
-  });
-  */
 
   /* Pagination code starts here */
 
@@ -77,7 +61,7 @@ const Home = (props)=> {
   var j=0;
   const initPaginationItems=[];
   earlierBlogs.forEach((b)=>{
-      if (j<4){
+      if (j<2){
         initPaginationItems.push(b);
       }
       j++;
@@ -212,6 +196,7 @@ const Home = (props)=> {
               logoImgSource="/images/common/logoBottomLeft.png"
               instagramImgArr={props.instagramImgArr}
               imageLogoBig="/images/common/logo-big.png"
+              
             />
 
           </BodyContent>
