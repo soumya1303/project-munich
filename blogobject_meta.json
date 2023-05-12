@@ -10,7 +10,8 @@
                 "month": "Type: String",
                 "year": "Type: Number",
                 "readCount": "Type: Number",
-                "categoryId": "Type: Number",
+                "catKey": "Type: Number",
+                "catId": "Type: Number",
                 "relatedBlogId":["Type: Number"],
                 "initContent": "Type: String",
                 "generalImageLib": {
@@ -24,18 +25,13 @@
                 "blogImageLib": [
                     {
                         "blockId" : "Type: Number",
-                        "fullwidthImg":{
-                            "imgId": "Type: Number",
-                            "imgURL": "Type: String Size: (1486 x 460)"
-                        },
-                        "halfwidthImg1":{
-                            "imgId": "Type: Number",
-                            "imgURL": "Type: String Size: (440 x 290)"
-                        },
-                        "halfwidthImg2":{
-                            "imgId": "Type: Number",
-                            "imgURL": "Type: String Size: (440 x 290)"
-                        }
+                        "fwHhImgURL_blockId_1" : "Size 1486 x 460",
+                        "fwFhImgURL_blockId_1" : "Size 1486 x 850",
+                        "hwHhImgURL_blockId_1" : "Size 440 x 290",
+                        "hwHhImgURL_blockId_2" : "Size 440 x 290",
+                        "hwFhImgURL_blockId_1" : "Size 440 x 650",
+                        "hwFhImgURL_blockId_2" : "Size 440 x 650"
+                      
                     }
                 ],
                 "blogYTImageLib": [{

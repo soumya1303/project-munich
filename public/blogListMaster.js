@@ -22,33 +22,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/britain/blogs/cotswold/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL11:"/images/category/britain/blogs/cotswold/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/britain/blogs/cotswold/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/britain/blogs/cotswold/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/britain/blogs/cotswold/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/britain/blogs/cotswold/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/britain/blogs/cotswold/content/hwFhImgURL12.jpg",
+            
             },
             {
                 blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/britain/blogs/cotswold/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/britain/blogs/cotswold/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL21:"/images/category/britain/blogs/cotswold/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/britain/blogs/cotswold/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/britain/blogs/cotswold/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/britain/blogs/cotswold/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/britain/blogs/cotswold/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/britain/blogs/cotswold/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/britain/blogs/cotswold/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/britain/blogs/cotswold/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/britain/blogs/cotswold/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/britain/blogs/cotswold/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/britain/blogs/cotswold/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/britain/blogs/cotswold/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/britain/blogs/cotswold/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/britain/blogs/cotswold/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/britain/blogs/cotswold/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/britain/blogs/cotswold/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/britain/blogs/cotswold/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/britain/blogs/cotswold/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/britain/blogs/cotswold/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/britain/blogs/cotswold/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/britain/blogs/cotswold/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/britain/blogs/cotswold/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/britain/blogs/cotswold/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/britain/blogs/cotswold/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/britain/blogs/cotswold/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/britain/blogs/cotswold/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/britain/blogs/cotswold/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/britain/blogs/cotswold/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/britain/blogs/cotswold/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/britain/blogs/cotswold/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -90,11 +120,7 @@ const blogList={
                 },
                 {
                     paraId: 8,
-                    paraText: "<br />I can sit here for hours with some scones, clotted cream and the scrumptiously delicious strawberry jam…not to forget the good old tea pot! It is therapeutic, relaxing and inspiring, all at the same time. The farm cafe sells lite bites like homemade quiche, sandwich and soup with homemade cakes and scones to finish the meal. The owners are very warm and welcoming and play a perfect host for every incoming visitor."
-                },
-                {
-                    paraId: 9,
-                    paraText: "<br /><h4>Handy tip:</h4> Photography is permitted on the farm and you can carry your dSLRs ok, but if you want to do photoshoots or professional photography, make sure you book it in advance and pay appropriate fees. Drone photography isn’t allowed over and around the farm as it is too close to the Royal Air Force Fairford base. So, in the end I didn’t have to fly to Provence to wander around an aromal Lavender field, instead I took my Mini out for a ride to the neighbourhood and enjoyed an even better views and scenery"
+                    paraText: "<br />I can sit here for hours with some scones, clotted cream and the scrumptiously delicious strawberry jam…not to forget the good old tea pot! It is therapeutic, relaxing and inspiring, all at the same time. The farm cafe sells lite bites like homemade quiche, sandwich and soup with homemade cakes and scones to finish the meal. The owners are very warm and welcoming and play a perfect host for every incoming visitor.<br /><h4>Handy tip:</h4> Photography is permitted on the farm and you can carry your dSLRs ok, but if you want to do photoshoots or professional photography, make sure you book it in advance and pay appropriate fees. Drone photography isn’t allowed over and around the farm as it is too close to the Royal Air Force Fairford base. So, in the end I didn’t have to fly to Provence to wander around an aromal Lavender field, instead I took my Mini out for a ride to the neighbourhood and enjoyed an even better views and scenery"
                 }
 
             ],
@@ -126,34 +152,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/europe/blogs/montenegro/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/europe/blogs/montenegro/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/europe/blogs/montenegro/content/hwImgURL2.jpg"
-                }
-            },
+                fwHhImgURL11:"/images/category/europe/blogs/montenegro/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/europe/blogs/montenegro/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/europe/blogs/montenegro/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/europe/blogs/montenegro/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/europe/blogs/montenegro/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/europe/blogs/montenegro/content/hwFhImgURL12.jpg",
             
+            },
             {
                 blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/europe/blogs/montenegro/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/europe/blogs/montenegro/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/europe/blogs/montenegro/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL21:"/images/category/europe/blogs/montenegro/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/europe/blogs/montenegro/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/europe/blogs/montenegro/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/europe/blogs/montenegro/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/europe/blogs/montenegro/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/europe/blogs/montenegro/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/europe/blogs/montenegro/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/europe/blogs/montenegro/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/europe/blogs/montenegro/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/europe/blogs/montenegro/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/europe/blogs/montenegro/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/europe/blogs/montenegro/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/europe/blogs/montenegro/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/europe/blogs/montenegro/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/europe/blogs/montenegro/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/europe/blogs/montenegro/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/europe/blogs/montenegro/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/europe/blogs/montenegro/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/europe/blogs/montenegro/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/europe/blogs/montenegro/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/europe/blogs/montenegro/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/europe/blogs/montenegro/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/europe/blogs/montenegro/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/europe/blogs/montenegro/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/europe/blogs/montenegro/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/europe/blogs/montenegro/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/europe/blogs/montenegro/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/europe/blogs/montenegro/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/europe/blogs/montenegro/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/europe/blogs/montenegro/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -188,25 +243,21 @@ const blogList={
                 },
                 {
                     paraId: 6,
-                    paraText: "<br />Budva, the metropolis town, with more than 17 beaches, sprawling hotels and resorts, historic monuments, a grand marina and numerous sea food restaurants serving fresh fishes, lobsters, octopus, squids straight from the bay. Also, as the cultural hub of Montenegro, Budva is famous for its theatres and local performances during the summer months. Stari Grad, which means the old town hosts many art and craft boutiques and galleries for the art enthusiasts."
+                    paraText: "<br />Budva, the metropolis town, with more than 17 beaches, sprawling hotels and resorts, historic monuments, a grand marina and numerous sea food restaurants serving fresh fishes, lobsters, octopus, squids straight from the bay. Also, as the cultural hub of Montenegro, Budva is famous for its theatres and local performances during the summer months. Stari Grad, which means the old town hosts many art and craft boutiques and galleries for the art enthusiasts.<br />The Old Town of Budva is almost as crazy as a maze, it has narrow interwinding streets with most of the corners leading to another two or three alternative paths! So easy to get lost here but even getting lost and discovering the city bits by bits is fun to travellers like me. If you are staying overnight in Kotor or Budva, do try and find an old boutique hotel for the authentic local experience. Combining traditional style with modern facilities, these stone buildings will take you back in time to the 18th century and some even back to the 13th century. Hotel Monte Cristo, is a 13th century stone building now restored with stylish furnishing. Or, Palazzo Radomiri Heritage Boutique Hotel, which is beautifully transformed from an early 18th century Baroque palace. If, the UNESCO protected old town of Kotor is in your mind, don’t worry and head to the Boutique Hotel Hippocampus. You can actually live within the fort walls."
                 },
                 {
                     paraId: 7,
-                    paraText: "<br />The Old Town of Budva is almost as crazy as a maze, it has narrow interwinding streets with most of the corners leading to another two or three alternative paths! So easy to get lost here but even getting lost and discovering the city bits by bits is fun to travellers like me. If you are staying overnight in Kotor or Budva, do try and find an old boutique hotel for the authentic local experience. Combining traditional style with modern facilities, these stone buildings will take you back in time to the 18th century and some even back to the 13th century. Hotel Monte Cristo, is a 13th century stone building now restored with stylish furnishing. Or, Palazzo Radomiri Heritage Boutique Hotel, which is beautifully transformed from an early 18th century Baroque palace. If, the UNESCO protected old town of Kotor is in your mind, don’t worry and head to the Boutique Hotel Hippocampus. You can actually live within the fort walls."
-                },
-                {
-                    paraId: 8,
                     paraText: "<br /><h4>Day 2</h4> Head further south, the first stop is Sveti Stefan, the most photographed and hyped site in Montenegro. It is also the most expensive town on its own and the most beautiful of all what you have seen till now in Montenegro. No less than a fairy tale, this fortified islet village is charming and mesmerising and is home to riches of the rich. Don’t be surprised that this is not open to public, it  is a 5 star hotel resort owned by Aman Resorts. It is home to 50 exclusive cottages and suites and 8 grand suites at Villa Miloc⌄er, overlooking pink sandy beaches and turquoise blue Adriatic Sea. A sight to remember for rest of your life. One of the 5 National parks, lake Skadar is the biggest in Balkan Peninsula and boast of its diversity of flora and fauna. Surrounded by mountains and covered by wetland, it is home to migratory birds like Dalmation pelican, Herons and Seagulls and Carp, bleak and Eel like fishes. You can either boat around the lake from Virpazar or alternatively use the popular viewpoint, Pavlova Strana or the horseshoe bend at the northwest corner of the lake. If you are driving, it can be reached on M2.3, 5kms past Meterizi on the right where you see the sign for Rijeka Crnojevica. <br /><br /><em>Travel tip:Park at Virpazar where you will also find local eateries and restaurant (and a toilet) before you head to the lake. The boat tours also have stand here but do not go with the first one who approaches you. Take time to decide which tour would you like to take. Anything between 1-2 hours is enough. Train connection to the station in Virpazar is available from Podgorica and so is the bus connection. If you are taking the bus, don’t ask for Skadar as there is a similar please in Albania across the lake. Ask for Virpazar or the Skadar National Park and the driver may drop you few hundred meters from the park entrance, if you are lucky ofc.</em>"
                 },
                 {
-                    paraId: 9,
+                    paraId: 8,
                     paraText: "<br />That’s all from the beautiful country of Montenegro for now. Stay tuned for more offbeat places like this, which would leave you wowed but won’t break the bank!"
                 }
 
             ],
             blockQuotes: [{
                 blockQuoteId: 1,
-                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+                blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Ulcinj — Professor Nolt"
             }]
 
         },
@@ -232,34 +283,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwImgURL2.jpg"
-                }
-            },
+                fwHhImgURL11:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL12.jpg",
             
+            },
             {
                 blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL21:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/europe/blogs/barcelona/whirlwind-barcelona/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -302,11 +382,7 @@ const blogList={
                 },
                 {
                     paraId: 8,
-                    paraText: "<br /><h4>Las Ramblas:</h4> The most famous landmark, Las Ramblas is the boulevard that runs from Plaça de Catalunya down to the Columbus Monument at the waterfront. It is a must if you are Barcelona, just one of those things that you have to do. The most happening part of the city, lined by trees and with thousands of tourists shuffling their way through the live statues, street performers, numerous flower sellers, open restaurants/bars, painters and many other artists and art sellers from one end to the other. Try an authentic paella or tapas dishes at the roadside stall or get your caricature done by one of the young artists, this street has all form of surprises to keep you engaged and wowed. It is free to visit. Yeah!!"
-                },
-                {
-                    paraId: 9,
-                    paraText: "<br /><h4>Camp Nou:</h4> Largest sporting stadium in the Europe and the third largest football stadium in the world, Camp Nou is home to the Barcelona Football club. For all the football fans, a must stop for you!It is located about 550ms east of the Las Ramblas and can be reached walking from Jaume I underground station. From Barcelona’s city centre you can take metro line 3, in the direction of Zona Universitària and Les Corts/ Palau Reial/Maria Cristina  is probably the closest station. Other options are Badal on line 5 and Collblanc on line 5 or line 6/9 to reach to the stadium."
+                    paraText: "<br /><h4>Las Ramblas:</h4> The most famous landmark, Las Ramblas is the boulevard that runs from Plaça de Catalunya down to the Columbus Monument at the waterfront. It is a must if you are Barcelona, just one of those things that you have to do. The most happening part of the city, lined by trees and with thousands of tourists shuffling their way through the live statues, street performers, numerous flower sellers, open restaurants/bars, painters and many other artists and art sellers from one end to the other. Try an authentic paella or tapas dishes at the roadside stall or get your caricature done by one of the young artists, this street has all form of surprises to keep you engaged and wowed. It is free to visit. Yeah!!<br /><h4>Camp Nou:</h4> Largest sporting stadium in the Europe and the third largest football stadium in the world, Camp Nou is home to the Barcelona Football club. For all the football fans, a must stop for you!It is located about 550ms east of the Las Ramblas and can be reached walking from Jaume I underground station. From Barcelona’s city centre you can take metro line 3, in the direction of Zona Universitària and Les Corts/ Palau Reial/Maria Cristina  is probably the closest station. Other options are Badal on line 5 and Collblanc on line 5 or line 6/9 to reach to the stadium."
                 }
 
             ],
@@ -338,33 +414,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/europe/blogs/perast/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/europe/blogs/perast/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/europe/blogs/perast/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL11:"/images/category/europe/blogs/perast/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/europe/blogs/perast/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/europe/blogs/perast/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/europe/blogs/perast/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/europe/blogs/perast/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/europe/blogs/perast/content/hwFhImgURL12.jpg",
+            
             },
             {
                 blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/europe/blogs/perast/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/europe/blogs/perast/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/europe/blogs/perast/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL21:"/images/category/europe/blogs/perast/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/europe/blogs/perast/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/europe/blogs/perast/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/europe/blogs/perast/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/europe/blogs/perast/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/europe/blogs/perast/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/europe/blogs/perast/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/europe/blogs/perast/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/europe/blogs/perast/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/europe/blogs/perast/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/europe/blogs/perast/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/europe/blogs/perast/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/europe/blogs/perast/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/europe/blogs/perast/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/europe/blogs/perast/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/europe/blogs/perast/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/europe/blogs/perast/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/europe/blogs/perast/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/europe/blogs/perast/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/europe/blogs/perast/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/europe/blogs/perast/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/europe/blogs/perast/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/europe/blogs/perast/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/europe/blogs/perast/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/europe/blogs/perast/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/europe/blogs/perast/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/europe/blogs/perast/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/europe/blogs/perast/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/europe/blogs/perast/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/europe/blogs/perast/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -382,35 +488,31 @@ const blogList={
                 },
                 {
                     paraId: 2,
-                    paraText: "<br />You can walk around the town in less than 2 hours and there is indeed only a handful of places that would interest a tourist. "
-                },
-                {
-                    paraId: 3,
-                    paraText: "<br />The earliest evidence of this historic bond, that survived the test of time, still lies at the Ujung Kulon National Park, West Java. An archaeological relic of Lord Ganesha, The Elephant God, from the 1st century AD was found on the summit of Mount Raksa in Panaotan Island. By the time Fa Hsien, the great Chinese scholar, reached the Balinese shore in 414 AD, Hinduism was already well entrenched in the archipelago."
+                    paraText: "<br />You can walk around the town in less than 2 hours and there is indeed only a handful of places that would interest a tourist. <br />The earliest evidence of this historic bond, that survived the test of time, still lies at the Ujung Kulon National Park, West Java. An archaeological relic of Lord Ganesha, The Elephant God, from the 1st century AD was found on the summit of Mount Raksa in Panaotan Island. By the time Fa Hsien, the great Chinese scholar, reached the Balinese shore in 414 AD, Hinduism was already well entrenched in the archipelago."
                 },
                 
                 {
-                    paraId: 4,
+                    paraId: 3,
                     paraText: "<br /><h4>Our Lady of the Rock:</h4> One of the two islets on the bay of Boka Kotorska, Our Lady of the Rock is a manmade island created by rocks and seized ships. There are many legends surrounding this beautiful island and I cannot help but write one such interesting tale here:"
                 },
                 {
-                    paraId: 5,
+                    paraId: 4,
                     paraText: "<br />According to folklore, two fisherman brothers returning from their trip in 1452, finds an icon of Virgin Mary and Christ on a sea cliff. They bring it home but the next day, it disappears from home and reappears at the cliff. They once again bring it home but the next day it disappears as before. Seeing this, the brothers realize that Virgin Mary wishes to stay there and vows to build a church there. For centuries, fisherman on return from their trips and captain on return from their successful voyages repeat the customs to throw rocks and even old seized ships to that same cliff, thereby building the island which you can see today. The custom from the folklore is still alive today and is celebrated as Fasinada on the 22nd of July.There are small boats offering you ride from the shore to the Lady of the rock for around €5. Entrance to the museum is €1. Inside the museum, you’ll be able to get a guided tour for about €1 donation. The museum hosts archaeological finds from the city of Perast as well as sacred relics from the prehistoric age. <br /><br /><em>Tip: Shorts and bare shoulders dresses are not allowed unless you have something to cover off your legs and shoulders. Also keep in mind that you cannot hire a scarf, shawl or stole at the entrance.</em>"
                 },
                 {
-                    paraId: 6,
+                    paraId: 5,
                     paraText: "<br /><h4>St. Nikola Church:</h4> You cannot miss this prominent 17th century church and the 55m tall bell tower from any part of the town. The church was started around 1616 but has never been finished. You can climb the bell tower and from the top it offers amazing aerial view of the bay."
                 },
                 {
-                    paraId: 7,
+                    paraId: 6,
                     paraText: "<br /><h4>Island of St. George:</h4> Island of St. George is not permittable for tourists and you can only get a glimpse from your boat ride. Decked by tall Cypress trees, this private island hosts an active monastery."
                 },
                 {
-                    paraId: 8,
+                    paraId: 7,
                     paraText: "<br /><h4>Perast Museum:</h4> This museum is located in one of the most beautiful buildings of Perast, the Bujovic Palace. A magnificent 18th century palace with an imposing porch consisting of five arcades and beautiful terraces with stone balusters is one of the most beautiful baroque edifices on the Adriatic Coast. Numerous exhibits, documents and paintings presented in several exhibitions are witnesses of the tumultuous and rich history of Perast, from its establishment through the rule of the Republic of Venice to the rule of France and Austria-Hungary in the area. Paintings, historic and maritime artefacts and collectibles from families, seafarers and other adventurers who have made Perast their home. The most interesting things were the ceremonial swords and the maps from the 17th century."
                 },
                 {
-                    paraId: 9,
+                    paraId: 8,
                     paraText: "<br />With its wonderful location on the Kotor bay and the fantasy island of Our Lady of the Rocks, this small village is surely fascinating. This is the tiny medieval town where the mountain meets the sea, literally… Don’t miss out if you are in an around The Old Town of Perast"
                 }
 
@@ -444,33 +546,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL12.jpg",
+            
             },
             {
-                blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwImgURL2.jpg"
-                }
+                blockId:2,
+                fwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -513,11 +645,7 @@ const blogList={
                 },
                 {
                     paraId: 8,
-                    paraText: "<br />As the actors enact the story of Raksasha King Ravana luring Seeta away amidst chanting around the mystical ceremonial flames, one’s mind would travel backward in time to one’s ancient past, when few good men would set sail on their dinghy boats on moonlit nights into the darkness of the Indian ocean. Along with spices and herbs, they would bring along their religion, culture and tales from their mythical land, tales that would live and flourish for thousands of years..."
-                },
-                {
-                    paraId: 9,
-                    paraText: "<em><strong>References:</strong>  <ul><li>Indian Influences on Balinese Culture: The Role of Hinduism and Buddhism in Present Day Bali - by Ketut Ardhana and Nyoman Wijaya</li><li>The role of Hinduism and Buddhism in promoting Indianness outside India: Scenarios of Southeast Asia – by Rahul Das</li><li>A Short History of Bali Yatra festival - Swarajya</li><li>Ramayana and Mahabharata are alive and well in Bali – Sunday Guardian Live</li></ul></em>"
+                    paraText: "<br />As the actors enact the story of Raksasha King Ravana luring Seeta away amidst chanting around the mystical ceremonial flames, one’s mind would travel backward in time to one’s ancient past, when few good men would set sail on their dinghy boats on moonlit nights into the darkness of the Indian ocean. Along with spices and herbs, they would bring along their religion, culture and tales from their mythical land, tales that would live and flourish for thousands of years...<br /><em><strong>References:</strong>  <ul><li>Indian Influences on Balinese Culture: The Role of Hinduism and Buddhism in Present Day Bali - by Ketut Ardhana and Nyoman Wijaya</li><li>The role of Hinduism and Buddhism in promoting Indianness outside India: Scenarios of Southeast Asia – by Rahul Das</li><li>A Short History of Bali Yatra festival - Swarajya</li><li>Ramayana and Mahabharata are alive and well in Bali – Sunday Guardian Live</li></ul></em>"
                 }
 
             ],
@@ -550,33 +678,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/usa/blogs/las-vegas/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL11:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL12.jpg",
+            
             },
             {
                 blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/usa/blogs/las-vegas/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL21:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -590,38 +748,34 @@ const blogList={
             blogParagraphs: [
                 {
                     paraId: 1,
-                    paraText: "Wynn once said “Las Vegas is sort of like how GOD would do it if he had money”…Neon lights, flashy cars, elaborate attires, night clubs, casinos, all in middle of the Mojave desert! The biggest oasis one could ever imagine….Absolutely in middle of nowhere. It has been on my bucket list for years, if not decades and though I have made multiple itineraries over the past years, somehow I could never arrange the logistics for this trip. I have always been either short of money (trust me flying from the European subcontinent to America is expensive) or enough holidays to make this dream come true. "
+                    paraText: "Wynn once said “Las Vegas is sort of like how GOD would do it if he had money”…Neon lights, flashy cars, elaborate attires, night clubs, casinos, all in middle of the Mojave desert! The biggest oasis one could ever imagine….Absolutely in middle of nowhere. It has been on my bucket list for years, if not decades and though I have made multiple itineraries over the past years, somehow I could never arrange the logistics for this trip. I have always been either short of money (trust me flying from the European subcontinent to America is expensive) or enough holidays to make this dream come true. <br />Finally, I chose to make this happen during the Christmas holidays. Work here in the Great Britain is almost quiet from the 3rd week of December up to the New Year, and so, what better opportunity to embark on this adventurous trip. Vegas, here I come! Excitement trips you up right from the moment you step into to this magical city. As the aircraft hovered over the Vegas skyline, I could spot humongous building with bright colourful lights, most of which are hotels and casinos and signs big enough that you can read from far above in the sky.  I spotted the flash light from the top of a giant pyramid (Luxor it was), the tall tower of the Stratosphere, the Eiffel tower adorning the hotel Paris, the emerald green of the MGM and while I was busy spotting as many famous hotels I could, bang we were on the runway! I was far too excited to realise that I am finally going to step into this dreamworld."
                 },
                 {
                     paraId: 2,
-                    paraText: "<br />Finally, I chose to make this happen during the Christmas holidays. Work here in the Great Britain is almost quiet from the 3rd week of December up to the New Year, and so, what better opportunity to embark on this adventurous trip. Vegas, here I come! Excitement trips you up right from the moment you step into to this magical city. As the aircraft hovered over the Vegas skyline, I could spot humongous building with bright colourful lights, most of which are hotels and casinos and signs big enough that you can read from far above in the sky.  I spotted the flash light from the top of a giant pyramid (Luxor it was), the tall tower of the Stratosphere, the Eiffel tower adorning the hotel Paris, the emerald green of the MGM and while I was busy spotting as many famous hotels I could, bang we were on the runway! I was far too excited to realise that I am finally going to step into this dreamworld."
-                },
-                {
-                    paraId: 3,
                     paraText: "<br /><h4>Trip to 'THE STRIP:</h4> Truly a dreamworld, Vegas is all about the inordinate themed hotels, enormous casinos, exotic spa salons and grand ‘entertainment’! Everything about Vegas is grand, monumental, prodigious, and one who has been here seen that knows, Vegas doesn’t disappoint! ‘The Strip’ is how they refer to the long boulevard, which hosts the most celebrated and the prominent hotels and casinos in the entire world. It begins with the MGM Grand, the Luxor, the Excalibur and the Mandalay Bay on one end and continues to the New York, the Cosmopolitan, Paris and Planet Hollywood on the other. You then redefine grandeur and aristocracy with Bellagio, Caesar Palace, Venetian and the Wynn before Mirage and Treasure Island fill you up with surprise!"
                 },
                 {
-                    paraId: 4,
+                    paraId: 3,
                     paraText: "<br /><h4>MGM Grand:</h4> At the southern end of the boulevard is MGM Grand, owned and operated by the MGM Resorts International. This hotel includes 5 outdoor pools, rivers and waterfalls and the largest casino in the Clark country. Don’t forget to take a selfie with the famous MGM lion. The best spot would be from The Tropicana, on the other side of the road. "
                 },
                 {
-                    paraId: 5,
+                    paraId: 4,
                     paraText: "<br /><h4>New York New York:</h4> A flavour of Big Apple here in Vegas, with a 150-foot replica of the Statue of Liberty and a giant 180 rollercoaster. And, to add a little sweetness, it hosts HERSHEY’S CHOCOLATE WORLD. A two storey pure chocolate delight, featuring all things Hershey’s! <br /><br /><em>Funfact: In addition to numerous onsite restaurants serving American and other international cuisine, NY features ‘Nine Fine Irishman’, an authentic pub that was built in Ireland and then shipped to the resort</em>"
                 },
                 {
-                    paraId: 6,
+                    paraId: 5,
                     paraText: "<br /><h4>Mandalay Bay:</h4>Another one of the MGM Hotels and Resorts, Mandalay Bay features an 11-acre beach with real sand and is famous for the Shark Reef Aquarium! Scary ha! I must not admit in public that I love gambling and so, my very best friend has decided that he would never let me go to Vegas on my own! Well, even with company I gambled some money and guess what Beginners luck (not literally) I did win some money here. I would now recommend you to surely go to Mandalay bay, and may be try one of the fruit machines (wink wink)...ah I am not suggesting that really!Big Michael Jackson fans hear out, it also is home to the MJ’s <em>One by Cirque du Soleil</em>"
                 },
                 {
-                    paraId: 7,
+                    paraId: 6,
                     paraText: "<br /><h4>The Venetian:</h4> Basilica, bell tower, gothic style palace, canals, Rialto bridge and gondolas…and no I am not talking about Venice! I am talking about a hotel is Vegas, the Venetian. Venetian hosts the Madame Tussauds wax museum, over 80 boutique stores on Grand Canal and a wide selection of dining choices including bistro fare at Thomas Keller’s Bouchon. <br /><br /><h4>Bellagio:</h4> And yes, the one I was truly waiting for was the famous Ocean’s Bellagio...well it isn’t called Ocean’s but is now almost synonym to the film. Lavish, majestic, posh, elaborate, impressive, gratifying all that which a hotel could be. Bellagio redefines luxury and grandeur and a Must Visit’ when you are in Vegas. The onsite restaurants and casino floor is next to none!"
                 },
                 {
-                    paraId: 8,
+                    paraId: 7,
                     paraText: "<br /><h4>Hotel Luxor:</h4>Next to MGM Grand on the boulevard is the great pyramid of Hotel Luxor, the obelisk, the sphinx and the pyramid itself, it is absolutely unmissable, not just from this Earth but from the ‘SPACE’. Yes! The flashlight I saw while landing at the Mc Carren Airport, is the iconic light on top of the pyramid which can be seen from space. Luxor is one of the oldest hotels and has been synonymous to Vegas for as long as it existed. As I walked inside the hollow, I realized that the faces of this pyramid in reality are the hotel rooms with slanted glass windows and roofs. Inside it has feel of an ancient Egyptian city with big statues of Egyptian gods and tall palm trees. <br /><br /><em>Funfact: Luxor’s pyramid is one of the tallest (350ft) in the world and falls just short of just two others in Giza, Egypt. And, its replica of the Sphinx is even larger than the Great Sphinx of Giza</em>"
                 },
                 {
-                    paraId: 9,
+                    paraId: 8,
                     paraText: "<br />I didn’t get chance to visit all the famous Hotels and Casinos in my trip, Wynn, Planet Hollywood, Paris, Mirage and Rio to name a few. I did see the half scale 540 foot replica of the Eiffel Tower, replica of the Arc de Triomphe and the La Fontaine des mars from distance but I couldn’t spend enough time to absorb all it had to offer to its visitors.My positive self shouts ‘Do you know what does that mean?’ It implies I am going to Vegas AGAIN! That’s just the high level Trip to the Strip, head to my other post <em>Vegas – Dare to miss</em> to read more about the fun activities you could do while here"
                 }
 
@@ -654,33 +808,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL11:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL12.jpg",
+            
             },
             {
                 blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL21:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -714,18 +898,14 @@ const blogList={
                 },
                 {
                     paraId: 6,
-                    paraText: "<br />Don’t miss the thrilling Slotzilla zip line experience, superhero style! Priced between $25-$45 (as of 2017). Or, dare to take the walking dead experience if you are brave enough to face zombies, errr I wasn’t. I can’t bear the thought of zombies, but I never claimed to be the adventurous sorts."
+                    paraText: "<br />Don’t miss the thrilling Slotzilla zip line experience, superhero style! Priced between $25-$45 (as of 2017). Or, dare to take the walking dead experience if you are brave enough to face zombies, errr I wasn’t. I can’t bear the thought of zombies, but I never claimed to be the adventurous sorts.<br /><br /><em>Travel Tips: Plan the Fremont Street visit for an evening as you wouldn’t want to miss out on the Viva Vision light show. It is displayed on a 1,500-foot-long and 90-foot-wide video screen and is set to music. The best part is...it is free for visitors! Yeahhhh! The show runs every hour from 6pm and lasts for about 6 mins.</em>"
                 },
                 {
                     paraId: 7,
-                    paraText: "<br /><br /><em>Travel Tips: Plan the Fremont Street visit for an evening as you wouldn’t want to miss out on the Viva Vision light show. It is displayed on a 1,500-foot-long and 90-foot-wide video screen and is set to music. The best part is...it is free for visitors! Yeahhhh! The show runs every hour from 6pm and lasts for about 6 mins.</em>"
-                },
-                {
-                    paraId: 8,
                     paraText: "<br />Visit to Freemont street is must even if you are in Vegas for a day. Don’t forget to read the ‘Stop over at Vegas’ blog if you only have 24hours in the city."
                 },
                 {
-                    paraId: 9,
+                    paraId: 8,
                     paraText: "<br />And, this is all I have for this famous, incredible and most extraordinary city from my bucket list. Vegas...it is!"
                 }
 
@@ -758,33 +938,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL11:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL12.jpg",
+            
             },
             {
                 blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL21:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/usa/blogs/las-vegas/making-of-las-vegas/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -826,11 +1036,7 @@ const blogList={
                 },
                 {
                     paraId: 8,
-                    paraText: "<br />The trend started to change in 1966 when billionaire businessman Howard Hughes bought over a dozen hotels, slowly pushing out mobster-owned hotels that dominated the city. In 1989, Steve Wynn started a new trend in hotel design and construction: The Mega Hotel. He opened the Mirage, the first glamorous resort hotel in Las Vegas. Transformed over the next two decades, the Strip saw many developments inspired by iconic cities, such as New York, Paris, Rome, Luxor etc. Casino business were booming, tourists would flock to Vegas to see Frank Sinatra, Elvis Presley or Cirque du Soleil perform. By 1990, Las Vegas had more than 86,000 hotel rooms, with 13 of the 20 largest hotels on earth."
-                },
-                {
-                    paraId: 9,
-                    paraText: "<br />The story of Vegas, from a tiny railway stopover in the middle of the Mojave Desert to becoming The Entertainment Capital of the World is remarkable. The story is written in blood and sweat of the workers at the dam, as much as, it is written in tears of those faceless young women who kept entertaining strangers through endless nights. The story of Vegas is about Elvis Presley’s performance in 1969 that turned his career around as much as it is about the human endeavour to build the first railway track in the middle of most desolate south Californian desert. <br /><br />The rest, as they say, is History."
+                    paraText: "<br />The trend started to change in 1966 when billionaire businessman Howard Hughes bought over a dozen hotels, slowly pushing out mobster-owned hotels that dominated the city. In 1989, Steve Wynn started a new trend in hotel design and construction: The Mega Hotel. He opened the Mirage, the first glamorous resort hotel in Las Vegas. Transformed over the next two decades, the Strip saw many developments inspired by iconic cities, such as New York, Paris, Rome, Luxor etc. Casino business were booming, tourists would flock to Vegas to see Frank Sinatra, Elvis Presley or Cirque du Soleil perform. By 1990, Las Vegas had more than 86,000 hotel rooms, with 13 of the 20 largest hotels on earth. <br /><br />The story of Vegas, from a tiny railway stopover in the middle of the Mojave Desert to becoming The Entertainment Capital of the World is remarkable. The story is written in blood and sweat of the workers at the dam, as much as, it is written in tears of those faceless young women who kept entertaining strangers through endless nights. The story of Vegas is about Elvis Presley’s performance in 1969 that turned his career around as much as it is about the human endeavour to build the first railway track in the middle of most desolate south Californian desert. <br /><br />The rest, as they say, is History."
                 }
 
             ],
@@ -862,33 +1068,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/europe/blogs/barcelona/sagrada/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/europe/blogs/barcelona/sagrada/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/europe/blogs/barcelona/sagrada/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL11:"/images/category/europe/blogs/barcelona/sagrada/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/europe/blogs/barcelona/sagrada/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL12.jpg",
+            
             },
             {
                 blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/europe/blogs/barcelona/sagrada/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/europe/blogs/barcelona/sagrada/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/europe/blogs/barcelona/sagrada/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL21:"/images/category/europe/blogs/barcelona/sagrada/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/europe/blogs/barcelona/sagrada/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/europe/blogs/barcelona/sagrada/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/europe/blogs/barcelona/sagrada/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/europe/blogs/barcelona/sagrada/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/europe/blogs/barcelona/sagrada/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/europe/blogs/barcelona/sagrada/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/europe/blogs/barcelona/sagrada/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/europe/blogs/barcelona/sagrada/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/europe/blogs/barcelona/sagrada/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/europe/blogs/barcelona/sagrada/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/europe/blogs/barcelona/sagrada/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -930,11 +1166,7 @@ const blogList={
                 },
                 {
                     paraId: 8,
-                    paraText: "<br /><h4>Don't Miss Out On:</h4> <ul><li>Difference between the old and new constructions and the change of colour and materials used </li><li> Stained glass windows and the beautiful sunlight falling through them, especially during sunset </li><li> The Towers – Off the 18 towers in Gaudi’s design, 12 dedicated to the 12 Apostles, 4 to the four Evangelist and last two to Virgin Mary and Jesus Christ. Off these, 4 for the Nativity façade and 4 for the Passion façade are complete. The Northeastern Nativity Facade was built under Gaudi's supervision before his death but the rests including the towers of the Passion Façade were built after his death</li><li>Gaudi Museum at the basement of the Sagrada Familia, which closely looks into this iconic artist’s life and work</li></ul>"
-                },
-                {
-                    paraId: 9,
-                    paraText: "<br /><h4>Last But Not The Least:</h4> As it is a Catholic worship place, there is a strict dress code in operation at all times. Shorts and skirts above knees are not allowed. Flip flops aren’t allowed and so aren’t sleeveless dresses or tops. Women, don’t even think about Bikini or spaghetti tops! Sorry, no beach wear girls!"
+                    paraText: "<br /><h4>Don't Miss Out On:</h4> <ul><li>Difference between the old and new constructions and the change of colour and materials used </li><li> Stained glass windows and the beautiful sunlight falling through them, especially during sunset </li><li> The Towers – Off the 18 towers in Gaudi’s design, 12 dedicated to the 12 Apostles, 4 to the four Evangelist and last two to Virgin Mary and Jesus Christ. Off these, 4 for the Nativity façade and 4 for the Passion façade are complete. The Northeastern Nativity Facade was built under Gaudi's supervision before his death but the rests including the towers of the Passion Façade were built after his death</li><li>Gaudi Museum at the basement of the Sagrada Familia, which closely looks into this iconic artist’s life and work</li></ul><br /><br /><h4>Last But Not The Least:</h4> As it is a Catholic worship place, there is a strict dress code in operation at all times. Shorts and skirts above knees are not allowed. Flip flops aren’t allowed and so aren’t sleeveless dresses or tops. Women, don’t even think about Bikini or spaghetti tops! Sorry, no beach wear girls!"
                 }
 
             ],
@@ -966,33 +1198,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/asiaandafrica/blogs/bali/musical/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/musical/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/musical/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/musical/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/musical/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL12.jpg",
+            
             },
             {
                 blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/asiaandafrica/blogs/bali/musical/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/musical/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/musical/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/musical/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/musical/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/musical/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/musical/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/musical/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/musical/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/musical/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/musical/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/musical/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/musical/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/asiaandafrica/blogs/bali/musical/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/asiaandafrica/blogs/bali/musical/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -1035,11 +1297,7 @@ const blogList={
                 },
                 {
                     paraId: 8,
-                    paraText: "<br />Where: Kecak dance is performed at many places incl. Tanah Lot, Pura Dalem Ubud, Padang Tegal Stage etc. but the most spectacular one certainly is here at the Uluwatu temple with the dramatic views of the setting sun over the Indian ocean. <br /><br />Tickets: Tickets could be bought at the entrance. <br /><br />When: The programme is held everyday around the sunset.Latest info. can be found here."
-                },
-                {
-                    paraId: 9,
-                    paraText: "I wish we could have witnessed more dance forms in this trip. But, as you may have seen in my other Blogs on Bali, there wasn’t enough time and there may never be enough time. How so ever small this island may seem, every inch, every stone and every bit tells you a story! I would strongly recommend you visit this spellbinding magical place once and I promise you, you would surely go back."
+                    paraText: "<br />Where: Kecak dance is performed at many places incl. Tanah Lot, Pura Dalem Ubud, Padang Tegal Stage etc. but the most spectacular one certainly is here at the Uluwatu temple with the dramatic views of the setting sun over the Indian ocean. <br /><br />Tickets: Tickets could be bought at the entrance. <br /><br />When: The programme is held everyday around the sunset.Latest info. can be found here. <br /><br />I wish we could have witnessed more dance forms in this trip. But, as you may have seen in my other Blogs on Bali, there wasn’t enough time and there may never be enough time. How so ever small this island may seem, every inch, every stone and every bit tells you a story! I would strongly recommend you visit this spellbinding magical place once and I promise you, you would surely go back."
                 }
 
             ],
@@ -1071,33 +1329,63 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/asiaandafrica/blogs/bali/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL12.jpg",
+            
             },
             {
                 blockId:2,
-                fullwidthImg:{
-                    fwImgId:1,
-                    fwImgURL:"/images/category/asiaandafrica/blogs/bali/content/fwImgURL1.jpg"
-                },
-                halfwidthImg1:{
-                    hwImgId:1,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/content/hwImgURL1.jpg"
-                },
-                halfwidthImg2:{
-                    hwImgId:2,
-                    hwImgURL:"/images/category/asiaandafrica/blogs/bali/content/hwImgURL2.jpg"
-                }
+                fwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL22.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL32.jpg",
+            
+            },
+            {
+                blockId:4,
+                fwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL52.jpg",
+            
+            },
+            {
+                blockId:6,
+                fwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL62.jpg",
+            
             }],
             blogYTImageLib:[
                 {   
@@ -1139,11 +1427,7 @@ const blogList={
                 },
                 {
                     paraId: 8,
-                    paraText: "<br />Before we could delay any further and make an excuse to stay back for lunch, Bima and Adi arrived to continue our journey to probably the last temple on our list. The famous Uluwatu temple and the Kecak dance performance. \nAlmost an hour and twenty mins from Ubud and very close to the International airport, Uluwatu temple lies in the southern part of the island. It is one of the very famous temples on the island and is made more famous due to its unique setting. Hanging on a cliff, approx.. 70mts above the crashing waves and facing the Indian ocean, Uluwatu temple is also home to numerous notorious monkeys. <br /><br /><em>Travel Tip: Remember the tip from the Monkey Forest Sanctuary, don’t keep items of jewellery, food, wallet, sunglasses or anything of that sort loose while you are on the premises. \nWait for the sunset, as you won’t see a backdrop as gorgeous and spell bounding as this, anywhere else in the world. Just around sunset, the cliff side open amphitheatre hosts the famous Kecak dance. It is a dance performance based on the Hindu epic ‘Ramayana’</em>"
-                },
-                {
-                    paraId: 9,
-                    paraText: "<br />In this short duration, I have realised very easily why Bali is called ‘The land of thousand temples’. Unique architecture, magnificent history, intriguing folklores, fascinating locations, all put together these temples cast a spell on you which you can’t escape. And so in my heart I know I will be back, back to explore what I haven’t seen and what I haven’t experienced. \nI can’t recommend Bali enough to all of you readers, but hopefully through my blogs I have tried enough to at least convince you to shortlist this for your next holiday. Cheers to the mesmerising island of Bali!"
+                    paraText: "<br />Before we could delay any further and make an excuse to stay back for lunch, Bima and Adi arrived to continue our journey to probably the last temple on our list. The famous Uluwatu temple and the Kecak dance performance. \nAlmost an hour and twenty mins from Ubud and very close to the International airport, Uluwatu temple lies in the southern part of the island. It is one of the very famous temples on the island and is made more famous due to its unique setting. Hanging on a cliff, approx.. 70mts above the crashing waves and facing the Indian ocean, Uluwatu temple is also home to numerous notorious monkeys. <br /><br /><em>Travel Tip: Remember the tip from the Monkey Forest Sanctuary, don’t keep items of jewellery, food, wallet, sunglasses or anything of that sort loose while you are on the premises. \nWait for the sunset, as you won’t see a backdrop as gorgeous and spell bounding as this, anywhere else in the world. Just around sunset, the cliff side open amphitheatre hosts the famous Kecak dance. It is a dance performance based on the Hindu epic ‘Ramayana’</em> <br />In this short duration, I have realised very easily why Bali is called ‘The land of thousand temples’. Unique architecture, magnificent history, intriguing folklores, fascinating locations, all put together these temples cast a spell on you which you can’t escape. And so in my heart I know I will be back, back to explore what I haven’t seen and what I haven’t experienced. \nI can’t recommend Bali enough to all of you readers, but hopefully through my blogs I have tried enough to at least convince you to shortlist this for your next holiday. Cheers to the mesmerising island of Bali!"
                 }
 
             ],

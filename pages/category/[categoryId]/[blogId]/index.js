@@ -87,8 +87,7 @@ const Blog=(props)=>{
                                     {/* <MainBlogHeader 
                                         blogHeader={props.blogItem.title}
                                     /> */}
-                                    <MainBlogBodyWrapper>
-
+                                    {/* <MainBlogBodyWrapper>
                                         <MainBlogSectionWrapper>
                                             <ParagraphWrapper textContent={props.blogItem.blogParagraphs[0].paraText}/>
                                             <ParagraphWrapper textContent={props.blogItem.blogParagraphs[1].paraText}/>
@@ -111,10 +110,12 @@ const Blog=(props)=>{
                                             <DuelImage imgURL={props.blogItem.blogImageLib[1].halfwidthImg1.hwImgURL} />
                                             <DuelImage imgURL={props.blogItem.blogImageLib[1].halfwidthImg2.hwImgURL} />
                                         </ImageGallaryWrapper>
+                                        
                                         <MainBlogSectionWrapper>
                                             <ParagraphWrapper textContent={props.blogItem.blogParagraphs[6].paraText}/>
                                             <ParagraphWrapper textContent={props.blogItem.blogParagraphs[7].paraText}/>
                                         </MainBlogSectionWrapper>
+                                        
                                         <YouTubeLink 
                                             ytVidURL={props.blogItem.blogYTImageLib[0].YTLinks.YTLink} 
                                             ytImgURL={props.blogItem.blogYTImageLib[0].YTLinks.YTImgURL}
@@ -122,8 +123,151 @@ const Blog=(props)=>{
                                         <MainBlogSectionWrapper>
                                             <ParagraphWrapper textContent={props.blogItem.blogParagraphs[8].paraText}/>
                                         </MainBlogSectionWrapper>
+                                    </MainBlogBodyWrapper>  */}
+
+                                    <MainBlogBodyWrapper>
+                                        <MainBlogSectionWrapper>
+                                            {props.blogItem.blogParagraphs[0].paraText !=undefined && <ParagraphWrapper textContent={props.blogItem.blogParagraphs[0].paraText}/>}
+                                            {props.blogItem.blockQuotes[0].blockQuoteText != undefined && <BlockQuoteWrapper blockQuoteContent = {props.blogItem.blockQuotes[0].blockQuoteText} />}
+                                            {props.blogItem.blogParagraphs[1].paraText !=undefined && <ParagraphWrapper textContent={props.blogItem.blogParagraphs[1].paraText}/>}
+                                        </MainBlogSectionWrapper>
+                                        <ImageGallaryWrapper>
+                                            {/* <SingleImage imgURL={props.blogItem.blogImageLib[0].fwHhImgURL11!=undefined && props.blogItem.blogImageLib[0].fwHhImgURL11}/> */}
+                                            {props.blogItem.blogImageLib[0].fwHhImgURL11!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[0].fwHhImgURL11} />}
+                                            {props.blogItem.blogImageLib[0].fwFhImgURL11!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[0].fwFhImgURL11} />}
+                                            {props.blogItem.blogImageLib[0].hwHhImgURL11!=undefined && props.blogItem.blogImageLib[0].hwHhImgURL12!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[0].hwHhImgURL11} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[0].hwHhImgURL12} />
+                                                </>
+                                            }
+                                            {props.blogItem.blogImageLib[0].hwFhImgURL11!=undefined && props.blogItem.blogImageLib[0].hwFhImgURL12!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[0].hwFhImgURL11} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[0].hwFhImgURL12} />
+                                                </>
+                                            }
+                                        </ImageGallaryWrapper>
                                         
-                                    </MainBlogBodyWrapper> 
+                                        <MainBlogSectionWrapper>
+                                            {props.blogItem.blogParagraphs[2].paraText !=undefined && <ParagraphWrapper textContent={props.blogItem.blogParagraphs[2].paraText}/>}
+                                        </MainBlogSectionWrapper>
+                                        
+                                        <ImageGallaryWrapper>
+                                            {props.blogItem.blogImageLib[1].fwHhImgURL21!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[1].fwHhImgURL21} />}
+                                            {props.blogItem.blogImageLib[1].fwFhImgURL21!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[1].fwFhImgURL21} />}
+                                            {props.blogItem.blogImageLib[1].hwHhImgURL21!=undefined && props.blogItem.blogImageLib[1].hwHhImgURL22!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[1].hwHhImgURL21} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[1].hwHhImgURL22} />
+                                                </>
+                                            }
+                                            {props.blogItem.blogImageLib[1].hwFhImgURL21!=undefined && props.blogItem.blogImageLib[1].hwFhImgURL22!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[1].hwFhImgURL21} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[1].hwFhImgURL22} />
+                                                </>
+                                            }
+                                        </ImageGallaryWrapper>
+                                        
+                                        <MainBlogSectionWrapper>
+                                            {props.blogItem.blogParagraphs[3].paraText !=undefined && <ParagraphWrapper textContent={props.blogItem.blogParagraphs[3].paraText}/>}
+                                        </MainBlogSectionWrapper>
+
+                                        <ImageGallaryWrapper>
+                                            {props.blogItem.blogImageLib[2].fwHhImgURL31!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[2].fwHhImgURL31} />}
+                                            {props.blogItem.blogImageLib[2].fwFhImgURL31!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[2].fwFhImgURL31} />}
+                                            {props.blogItem.blogImageLib[2].hwHhImgURL31!=undefined && props.blogItem.blogImageLib[2].hwHhImgURL32!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[2].hwHhImgURL31} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[2].hwHhImgURL32} />
+                                                </>
+                                            }
+                                            {props.blogItem.blogImageLib[2].hwFhImgURL31!=undefined && props.blogItem.blogImageLib[2].hwFhImgURL32!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[2].hwFhImgURL31} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[2].hwFhImgURL32} />
+                                                </>
+                                            }
+                                        </ImageGallaryWrapper>
+
+                                        <MainBlogSectionWrapper>
+                                            {props.blogItem.blogParagraphs[4].paraText !=undefined && <ParagraphWrapper textContent={props.blogItem.blogParagraphs[4].paraText}/>}
+                                        </MainBlogSectionWrapper>
+
+                                        <ImageGallaryWrapper>
+                                            {props.blogItem.blogImageLib[3].fwHhImgURL41!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[3].fwHhImgURL41} />}
+                                            {props.blogItem.blogImageLib[3].fwFhImgURL41!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[3].fwFhImgURL41} />}
+                                            {props.blogItem.blogImageLib[3].hwHhImgURL41!=undefined && props.blogItem.blogImageLib[3].hwHhImgURL42!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[3].hwHhImgURL41} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[3].hwHhImgURL42} />
+                                                </>
+                                            }
+                                            {props.blogItem.blogImageLib[3].hwFhImgURL41!=undefined && props.blogItem.blogImageLib[3].hwFhImgURL42!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[3].hwFhImgURL41} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[3].hwFhImgURL42} />
+                                                </>
+                                            }
+                                        </ImageGallaryWrapper>
+
+                                        <MainBlogSectionWrapper>
+                                            {props.blogItem.blogParagraphs[5].paraText !=undefined && <ParagraphWrapper textContent={props.blogItem.blogParagraphs[5].paraText}/>}
+                                        </MainBlogSectionWrapper>
+
+                                        <ImageGallaryWrapper>
+                                            {props.blogItem.blogImageLib[4].fwHhImgURL51!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[4].fwHhImgURL51} />}
+                                            {props.blogItem.blogImageLib[4].fwFhImgURL51!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[4].fwFhImgURL51} />}
+                                            {props.blogItem.blogImageLib[4].hwHhImgURL51!=undefined && props.blogItem.blogImageLib[4].hwHhImgURL52!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[4].hwHhImgURL51} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[4].hwHhImgURL52} />
+                                                </>
+                                            }
+                                            {props.blogItem.blogImageLib[4].hwFhImgURL51!=undefined && props.blogItem.blogImageLib[4].hwFhImgURL52!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[4].hwFhImgURL51} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[4].hwFhImgURL52} />
+                                                </>
+                                            }
+                                        </ImageGallaryWrapper>
+
+                                        <MainBlogSectionWrapper>
+                                            {props.blogItem.blogParagraphs[6].paraText !=undefined && <ParagraphWrapper textContent={props.blogItem.blogParagraphs[6].paraText}/>}
+                                        </MainBlogSectionWrapper>
+
+                                        <ImageGallaryWrapper>
+                                            {props.blogItem.blogImageLib[5].fwHhImgURL61!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[5].fwHhImgURL61} />}
+                                            {props.blogItem.blogImageLib[5].fwFhImgURL61!=undefined &&  <SingleImage imgURL={props.blogItem.blogImageLib[5].fwFhImgURL61} />}
+                                            {props.blogItem.blogImageLib[5].hwHhImgURL61!=undefined && props.blogItem.blogImageLib[5].hwHhImgURL62!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[5].hwHhImgURL61} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[5].hwHhImgURL62} />
+                                                </>
+                                            }
+                                            {props.blogItem.blogImageLib[5].hwFhImgURL61!=undefined && props.blogItem.blogImageLib[5].hwFhImgURL62!=undefined &&
+                                                <>
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[5].hwFhImgURL61} />
+                                                    <DuelImage imgURL={props.blogItem.blogImageLib[5].hwFhImgURL62} />
+                                                </>
+                                            }
+                                        </ImageGallaryWrapper>
+
+                                        <MainBlogSectionWrapper>
+                                            {props.blogItem.blogParagraphs[7].paraText !=undefined && <ParagraphWrapper textContent={props.blogItem.blogParagraphs[7].paraText}/>}
+                                        </MainBlogSectionWrapper>
+                                        
+                                        {/* <YouTubeLink 
+                                            ytVidURL={props.blogItem.blogYTImageLib[0].YTLinks.YTLink} 
+                                            ytImgURL={props.blogItem.blogYTImageLib[0].YTLinks.YTImgURL}
+                                        />
+                                        <MainBlogSectionWrapper>
+                                            <ParagraphWrapper textContent={props.blogItem.blogParagraphs[8].paraText}/>
+                                        </MainBlogSectionWrapper> */}
+
+                                    </MainBlogBodyWrapper>
+
                                     <MainBlogFooter 
                                         masterURI={props.masterURI}
                                         blogId={props.blogItem.blogId}
