@@ -127,6 +127,10 @@ const blogList={
             blockQuotes: [{
                 blockQuoteId: 1,
                 blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
 
         },
@@ -153,62 +157,33 @@ const blogList={
             blogImageLib:[{
                 blockId:1,
                 fwHhImgURL11:"/images/category/europe/blogs/montenegro/content/fwHhImgURL11.jpg",
-                fwFhImgURL11:"/images/category/europe/blogs/montenegro/content/fwFhImgURL11.jpg",
                 hwHhImgURL11:"/images/category/europe/blogs/montenegro/content/hwHhImgURL11.jpg",
                 hwHhImgURL12:"/images/category/europe/blogs/montenegro/content/hwHhImgURL12.jpg",
-                hwFhImgURL11:"/images/category/europe/blogs/montenegro/content/hwFhImgURL11.jpg",
-                hwFhImgURL12:"/images/category/europe/blogs/montenegro/content/hwFhImgURL12.jpg",
             
             },
             {
                 blockId:2,
-                fwHhImgURL21:"/images/category/europe/blogs/montenegro/content/fwHhImgURL21.jpg",
                 fwFhImgURL21:"/images/category/europe/blogs/montenegro/content/fwFhImgURL21.jpg",
                 hwHhImgURL21:"/images/category/europe/blogs/montenegro/content/hwHhImgURL21.jpg",
                 hwHhImgURL22:"/images/category/europe/blogs/montenegro/content/hwHhImgURL22.jpg",
-                hwFhImgURL21:"/images/category/europe/blogs/montenegro/content/hwFhImgURL21.jpg",
-                hwFhImgURL22:"/images/category/europe/blogs/montenegro/content/hwFhImgURL22.jpg",
-            
             },
             {
                 blockId:3,
-                fwHhImgURL31:"/images/category/europe/blogs/montenegro/content/fwHhImgURL31.jpg",
-                fwFhImgURL31:"/images/category/europe/blogs/montenegro/content/fwFhImgURL31.jpg",
-                hwHhImgURL31:"/images/category/europe/blogs/montenegro/content/hwHhImgURL31.jpg",
-                hwHhImgURL32:"/images/category/europe/blogs/montenegro/content/hwHhImgURL32.jpg",
-                hwFhImgURL31:"/images/category/europe/blogs/montenegro/content/hwFhImgURL31.jpg",
-                hwFhImgURL32:"/images/category/europe/blogs/montenegro/content/hwFhImgURL32.jpg",
-            
+                
             },
             {
                 blockId:4,
-                fwHhImgURL41:"/images/category/europe/blogs/montenegro/content/fwHhImgURL41.jpg",
                 fwFhImgURL41:"/images/category/europe/blogs/montenegro/content/fwFhImgURL41.jpg",
-                hwHhImgURL41:"/images/category/europe/blogs/montenegro/content/hwHhImgURL41.jpg",
-                hwHhImgURL42:"/images/category/europe/blogs/montenegro/content/hwHhImgURL42.jpg",
-                hwFhImgURL41:"/images/category/europe/blogs/montenegro/content/hwFhImgURL41.jpg",
-                hwFhImgURL42:"/images/category/europe/blogs/montenegro/content/hwFhImgURL42.jpg",
-            
+                
             },
             {
                 blockId:5,
-                fwHhImgURL51:"/images/category/europe/blogs/montenegro/content/fwHhImgURL51.jpg",
                 fwFhImgURL51:"/images/category/europe/blogs/montenegro/content/fwFhImgURL51.jpg",
-                hwHhImgURL51:"/images/category/europe/blogs/montenegro/content/hwHhImgURL51.jpg",
-                hwHhImgURL52:"/images/category/europe/blogs/montenegro/content/hwHhImgURL52.jpg",
-                hwFhImgURL51:"/images/category/europe/blogs/montenegro/content/hwFhImgURL51.jpg",
-                hwFhImgURL52:"/images/category/europe/blogs/montenegro/content/hwFhImgURL52.jpg",
             
             },
             {
                 blockId:6,
-                fwHhImgURL61:"/images/category/europe/blogs/montenegro/content/fwHhImgURL61.jpg",
                 fwFhImgURL61:"/images/category/europe/blogs/montenegro/content/fwFhImgURL61.jpg",
-                hwHhImgURL61:"/images/category/europe/blogs/montenegro/content/hwHhImgURL61.jpg",
-                hwHhImgURL62:"/images/category/europe/blogs/montenegro/content/hwHhImgURL62.jpg",
-                hwFhImgURL61:"/images/category/europe/blogs/montenegro/content/hwFhImgURL61.jpg",
-                hwFhImgURL62:"/images/category/europe/blogs/montenegro/content/hwFhImgURL62.jpg",
-            
             }],
             blogYTImageLib:[
                 {   
@@ -226,7 +201,7 @@ const blogList={
                 },
                 {
                     paraId: 2,
-                    paraText: "<br /><h4>Day 1 </h4>Start from the northern end of the country and drive along the scenic route along the bay of Kotor. The first stop is the beautiful medieval town of Perast. They say, Perast seems like a fragment of Venice, which has just floated across to the Adriatic and harboured itself to the Boka Bay. Famous for Our Lady of the Rock and Island of St. George, it also hosts many Hotels and spa resorts and small restaurants, serving mouth-watering fish delicacies. Don’t forget to read more about this beautiful town and a very interesting folklore, in my blog The Old town of Perast."
+                    paraText: "<br /><h4>Day 1 : Perast - Kotor - Budva </h4>Start from the northern end of the country and drive along the scenic route along the bay of Kotor. The first stop is the beautiful medieval town of Perast. They say, Perast seems like a fragment of Venice, which has just floated across to the Adriatic and harboured itself to the Boka Bay. Famous for Our Lady of the Rock and Island of St. George, it also hosts many Hotels and spa resorts and small restaurants, serving mouth-watering fish delicacies. Don’t forget to read more about this beautiful town and a very interesting folklore, in my blog The Old town of Perast."
                 },
                 {
                     paraId: 3,
@@ -235,29 +210,33 @@ const blogList={
                 
                 {
                     paraId: 4,
-                    paraText: "<br />The city walls also lead unto the fortress of San Giovanni, a stunning medieval castle sited on the hill of St. John, which renders the exceptional and outstanding views of the orange roofed town and the bay. <br /><em>Caution:</em> It is perched 1200m high on the hill and involves climbing more than 1200 stairs, pretty challenging hike."
+                    paraText: "<br />The city walls also lead unto the fortress of San Giovanni, a stunning medieval castle sited on the hill of St. John, which renders the exceptional and outstanding views of the orange roofed town and the bay. Caution though, it is perched 1200m high on the hill and involves climbing more than 1200 stairs, pretty challenging hike."
                 },
                 {
                     paraId: 5,
-                    paraText: "<br /><h4>Handy tip:</h4>For souvenir shopping, avoid the shops next to entrance to the city wall and head towards the cathedral. You will find many hidden boutiques, shops and cafes hidden in the corners, with not so many tourists flocking  around. After a refreshing cup of tea or coffee, make your way to the Kotor bus terminus which is around 10mins walk from the city wall entrance and take a bus to Budva. It is around 27kms from Kotor and takes around 30-45 minutes, depending on the service you take. <br /><br /><em>Travel tip: The bus leaves almost every 30ish minutes from Kotor and takes between 30 – 45mins to reach Budva. Use the Croatia (I could find more reliable times here on the Croatian transport site rather than a Montenegrin site ) transport site to find more info.</em>"
+                    paraText: "<em>Handy tip : For souvenir shopping, avoid the shops next to entrance to the city wall and head towards the cathedral. You will find many hidden boutiques, shops and cafes hidden in the corners, with not so many tourists flocking  around. After a refreshing cuppa, make your way to the Kotor bus terminus which is around 10mins walk from the city wall entrance and take a bus to Budva. It is around 27kms from Kotor and takes around 30-45 minutes, depending on the service you take. </em><br /><br /><em>Travel tip : The bus leaves almost every 30ish minutes from Kotor and takes between 30 – 45mins to reach Budva. Use the Croatia (I could find more reliable times here on the Croatian transport site rather than a Montenegrin site ) transport site to find more info.</em> <br /><br />Budva, the metropolis town, with more than 17 beaches, sprawling hotels and resorts, historic monuments, a grand marina and numerous sea food restaurants serving fresh fishes, lobsters, octopus, squids straight from the bay. Also, as the cultural hub of Montenegro, Budva is famous for its theatres and local performances during the summer months. Stari Grad, which means the old town hosts many art and craft boutiques and galleries for the art enthusiasts.<br /><br />"
                 },
                 {
                     paraId: 6,
-                    paraText: "<br />Budva, the metropolis town, with more than 17 beaches, sprawling hotels and resorts, historic monuments, a grand marina and numerous sea food restaurants serving fresh fishes, lobsters, octopus, squids straight from the bay. Also, as the cultural hub of Montenegro, Budva is famous for its theatres and local performances during the summer months. Stari Grad, which means the old town hosts many art and craft boutiques and galleries for the art enthusiasts.<br />The Old Town of Budva is almost as crazy as a maze, it has narrow interwinding streets with most of the corners leading to another two or three alternative paths! So easy to get lost here but even getting lost and discovering the city bits by bits is fun to travellers like me. If you are staying overnight in Kotor or Budva, do try and find an old boutique hotel for the authentic local experience. Combining traditional style with modern facilities, these stone buildings will take you back in time to the 18th century and some even back to the 13th century. Hotel Monte Cristo, is a 13th century stone building now restored with stylish furnishing. Or, Palazzo Radomiri Heritage Boutique Hotel, which is beautifully transformed from an early 18th century Baroque palace. If, the UNESCO protected old town of Kotor is in your mind, don’t worry and head to the Boutique Hotel Hippocampus. You can actually live within the fort walls."
+                    paraText: "The Old Town of Budva is almost as crazy as a maze, it has narrow interwinding streets with most of the corners leading to another two or three alternative paths! So easy to get lost here but even getting lost and discovering the city bits by bits is fun to travellers like me. If you are staying overnight in Kotor or Budva, do try and find an old boutique hotel for the authentic local experience. Combining traditional style with modern facilities, these stone buildings will take you back in time to the 18th century and some even back to the 13th century. Hotel Monte Cristo, is a 13th century stone building now restored with stylish furnishing. Or, Palazzo Radomiri Heritage Boutique Hotel, which is beautifully transformed from an early 18th century Baroque palace. If, the UNESCO protected old town of Kotor is in your mind, don’t worry and head to the Boutique Hotel Hippocampus. You can actually live within the fort walls.<br /><br /><h4>Day 2 : Sveti Stefan - Lake Skadar </h4> Head further south, the first stop is Sveti Stefan, the most photographed and hyped site in Montenegro. It is also the most expensive town on its own and the most beautiful of all what you have seen till now in Montenegro. No less than a fairy tale, this fortified islet village is charming and mesmerising and is home to riches of the rich. Don’t be surprised that this is not open to public, it  is a 5 star hotel resort owned by Aman Resorts. It is home to 50 exclusive cottages and suites and 8 grand suites at Villa Miloc⌄er, overlooking pink sandy beaches and turquoise blue Adriatic Sea. A sight to remember for rest of your life. "
                 },
                 {
                     paraId: 7,
-                    paraText: "<br /><h4>Day 2</h4> Head further south, the first stop is Sveti Stefan, the most photographed and hyped site in Montenegro. It is also the most expensive town on its own and the most beautiful of all what you have seen till now in Montenegro. No less than a fairy tale, this fortified islet village is charming and mesmerising and is home to riches of the rich. Don’t be surprised that this is not open to public, it  is a 5 star hotel resort owned by Aman Resorts. It is home to 50 exclusive cottages and suites and 8 grand suites at Villa Miloc⌄er, overlooking pink sandy beaches and turquoise blue Adriatic Sea. A sight to remember for rest of your life. One of the 5 National parks, lake Skadar is the biggest in Balkan Peninsula and boast of its diversity of flora and fauna. Surrounded by mountains and covered by wetland, it is home to migratory birds like Dalmation pelican, Herons and Seagulls and Carp, bleak and Eel like fishes. You can either boat around the lake from Virpazar or alternatively use the popular viewpoint, Pavlova Strana or the horseshoe bend at the northwest corner of the lake. If you are driving, it can be reached on M2.3, 5kms past Meterizi on the right where you see the sign for Rijeka Crnojevica. <br /><br /><em>Travel tip:Park at Virpazar where you will also find local eateries and restaurant (and a toilet) before you head to the lake. The boat tours also have stand here but do not go with the first one who approaches you. Take time to decide which tour would you like to take. Anything between 1-2 hours is enough. Train connection to the station in Virpazar is available from Podgorica and so is the bus connection. If you are taking the bus, don’t ask for Skadar as there is a similar please in Albania across the lake. Ask for Virpazar or the Skadar National Park and the driver may drop you few hundred meters from the park entrance, if you are lucky ofc.</em>"
+                    paraText: "One of the 5 National parks, lake Skadar is the biggest in Balkan Peninsula and boast of its diversity of flora and fauna. Surrounded by mountains and covered by wetland, it is home to migratory birds like Dalmation pelican, Herons and Seagulls and Carp, bleak and Eel like fishes. You can either boat around the lake from Virpazar or alternatively use the popular viewpoint, Pavlova Strana or the horseshoe bend at the northwest corner of the lake. If you are driving, it can be reached on M2.3, 5kms past Meterizi on the right where you see the sign for Rijeka Crnojevica. <br /><br />"
                 },
                 {
                     paraId: 8,
-                    paraText: "<br />That’s all from the beautiful country of Montenegro for now. Stay tuned for more offbeat places like this, which would leave you wowed but won’t break the bank!"
+                    paraText: "<em>Travel tip : Park at Virpazar where you will also find local eateries and restaurant (and a toilet) before you head to the lake. The boat tours also have stand here but do not go with the first one who approaches you. Take time to decide which tour would you like to take. Anything between 1-2 hours is enough. Train connection to the station in Virpazar is available from Podgorica and so is the bus connection. If you are taking the bus, don’t ask for Skadar as there is a similar please in Albania across the lake. Ask for Virpazar or the Skadar National Park and the driver may drop you few hundred meters from the park entrance, if you are lucky ofc.</em><br /><br />That’s all from the beautiful country of Montenegro for now. Stay tuned for more offbeat places like this, which would leave you wowed but won’t break the bank!"
                 }
 
             ],
             blockQuotes: [{
                 blockQuoteId: 1,
-                blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Ulcinj — Professor Nolt"
+                blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
 
         },
@@ -389,6 +368,10 @@ const blogList={
             blockQuotes: [{
                 blockQuoteId: 1,
                 blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
 
         },
@@ -520,6 +503,10 @@ const blogList={
             blockQuotes: [{
                 blockQuoteId: 1,
                 blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
 
         },
@@ -652,6 +639,10 @@ const blogList={
             blockQuotes: [{
                 blockQuoteId: 1,
                 blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
 
         },
@@ -679,61 +670,61 @@ const blogList={
             blogImageLib:[{
                 blockId:1,
                 fwHhImgURL11:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL11.jpg",
-                fwFhImgURL11:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL11.jpg",
-                hwHhImgURL11:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL11.jpg",
-                hwHhImgURL12:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL12.jpg",
+                //fwFhImgURL11:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL11.jpg",
+                //hwHhImgURL11:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL11.jpg",
+                //hwHhImgURL12:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL12.jpg",
                 hwFhImgURL11:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL11.jpg",
                 hwFhImgURL12:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL12.jpg",
             
             },
             {
                 blockId:2,
-                fwHhImgURL21:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL21.jpg",
+                //fwHhImgURL21:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL21.jpg",
                 fwFhImgURL21:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL21.jpg",
-                hwHhImgURL21:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL21.jpg",
-                hwHhImgURL22:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL22.jpg",
-                hwFhImgURL21:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL21.jpg",
-                hwFhImgURL22:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL22.jpg",
+                // hwHhImgURL21:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL21.jpg",
+                // hwHhImgURL22:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL22.jpg",
+                // hwFhImgURL21:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL21.jpg",
+                // hwFhImgURL22:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL22.jpg",
             
             },
             {
                 blockId:3,
-                fwHhImgURL31:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL31.jpg",
+                //fwHhImgURL31:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL31.jpg",
                 fwFhImgURL31:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL31.jpg",
-                hwHhImgURL31:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL31.jpg",
-                hwHhImgURL32:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL32.jpg",
-                hwFhImgURL31:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL31.jpg",
-                hwFhImgURL32:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL32.jpg",
+                // hwHhImgURL31:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL31.jpg",
+                // hwHhImgURL32:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL32.jpg",
+                // hwFhImgURL31:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL31.jpg",
+                // hwFhImgURL32:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL32.jpg",
             
             },
             {
                 blockId:4,
-                fwHhImgURL41:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL41.jpg",
-                fwFhImgURL41:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL41.jpg",
-                hwHhImgURL41:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL41.jpg",
-                hwHhImgURL42:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL42.jpg",
+                // fwHhImgURL41:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL41.jpg",
+                // fwFhImgURL41:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL41.jpg",
+                // hwHhImgURL41:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL41.jpg",
+                // hwHhImgURL42:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL42.jpg",
                 hwFhImgURL41:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL41.jpg",
                 hwFhImgURL42:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL42.jpg",
             
             },
             {
                 blockId:5,
-                fwHhImgURL51:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL51.jpg",
+                //fwHhImgURL51:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL51.jpg",
                 fwFhImgURL51:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL51.jpg",
                 hwHhImgURL51:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL51.jpg",
                 hwHhImgURL52:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL52.jpg",
-                hwFhImgURL51:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL51.jpg",
-                hwFhImgURL52:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL52.jpg",
+                //hwFhImgURL51:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL51.jpg",
+                //hwFhImgURL52:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL52.jpg",
             
             },
             {
                 blockId:6,
-                fwHhImgURL61:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL61.jpg",
+                //fwHhImgURL61:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL61.jpg",
                 fwFhImgURL61:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL61.jpg",
                 hwHhImgURL61:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL61.jpg",
                 hwHhImgURL62:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL62.jpg",
-                hwFhImgURL61:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL61.jpg",
-                hwFhImgURL62:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL62.jpg",
+                // hwFhImgURL61:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL61.jpg",
+                // hwFhImgURL62:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL62.jpg",
             
             }],
             blogYTImageLib:[
@@ -748,11 +739,11 @@ const blogList={
             blogParagraphs: [
                 {
                     paraId: 1,
-                    paraText: "Wynn once said “Las Vegas is sort of like how GOD would do it if he had money”…Neon lights, flashy cars, elaborate attires, night clubs, casinos, all in middle of the Mojave desert! The biggest oasis one could ever imagine….Absolutely in middle of nowhere. It has been on my bucket list for years, if not decades and though I have made multiple itineraries over the past years, somehow I could never arrange the logistics for this trip. I have always been either short of money (trust me flying from the European subcontinent to America is expensive) or enough holidays to make this dream come true. <br />Finally, I chose to make this happen during the Christmas holidays. Work here in the Great Britain is almost quiet from the 3rd week of December up to the New Year, and so, what better opportunity to embark on this adventurous trip. Vegas, here I come! Excitement trips you up right from the moment you step into to this magical city. As the aircraft hovered over the Vegas skyline, I could spot humongous building with bright colourful lights, most of which are hotels and casinos and signs big enough that you can read from far above in the sky.  I spotted the flash light from the top of a giant pyramid (Luxor it was), the tall tower of the Stratosphere, the Eiffel tower adorning the hotel Paris, the emerald green of the MGM and while I was busy spotting as many famous hotels I could, bang we were on the runway! I was far too excited to realise that I am finally going to step into this dreamworld."
+                    paraText: "Wynn once said “Las Vegas is sort of like how GOD would do it if he had money”. Neon lights, flashy cars, elaborate attires, night clubs, casinos, all in middle of the Mojave desert! The biggest oasis one could ever imagine….Absolutely in middle of nowhere. It has been on my bucket list for years, if not decades and though I have made multiple itineraries over the past years, somehow I could never arrange the logistics for this trip. I have always been either short of money (trust me flying from the European subcontinent to America is expensive) or enough holidays to make this dream come true. "
                 },
                 {
                     paraId: 2,
-                    paraText: "<br /><h4>Trip to 'THE STRIP:</h4> Truly a dreamworld, Vegas is all about the inordinate themed hotels, enormous casinos, exotic spa salons and grand ‘entertainment’! Everything about Vegas is grand, monumental, prodigious, and one who has been here seen that knows, Vegas doesn’t disappoint! ‘The Strip’ is how they refer to the long boulevard, which hosts the most celebrated and the prominent hotels and casinos in the entire world. It begins with the MGM Grand, the Luxor, the Excalibur and the Mandalay Bay on one end and continues to the New York, the Cosmopolitan, Paris and Planet Hollywood on the other. You then redefine grandeur and aristocracy with Bellagio, Caesar Palace, Venetian and the Wynn before Mirage and Treasure Island fill you up with surprise!"
+                    paraText: "<br />Finally, I chose to make this happen during the Christmas holidays. Work here in the Great Britain is almost quiet from the 3rd week of December up to the New Year, and so, what better opportunity to embark on this adventurous trip. Vegas, here I come! Excitement trips you up right from the moment you step into to this magical city. As the aircraft hovered over the Vegas skyline, I could spot humongous building with bright colourful lights, most of which are hotels and casinos and signs big enough that you can read from far above in the sky.  I spotted the flash light from the top of a giant pyramid (Luxor it was), the tall tower of the Stratosphere, the Eiffel tower adorning the hotel Paris, the emerald green of the MGM and while I was busy spotting as many famous hotels I could, bang we were on the runway! I was far too excited to realise that I am finally going to step into this dreamworld.<br /><br /><h4>Trip to 'THE STRIP' :</h4> Truly a dreamworld, Vegas is all about the inordinate themed hotels, enormous casinos, exotic spa salons and grand ‘entertainment’! Everything about Vegas is grand, monumental, prodigious, and one who has been here seen that knows, Vegas doesn’t disappoint! ‘The Strip’ is how they refer to the long boulevard, which hosts the most celebrated and the prominent hotels and casinos in the entire world. It begins with the MGM Grand, the Luxor, the Excalibur and the Mandalay Bay on one end and continues to the New York, the Cosmopolitan, Paris and Planet Hollywood on the other. You then redefine grandeur and aristocracy with Bellagio, Caesar Palace, Venetian and the Wynn before Mirage and Treasure Island fill you up with surprise!"
                 },
                 {
                     paraId: 3,
@@ -768,11 +759,11 @@ const blogList={
                 },
                 {
                     paraId: 6,
-                    paraText: "<br /><h4>The Venetian:</h4> Basilica, bell tower, gothic style palace, canals, Rialto bridge and gondolas…and no I am not talking about Venice! I am talking about a hotel is Vegas, the Venetian. Venetian hosts the Madame Tussauds wax museum, over 80 boutique stores on Grand Canal and a wide selection of dining choices including bistro fare at Thomas Keller’s Bouchon. <br /><br /><h4>Bellagio:</h4> And yes, the one I was truly waiting for was the famous Ocean’s Bellagio...well it isn’t called Ocean’s but is now almost synonym to the film. Lavish, majestic, posh, elaborate, impressive, gratifying all that which a hotel could be. Bellagio redefines luxury and grandeur and a Must Visit’ when you are in Vegas. The onsite restaurants and casino floor is next to none!"
+                    paraText: "<br /><h4>The Venetian:</h4> Basilica, bell tower, gothic style palace, canals, Rialto bridge and gondolas…and no I am not talking about Venice! I am talking about a hotel is Vegas, the Venetian. Venetian hosts the Madame Tussauds wax museum, over 80 boutique stores on Grand Canal and a wide selection of dining choices including bistro fare at Thomas Keller’s Bouchon. <br /><br />"
                 },
                 {
                     paraId: 7,
-                    paraText: "<br /><h4>Hotel Luxor:</h4>Next to MGM Grand on the boulevard is the great pyramid of Hotel Luxor, the obelisk, the sphinx and the pyramid itself, it is absolutely unmissable, not just from this Earth but from the ‘SPACE’. Yes! The flashlight I saw while landing at the Mc Carren Airport, is the iconic light on top of the pyramid which can be seen from space. Luxor is one of the oldest hotels and has been synonymous to Vegas for as long as it existed. As I walked inside the hollow, I realized that the faces of this pyramid in reality are the hotel rooms with slanted glass windows and roofs. Inside it has feel of an ancient Egyptian city with big statues of Egyptian gods and tall palm trees. <br /><br /><em>Funfact: Luxor’s pyramid is one of the tallest (350ft) in the world and falls just short of just two others in Giza, Egypt. And, its replica of the Sphinx is even larger than the Great Sphinx of Giza</em>"
+                    paraText: "<h4>Bellagio:</h4> And yes, the one I was truly waiting for was the famous Ocean’s Bellagio...well it isn’t called Ocean’s but is now almost synonym to the film. Lavish, majestic, posh, elaborate, impressive, gratifying all that which a hotel could be. Bellagio redefines luxury and grandeur and a Must Visit’ when you are in Vegas. The onsite restaurants and casino floor is next to none! <br /><br /><h4>Luxor:</h4>Next to MGM Grand on the boulevard is the great pyramid of Hotel Luxor, the obelisk, the sphinx and the pyramid itself, it is absolutely unmissable, not just from this Earth but from the ‘SPACE’. Yes! The flashlight I saw while landing at the Mc Carren Airport, is the iconic light on top of the pyramid which can be seen from space. Luxor is one of the oldest hotels and has been synonymous to Vegas for as long as it existed. As I walked inside the hollow, I realized that the faces of this pyramid in reality are the hotel rooms with slanted glass windows and roofs. Inside it has feel of an ancient Egyptian city with big statues of Egyptian gods and tall palm trees. <br /><br /><em>Funfact: Luxor’s pyramid is one of the tallest (350ft) in the world and falls just short of just two others in Giza, Egypt. And, its replica of the Sphinx is even larger than the Great Sphinx of Giza</em>"
                 },
                 {
                     paraId: 8,
@@ -782,7 +773,15 @@ const blogList={
             ],
             blockQuotes: [{
                 blockQuoteId: 1,
-                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+                blockQuoteText: "Las Vegas looks the way you would imagine heaven must look at night - Chuck Palahniuk"
+            },
+            {
+                blockQuoteId: 2,
+                blockQuoteText: "Las Vegas is the only place I know where money really talks. It says, Goodbye - Frank Sinatra"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
         },
         
@@ -913,6 +912,10 @@ const blogList={
             blockQuotes: [{
                 blockQuoteId: 1,
                 blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
         },
 
@@ -1043,6 +1046,10 @@ const blogList={
             blockQuotes: [{
                 blockQuoteId: 1,
                 blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
         },
         
@@ -1173,6 +1180,10 @@ const blogList={
             blockQuotes: [{
                 blockQuoteId: 1,
                 blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
 
         },
@@ -1304,6 +1315,10 @@ const blogList={
             blockQuotes: [{
                 blockQuoteId: 1,
                 blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
 
         },
@@ -1434,6 +1449,10 @@ const blogList={
             blockQuotes: [{
                 blockQuoteId: 1,
                 blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
 
         }

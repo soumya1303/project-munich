@@ -256,6 +256,7 @@ const Blog=(props)=>{
 
                                         <MainBlogSectionWrapper>
                                             {props.blogItem.blogParagraphs[7].paraText !=undefined && <ParagraphWrapper textContent={props.blogItem.blogParagraphs[7].paraText}/>}
+                                            {props.blogItem.blockQuotes[1].blockQuoteText != undefined && <BlockQuoteWrapper blockQuoteContent = {props.blogItem.blockQuotes[1].blockQuoteText} />}
                                         </MainBlogSectionWrapper>
                                         
                                         {/* <YouTubeLink 
