@@ -510,143 +510,109 @@ const blogList={
             }]
 
         },
-
         {
             blogId:1007,
-            title:"The India Connection",
-            author:"Soumyadeep Ghosh",
-            date:11,
-            month:"JUN",
-            year:2018,
-            readCount:4,
+            title:"Island of The Gods",
+            author:"Madhurima Ranu",
+            date:6,
+            month:"APR",
+            year:2016,
+            readCount:6,
             catKey: 1004,
             catId:"asiaandothers",
             relatedBlogId:[1001, 1002],
-            initContent:"As the winter approaches in India and one senses the chill in the northern wind, families would gather at the seaside temple town of Konark, in the eastern state of Odisha...",
+            initContent:"Island of Gods, Bali is part of the Indonesian archipelago and just 8 degrees south of equator. Pure tropical bliss with temperatures averaging 22 degs. in the central and ...",
             generalImageLib:{
-                bannerImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/bannerImgURL.jpg",
-                authorImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/authorImgURL.jpg",
-                titleImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/titleImgURL.jpg",
-                smallTitleImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/smallTitleImgURL.jpg",
-                mostReadImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/mostReadImgURL.jpg",
-                similarPostImgURL:"/images/category/asiaandafrica/blogs/bali/indiaandbali/similarPostImgURL.jpg",
+                bannerImgURL: "/images/category/asiaandafrica/blogs/bali/bannerImgURL.jpg",
+                authorImgURL: "/images/category/asiaandafrica/blogs/bali/authorImgURL.jpg",
+                titleImgURL: "/images/category/asiaandafrica/blogs/bali/titleImgURL.jpg",
+                smallTitleImgURL: "/images/category/asiaandafrica/blogs/bali/smallTitleImgURL.jpg",
+                mostReadImgURL: "/images/category/asiaandafrica/blogs/bali/mostReadImgURL.jpg",
+                similarPostImgURL:"/images/category/asiaandafrica/blogs/bali/similarPostImgURL.jpg"
             },
             blogImageLib:[{
                 blockId:1,
-                fwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL11.jpg",
-                fwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL11.jpg",
-                hwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL11.jpg",
-                hwHhImgURL12:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL12.jpg",
-                hwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL11.jpg",
-                hwFhImgURL12:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL12.jpg",
-            
+                fwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL11.jpg",
+                hwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL12.jpg",
             },
             {
                 blockId:2,
-                fwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL21.jpg",
-                fwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL21.jpg",
-                hwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL21.jpg",
-                hwHhImgURL22:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL22.jpg",
-                hwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL21.jpg",
-                hwFhImgURL22:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL22.jpg",
-            
+                fwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL21.jpg",
             },
             {
                 blockId:3,
-                fwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL31.jpg",
-                fwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL31.jpg",
-                hwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL31.jpg",
-                hwHhImgURL32:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL32.jpg",
-                hwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL31.jpg",
-                hwFhImgURL32:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL32.jpg",
-            
+                fwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL31.jpg",
             },
             {
                 blockId:4,
-                fwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL41.jpg",
-                fwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL41.jpg",
-                hwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL41.jpg",
-                hwHhImgURL42:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL42.jpg",
-                hwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL41.jpg",
-                hwFhImgURL42:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL42.jpg",
-            
+                fwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL41.jpg",   
             },
             {
                 blockId:5,
-                fwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL51.jpg",
-                fwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL51.jpg",
-                hwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL51.jpg",
-                hwHhImgURL52:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL52.jpg",
-                hwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL51.jpg",
-                hwFhImgURL52:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL52.jpg",
-            
+                fwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL51.jpg",
             },
             {
                 blockId:6,
-                fwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL61.jpg",
-                fwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL61.jpg",
-                hwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL61.jpg",
-                hwHhImgURL62:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL62.jpg",
-                hwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL61.jpg",
-                hwFhImgURL62:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL62.jpg",
-            
+                fwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL62.jpg",
+                
             }],
             blogYTImageLib:[
                 {   
                     blockId:1,
                     YTLinks:{
                         YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
-                        YTImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/content/ytImgURL.jpg"
+                        YTImgURL: "/images/category/asiaandafrica/blogs/bali/content/ytImgURL.jpg"
                     }
                 }
             ],
             blogParagraphs: [
                 {
                     paraId: 1,
-                    paraText: "As the winter approaches in India and one senses the chill in the northern wind, families would gather at the seaside temple town of Konark, in the eastern state of Odisha. Women would place small paper boats in the water and watch them float away. As the cool breeze blow from the north, the full moon would make the crashing waves glimmer.  Immortalized through rituals, this is how the families of the ancient mariners would have bid goodbye to their loved ones on their voyage to the Balinese archipelago 2000 years ago. Known as “Bali Yatra” (Voyage to Bali), a fair is held every year in the month of November here in Cuttack, the present-day capital of Odisha."
+                    paraText: "Island of Gods, Bali is part of the Indonesian archipelago and just 8 degrees south of equator. Pure tropical bliss with temperatures averaging 22 degs. in the central and hilly areas and reaching up to 27 deg. in the coastal areas. Sunrise over the volcanic mountains in the north to lush terraced paddy fields in the central plain continues to the wild and glorious coastline in the south, Bali offers extraordinary panoramic views at every step. It is not possible to see everything this mesmerising Island has to offer but anything you may manage to witness, is still going to leave an everlasting impression on you for a very long time. \nOff all my travels across multiple countries and continents, this is that one trip which is going to stay on my head and heart for a long time. Everytime some asks me about my favourite holiday, I can’t stop myself from saying ‘Bali, it is!’. \nEven though Indonesia is predominantly a Muslim country, Bali is a Hindu dominant island. It’s culture, food, art and craft all have Hindu influence and this is evident by a number of beautifully constructed Temples across the island. \nSo even though I didn’t go to Bali for any spiritual or religious reasons, I couldn’t stop visiting one temple after another after another. Here is a short column on what I did in the God’s own island."
                 },
                 {
                     paraId: 2,
-                    paraText: "<br />Ancient seamen knew enough about the monsoon winds and the ocean currents to sail down the coast to Ceylon. In Ceylon, they would fill their dinghy with fresh supplies before setting sail to the northern tip of Sumatra. (Called Swarnadwipa or Island of Gold). The youngsters and the more daring lot would head further south hugging the western coast to Java (Called Yavadwipa or the Island of Grain) and Bali. Along with nutmeg and cinnamon, the Indian merchants would also carry the stories of Lord Rama, the prince of mythical state of Ayodhya. Stories on how he had sent Sugriva, the monkey God and his chief of army staff, to Yavadwipa to find his missing wife Seeta. The merchants carried with them the ancient knowledge, wisdom, scriptures, science, medicines and more than anything else their religion, Hindiusm – The Sanatan Dharma. While some continued the journey, few younger ones found love in these alien lands and settled down happily with Bali Aga or Bali Mula (aborigine Balinese woman).  Like a bonfire turns into a bushfire in no time, Hinduism soon started taking roots at a most unusual places of all, thousands of miles away from where it originated."
+                    paraText: "<br /><h4>Day I - Ubud-Monkey Forest – Goa Gajah – Tirtha Empul</h4> We stayed in Ubud, which is an hour north of the Ngurah Rai International Airport and is also the centre of the Island. After a luxurious breakfast of lush tropical fruits and juices, we head out on our venture to discover this incredible island. First to the Sacred Monkey Forest Sanctuary. Set in the backdrop of the dense forests, Monkey forest sanctuary is home to three temples and several grey tailed macaques. Adorned with stone sculptures the temple and the temple ground gave me the feeling of being on an Indiana Jones movie…an ancient feel, tranquil jungle, stone platforms and sculptures covered with fern and mosses, an ancient mysterious water body and branches hanging so low that it almost touches the ground. <br /><br />Travel Tips: Don’t miss out the 14th Century Pura Dalem Agung Padanglegal – The temple of death, dedicated to Hindu God Shiva and the dragon staircase, adorned with hanging Banyan tree roots."
                 },
                 {
                     paraId: 3,
-                    paraText: "<br />The earliest evidence of this historic bond, that survived the test of time, still lies at the Ujung Kulon National Park, West Java. An archaeological relic of Lord Ganesha, The Elephant God, from the 1st century AD was found on the summit of Mount Raksa in Panaotan Island. By the time Fa Hsien, the great Chinese scholar, reached the Balinese shore in 414 AD, Hinduism was already well entrenched in the archipelago."
+                    paraText: "<br />My next stop was Goa Gajah. We grabbed a quick sandwich on the way so to make most of the day. Around 15mins taxi ride from the monkey forest/central Ubud, is this 11th century archaeologically significant Elephant caves, ‘Gajah’ is Elephant. Once at the site, please be aware that you would need to climb down few stairs, in case you have mobility restrictions. As you reach the bottom of the stairs, you will witness fascinating stone sculptures, rock carvings, stone bathing pools and fountains and with a menacing giant’s open mouth as the entrance, the central meditation cave. <br /><br /><em>Travel Tip: Sarong (wrap around skirt) is a must and can be borrowed at the ticketing office</em>"
                 },
-                
                 {
                     paraId: 4,
-                    paraText: "<br />Today the largest bastion of the Hindu religion resides in the magnificently picturesque island state of Bali, which has adopted Hinduism in its own way. It is called as Agama Hindu Dharma. It was originated from Java and is a blend of Shivaism and Buddhism. The religious and cultural impact of Hinduism on the Balinese island and her people are fascinating and are reflected in their lives, cultures and art forms. Take the example of the Mandala System, enforced by the kings in the 11th century. Seen in the structures of almost all Balinese temples, it divides the whole construction into 3 parts – (a) Jaba or the outer yard (b) Jaba Tengah or the middle yard and (c) Jeroan or the inner yard. The concept of Tri Mandala is inspired by the circle of life and the journey of the immortal soul as depicted in Hindu Puranas (a) Swarga Loka or The Kingdom of Gods (b) Martya Loka or The Human Kingdom and (c) The Patal Loka or The Home of The Fallen Gods and Demons. It may also be worthwhile to point out that each of the Balinese temple is associated with either of the three major Hindu Gods. Known as The Holy Trinity, Pura Puseh (Wisnu as the protector), Pura Desa (Brahma as creator) and Pura Dalem (Shiva as the destroyer) have captured and dominated the Balinese imagination from time immemorial. The reader may jump to our Travel Blog section to get to know some of the magnificent monuments dedicated to The Holy Trinity. These structures have stood firm against the test of time and have mesmerised tourists even since."
+                    paraText: "<br /><h4>Day II - Ubud – Taman Ayun – Ulun Danu Bratan – Tanha Lot </h4>I am certainly not a morning person, but when I am on holiday, I try to wake up early to make most of the day. After a quick breakfast of delicious banana pancakes (with sprinkle of grated coconut and palm sugar), we started for our tour to the west of Ubud, to visit the famous Taman Ayun Temple. About 19kms from Ubud central this temple is surrounded by several Meru towers, which are Pagoda like shrines and numerous water features. Away from the crowd and hustle bustle, the serene lush green temple ground is a very quiet and a peaceful place. I found it restful for my mind and body and equally refreshing for the soul. I could have sat here for hours uninterrupted, but my fascination for this wonderful island provoked me to get going to explore more. <br /><br /><em>Funfact: This temple garden is featured in the TV programme ‘Around the world in 80 gardens’. While in the garden, look out for a Barong in one of the out buildings</em>"
                 },
                 {
                     paraId: 5,
-                    paraText: "The effect of religion in Balinese life is so pervasive that most domestic households are designed based on the principles of a ‘Sacred Place.’ The houses are meant to be built precisely in the direction of the sun rising up or the location of the volcanoes. Between 6th-8th centuries the influence of classical Hindu and Buddhist architectural styles were in abundance in construction of temples, houses, village courtyards and public places. The principle of Kaja Kelod, is one of the main guidelines of the Balinese architecture. Kaja meaning Facing the Volcanoes and Kelod meaning Facing the Sea. This concept is often used in planning the placement of houses or temples in the villages. Sacred buildings, such as temples are placed in the Kaja section. Normal buildings, such as residential houses are usually placed in the Kelod section. <br /><br /><em>Fun Fact: For houses to get legalised in Bali, it cannot exceed the height of a coconut tree (roughly 15 meters)</em>"
+                    paraText: "<br />We hit the roads and our guides, Bima and Adi started to build the curiosity with our next destination, the most pronounced and the most photographed landmark of Bali, the Ulun Danu Bratan temple. \nLocated about 50kms north of Ubud in Lake Bratan, this temple is encircled with the scenic backdrop of the mountain range of the Bedugul region. It had rained earlier that day and the clouds were almost touching the lake which was adding onto the heavenly setting of this place. The stunningly picturesque view was beyond imagination, and I possibly can’t describe the beauty in words. I didn’t want to leave, more so this time and spend the afternoon soaking these views but I had to. Bima promised that we would not be disappointed anywhere we go on this island and any corner we chose to visit, so I should better get my lazy bum up and going. \nBima told is a couple of folklores as we head back south enjoying the alluring views on the way. We took a detour through the tiered paddy fields and had our lunch overlooking the lush green fields, which has been brought to life just with that early morning rain."
                 },
                 {
                     paraId: 6,
-                    paraText: "<br />As one travels through the island, one would find it hard to remain oblivious to the wonderfully crafted Hindu deities all throughout the island. The unique craftmanship to etch fluidity on stones, wooden planks or on bronze is on display in abundance. They are everywhere - at forks, bends, crossroads, roundabouts, in front of banks, malls and in foyers. Lord Hanuman, holding mountain Dronagiri to bring the life-saving drug to save Lakshman's life or Lord Krishna teaching Arjuna in the battle-field of Kurukshetra or Kuber, The King of Yakshas, protecting his enormous wealth – each sculpture tells you stories, stories that sailed along with the ancient seamen from the distant land of India."
+                    paraText: "<br />Tanha Lot, which means Land in the sea is a beautiful Hindu shrine with unique offshore setting.  Built on a rock, with the backdrop of Indian ocean amidst constantly crashing waves, it epitomises the mesmerising island of Bali. According to mythology a man named Dang Hyang Nirartha built the temple to worship Bhatara Segara – the sea god and created a poisonous snake to protect it. I heard the locals saying that many sea snakes still nest under the base of the temple. Scary! I didn’t dare to go to the rock but I would recommend caution if you do. <br /><br /><em>Trvale Tip: There are many shops near the entrance selling items of local art and handicraft and munchies like roasted monkey nuts and sweetcorn. I recommend you watch the sunset so get some munchies, grab a seat before it goes too crowded and watch the sun go down while you devour the sweetcorn</em>"
                 },
                 {
                     paraId: 7,
-                    paraText: "<br />On the south western coast of the island, on top of a cliff peeping over the Indian ocean, lies the Temple of Uluwatu, home of Lord Shiva (Rudra). Every evening, hundreds of men in black and white sarongs would sit in a lotus position to create a perfect silhouette in front of the setting sun."
+                    paraText: "<br /><h4>Day III - Ubud Lotus Temple (and Cafe) – Uluwatu Temple </h4> I was woken up around 4am with loud thunderstorm, lightening and tropical rain and thought it was a little scary I think I have never seen rain that beautiful in my entire life. I sat there watching the droplets hit the pool with a splash and that frequent lightening drowning the entire villa with brightness. I was tired and drowsy but it was far too intriguing and fascinating to take me back to my bed. As we were up and about early, we decided to head to Ubud town to visit the Lotus temple. Situated between Ubud palace and Puri Lukisan museum, it is a beautiful premise with a large lotus pond lined with magnolia trees and the Pura Taman Kemuda Saraswati (Hindu god of art, culture and learning) temple standing tall in the centre. It also hosts a café on site which serves traditional Balinese breakfast/lunch/dinner. We took the seats overlooking the pond and enjoyed the famous Pisang Goreng, fried banana with grated coconut and palm sugar."
                 },
                 {
                     paraId: 8,
-                    paraText: "<br />As the actors enact the story of Raksasha King Ravana luring Seeta away amidst chanting around the mystical ceremonial flames, one’s mind would travel backward in time to one’s ancient past, when few good men would set sail on their dinghy boats on moonlit nights into the darkness of the Indian ocean. Along with spices and herbs, they would bring along their religion, culture and tales from their mythical land, tales that would live and flourish for thousands of years...<br /><em><strong>References:</strong>  <ul><li>Indian Influences on Balinese Culture: The Role of Hinduism and Buddhism in Present Day Bali - by Ketut Ardhana and Nyoman Wijaya</li><li>The role of Hinduism and Buddhism in promoting Indianness outside India: Scenarios of Southeast Asia – by Rahul Das</li><li>A Short History of Bali Yatra festival - Swarajya</li><li>Ramayana and Mahabharata are alive and well in Bali – Sunday Guardian Live</li></ul></em>"
+                    paraText: "<br />Before we could delay any further and make an excuse to stay back for lunch, Bima and Adi arrived to continue our journey to probably the last temple on our list. The famous Uluwatu temple and the Kecak dance performance. \nAlmost an hour and twenty mins from Ubud and very close to the International airport, Uluwatu temple lies in the southern part of the island. It is one of the very famous temples on the island and is made more famous due to its unique setting. Hanging on a cliff, approx.. 70mts above the crashing waves and facing the Indian ocean, Uluwatu temple is also home to numerous notorious monkeys. <br /><br /><em>Travel Tip: Remember the tip from the Monkey Forest Sanctuary, don’t keep items of jewellery, food, wallet, sunglasses or anything of that sort loose while you are on the premises. \nWait for the sunset, as you won’t see a backdrop as gorgeous and spell bounding as this, anywhere else in the world. Just around sunset, the cliff side open amphitheatre hosts the famous Kecak dance. It is a dance performance based on the Hindu epic ‘Ramayana’</em> <br /><br />In this short duration, I have realised very easily why Bali is called ‘The land of thousand temples’. Unique architecture, magnificent history, intriguing folklores, fascinating locations, all put together these temples cast a spell on you which you can’t escape. And so in my heart I know I will be back, back to explore what I haven’t seen and what I haven’t experienced. \nI can’t recommend Bali enough to all of you readers, but hopefully through my blogs I have tried enough to at least convince you to shortlist this for your next holiday. Cheers to the mesmerising island of Bali!"
                 }
 
             ],
             blockQuotes: [{
                 blockQuoteId: 1,
-                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+                blockQuoteText: "Bali is more than a place. It’s a mood, it’s magical. It’s a tropical state of mind - Source Unknown"
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                blockQuoteText: "Promise yourself that one day you will wake up in Bali —  Source Unknown"
             }]
 
         },
-        
         {
             blogId:1006,
             title:"The Sin City",
@@ -657,7 +623,7 @@ const blogList={
             readCount:14,
             catKey: 1001,
             catId:"usa",
-            relatedBlogId:[1004, 1005],
+            relatedBlogId:[1004, 1005, 10061],
             initContent:"Wynn once said “Las Vegas is sort of like how God would do it if he had money...Neon lights, flashy cars, elaborate attires, night clubs, casinos, all in middle of the Mojave ...",
             generalImageLib:{
                 bannerImgURL: "/images/category/usa/blogs/las-vegas/bannerImgURL.jpg",
@@ -670,62 +636,39 @@ const blogList={
             blogImageLib:[{
                 blockId:1,
                 fwHhImgURL11:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL11.jpg",
-                //fwFhImgURL11:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL11.jpg",
-                //hwHhImgURL11:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL11.jpg",
-                //hwHhImgURL12:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL12.jpg",
                 hwFhImgURL11:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL11.jpg",
                 hwFhImgURL12:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL12.jpg",
             
             },
             {
                 blockId:2,
-                //fwHhImgURL21:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL21.jpg",
                 fwFhImgURL21:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL21.jpg",
-                // hwHhImgURL21:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL21.jpg",
-                // hwHhImgURL22:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL22.jpg",
-                // hwFhImgURL21:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL21.jpg",
-                // hwFhImgURL22:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL22.jpg",
             
             },
             {
                 blockId:3,
-                //fwHhImgURL31:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL31.jpg",
                 fwFhImgURL31:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL31.jpg",
-                // hwHhImgURL31:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL31.jpg",
-                // hwHhImgURL32:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL32.jpg",
-                // hwFhImgURL31:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL31.jpg",
-                // hwFhImgURL32:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL32.jpg",
-            
+                
             },
             {
                 blockId:4,
-                // fwHhImgURL41:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL41.jpg",
-                // fwFhImgURL41:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL41.jpg",
-                // hwHhImgURL41:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL41.jpg",
-                // hwHhImgURL42:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL42.jpg",
                 hwFhImgURL41:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL41.jpg",
                 hwFhImgURL42:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL42.jpg",
             
             },
             {
                 blockId:5,
-                //fwHhImgURL51:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL51.jpg",
                 fwFhImgURL51:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL51.jpg",
                 hwHhImgURL51:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL51.jpg",
                 hwHhImgURL52:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL52.jpg",
-                //hwFhImgURL51:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL51.jpg",
-                //hwFhImgURL52:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL52.jpg",
-            
+                
             },
             {
                 blockId:6,
-                //fwHhImgURL61:"/images/category/usa/blogs/las-vegas/content/fwHhImgURL61.jpg",
                 fwFhImgURL61:"/images/category/usa/blogs/las-vegas/content/fwFhImgURL61.jpg",
                 hwHhImgURL61:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL61.jpg",
                 hwHhImgURL62:"/images/category/usa/blogs/las-vegas/content/hwHhImgURL62.jpg",
-                // hwFhImgURL61:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL61.jpg",
-                // hwFhImgURL62:"/images/category/usa/blogs/las-vegas/content/hwFhImgURL62.jpg",
-            
+                
             }],
             blogYTImageLib:[
                 {   
@@ -784,7 +727,120 @@ const blogList={
                 //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
         },
-        
+        {
+            blogId:10061,
+            title:"The Strip",
+            author:"Madhurima Ranu",
+            date:7,
+            month:"MAY",
+            year:2018,
+            readCount:14,
+            catKey: 1001,
+            catId:"usa",
+            relatedBlogId:[1004, 1005, 1006],
+            initContent:"Wynn once said “Las Vegas is sort of like how God would do it if he had money...Neon lights, flashy cars, elaborate attires, night clubs, casinos, all in middle of the Mojave ...",
+            generalImageLib:{
+                bannerImgURL: "/images/category/usa/blogs/las-vegas/thestrip/bannerImgURL.jpg",
+                authorImgURL: "/images/category/usa/blogs/las-vegas/thestrip/authorImgURL.jpg",
+                titleImgURL: "/images/category/usa/blogs/las-vegas/thestrip/titleImgURL.jpg",
+                smallTitleImgURL: "/images/category/usa/blogs/las-vegas/thestrip/smallTitleImgURL.jpg",
+                mostReadImgURL: "/images/category/usa/blogs/las-vegas/thestrip/mostReadImgURL.jpg",
+                similarPostImgURL:"/images/category/usa/blogs/las-vegas/thestrip/similarPostImgURL.jpg",
+            },
+            blogImageLib:[{
+                blockId:1,
+                fwHhImgURL11:"/images/category/usa/blogs/las-vegas/thestrip/content/fwHhImgURL11.jpg",
+                hwFhImgURL11:"/images/category/usa/blogs/las-vegas/thestrip/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/usa/blogs/las-vegas/thestrip/content/hwFhImgURL12.jpg",
+            
+            },
+            {
+                blockId:2,
+                fwFhImgURL21:"/images/category/usa/blogs/las-vegas/thestrip/content/fwFhImgURL21.jpg",
+            
+            },
+            {
+                blockId:3,
+                fwFhImgURL31:"/images/category/usa/blogs/las-vegas/thestrip/content/fwFhImgURL31.jpg",
+                
+            },
+            {
+                blockId:4,
+                hwFhImgURL41:"/images/category/usa/blogs/las-vegas/thestrip/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/usa/blogs/las-vegas/thestrip/content/hwFhImgURL42.jpg",
+            
+            },
+            {
+                blockId:5,
+                fwFhImgURL51:"/images/category/usa/blogs/las-vegas/thestrip/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/usa/blogs/las-vegas/thestrip/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/usa/blogs/las-vegas/thestrip/content/hwHhImgURL52.jpg",
+                
+            },
+            {
+                blockId:6,
+                fwFhImgURL61:"/images/category/usa/blogs/las-vegas/thestrip/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/usa/blogs/las-vegas/thestrip/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/usa/blogs/las-vegas/thestrip/content/hwHhImgURL62.jpg",
+                
+            }],
+            blogYTImageLib:[
+                {   
+                    blockId:1,
+                    YTLinks:{
+                        YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
+                        YTImgURL: "/images/category/usa/blogs/las-vegas/thestrip/content/ytImgURL.jpg"
+                    }
+                }
+            ],
+            blogParagraphs: [
+                {
+                    paraId: 1,
+                    paraText: "Wynn once said “Las Vegas is sort of like how GOD would do it if he had money”. Neon lights, flashy cars, elaborate attires, night clubs, casinos, all in middle of the Mojave desert! The biggest oasis one could ever imagine….Absolutely in middle of nowhere. It has been on my bucket list for years, if not decades and though I have made multiple itineraries over the past years, somehow I could never arrange the logistics for this trip. I have always been either short of money (trust me flying from the European subcontinent to America is expensive) or enough holidays to make this dream come true. "
+                },
+                {
+                    paraId: 2,
+                    paraText: "<br />Finally, I chose to make this happen during the Christmas holidays. Work here in the Great Britain is almost quiet from the 3rd week of December up to the New Year, and so, what better opportunity to embark on this adventurous trip. Vegas, here I come! Excitement trips you up right from the moment you step into to this magical city. As the aircraft hovered over the Vegas skyline, I could spot humongous building with bright colourful lights, most of which are hotels and casinos and signs big enough that you can read from far above in the sky.  I spotted the flash light from the top of a giant pyramid (Luxor it was), the tall tower of the Stratosphere, the Eiffel tower adorning the hotel Paris, the emerald green of the MGM and while I was busy spotting as many famous hotels I could, bang we were on the runway! I was far too excited to realise that I am finally going to step into this dreamworld.<br /><br /><h4>Trip to 'THE STRIP' :</h4> Truly a dreamworld, Vegas is all about the inordinate themed hotels, enormous casinos, exotic spa salons and grand ‘entertainment’! Everything about Vegas is grand, monumental, prodigious, and one who has been here seen that knows, Vegas doesn’t disappoint! ‘The Strip’ is how they refer to the long boulevard, which hosts the most celebrated and the prominent hotels and casinos in the entire world. It begins with the MGM Grand, the Luxor, the Excalibur and the Mandalay Bay on one end and continues to the New York, the Cosmopolitan, Paris and Planet Hollywood on the other. You then redefine grandeur and aristocracy with Bellagio, Caesar Palace, Venetian and the Wynn before Mirage and Treasure Island fill you up with surprise!"
+                },
+                {
+                    paraId: 3,
+                    paraText: "<br /><h4>MGM Grand:</h4> At the southern end of the boulevard is MGM Grand, owned and operated by the MGM Resorts International. This hotel includes 5 outdoor pools, rivers and waterfalls and the largest casino in the Clark country. Don’t forget to take a selfie with the famous MGM lion. The best spot would be from The Tropicana, on the other side of the road. "
+                },
+                {
+                    paraId: 4,
+                    paraText: "<br /><h4>New York New York:</h4> A flavour of Big Apple here in Vegas, with a 150-foot replica of the Statue of Liberty and a giant 180 rollercoaster. And, to add a little sweetness, it hosts HERSHEY’S CHOCOLATE WORLD. A two storey pure chocolate delight, featuring all things Hershey’s! <br /><br /><em>Funfact: In addition to numerous onsite restaurants serving American and other international cuisine, NY features ‘Nine Fine Irishman’, an authentic pub that was built in Ireland and then shipped to the resort</em>"
+                },
+                {
+                    paraId: 5,
+                    paraText: "<br /><h4>Mandalay Bay:</h4>Another one of the MGM Hotels and Resorts, Mandalay Bay features an 11-acre beach with real sand and is famous for the Shark Reef Aquarium! Scary ha! I must not admit in public that I love gambling and so, my very best friend has decided that he would never let me go to Vegas on my own! Well, even with company I gambled some money and guess what Beginners luck (not literally) I did win some money here. I would now recommend you to surely go to Mandalay bay, and may be try one of the fruit machines (wink wink)...ah I am not suggesting that really!Big Michael Jackson fans hear out, it also is home to the MJ’s <em>One by Cirque du Soleil</em>"
+                },
+                {
+                    paraId: 6,
+                    paraText: "<br /><h4>The Venetian:</h4> Basilica, bell tower, gothic style palace, canals, Rialto bridge and gondolas…and no I am not talking about Venice! I am talking about a hotel is Vegas, the Venetian. Venetian hosts the Madame Tussauds wax museum, over 80 boutique stores on Grand Canal and a wide selection of dining choices including bistro fare at Thomas Keller’s Bouchon. <br /><br />"
+                },
+                {
+                    paraId: 7,
+                    paraText: "<h4>Bellagio:</h4> And yes, the one I was truly waiting for was the famous Ocean’s Bellagio...well it isn’t called Ocean’s but is now almost synonym to the film. Lavish, majestic, posh, elaborate, impressive, gratifying all that which a hotel could be. Bellagio redefines luxury and grandeur and a Must Visit’ when you are in Vegas. The onsite restaurants and casino floor is next to none! <br /><br /><h4>Luxor:</h4>Next to MGM Grand on the boulevard is the great pyramid of Hotel Luxor, the obelisk, the sphinx and the pyramid itself, it is absolutely unmissable, not just from this Earth but from the ‘SPACE’. Yes! The flashlight I saw while landing at the Mc Carren Airport, is the iconic light on top of the pyramid which can be seen from space. Luxor is one of the oldest hotels and has been synonymous to Vegas for as long as it existed. As I walked inside the hollow, I realized that the faces of this pyramid in reality are the hotel rooms with slanted glass windows and roofs. Inside it has feel of an ancient Egyptian city with big statues of Egyptian gods and tall palm trees. <br /><br /><em>Funfact: Luxor’s pyramid is one of the tallest (350ft) in the world and falls just short of just two others in Giza, Egypt. And, its replica of the Sphinx is even larger than the Great Sphinx of Giza</em>"
+                },
+                {
+                    paraId: 8,
+                    paraText: "<br />I didn’t get chance to visit all the famous Hotels and Casinos in my trip, Wynn, Planet Hollywood, Paris, Mirage and Rio to name a few. I did see the half scale 540 foot replica of the Eiffel Tower, replica of the Arc de Triomphe and the La Fontaine des mars from distance but I couldn’t spend enough time to absorb all it had to offer to its visitors.My positive self shouts ‘Do you know what does that mean?’ It implies I am going to Vegas AGAIN! That’s just the high level Trip to the Strip, head to my other post <em>Vegas – Dare to miss</em> to read more about the fun activities you could do while here"
+                }
+
+            ],
+            blockQuotes: [{
+                blockQuoteId: 1,
+                blockQuoteText: "Las Vegas looks the way you would imagine heaven must look at night - Chuck Palahniuk"
+            },
+            {
+                blockQuoteId: 2,
+                blockQuoteText: "Las Vegas is the only place I know where money really talks. It says, Goodbye - Frank Sinatra"
+            },
+            {
+                blockQuoteId: 2,
+                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+            }]
+        },
         {
             blogId:1005,
             title:"Las Vegas - Dare You Miss",
@@ -795,7 +851,7 @@ const blogList={
             readCount:11,
             catKey: 1001,
             catId:"usa",
-            relatedBlogId:[1004, 1006],
+            relatedBlogId:[1004, 1006, 10061],
             initContent:"Night! What night?! This city never sleeps and so whether it is middle of the day or the midnight, the hustle bustle, the glitter and the glamour and the romance and the charisma ...",
             generalImageLib:{
                 bannerImgURL: "/images/category/usa/blogs/las-vegas/vegas-dareumiss/bannerImgURL.jpg",
@@ -807,20 +863,11 @@ const blogList={
             },
             blogImageLib:[{
                 blockId:1,
-                fwHhImgURL11:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL11.jpg",
                 fwFhImgURL11:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL11.jpg",
-                hwHhImgURL11:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL11.jpg",
-                hwHhImgURL12:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL12.jpg",
-                hwFhImgURL11:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL11.jpg",
-                hwFhImgURL12:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL12.jpg",
-            
+                
             },
             {
                 blockId:2,
-                fwHhImgURL21:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL21.jpg",
-                fwFhImgURL21:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL21.jpg",
-                hwHhImgURL21:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL21.jpg",
-                hwHhImgURL22:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL22.jpg",
                 hwFhImgURL21:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL21.jpg",
                 hwFhImgURL22:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL22.jpg",
             
@@ -828,42 +875,24 @@ const blogList={
             {
                 blockId:3,
                 fwHhImgURL31:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL31.jpg",
-                fwFhImgURL31:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL31.jpg",
-                hwHhImgURL31:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL31.jpg",
-                hwHhImgURL32:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL32.jpg",
                 hwFhImgURL31:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL31.jpg",
                 hwFhImgURL32:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL32.jpg",
             
             },
             {
                 blockId:4,
-                fwHhImgURL41:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL41.jpg",
                 fwFhImgURL41:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL41.jpg",
                 hwHhImgURL41:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL41.jpg",
-                hwHhImgURL42:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL42.jpg",
-                hwFhImgURL41:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL41.jpg",
-                hwFhImgURL42:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL42.jpg",
-            
+                hwHhImgURL42:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL42.jpg", 
             },
             {
                 blockId:5,
-                fwHhImgURL51:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL51.jpg",
-                fwFhImgURL51:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL51.jpg",
-                hwHhImgURL51:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL51.jpg",
-                hwHhImgURL52:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL52.jpg",
-                hwFhImgURL51:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL51.jpg",
-                hwFhImgURL52:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL52.jpg",
-            
+                fwFhImgURL51:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL51.jpg",  
             },
             {
                 blockId:6,
-                fwHhImgURL61:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwHhImgURL61.jpg",
                 fwFhImgURL61:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/fwFhImgURL61.jpg",
-                hwHhImgURL61:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL61.jpg",
-                hwHhImgURL62:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwHhImgURL62.jpg",
-                hwFhImgURL61:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL61.jpg",
-                hwFhImgURL62:"/images/category/usa/blogs/las-vegas/vegas-dareumiss/content/hwFhImgURL62.jpg",
-            
+                
             }],
             blogYTImageLib:[
                 {   
@@ -881,41 +910,41 @@ const blogList={
                 },
                 {
                     paraId: 2,
-                    paraText: "<br />Remember the scene from the Ocean’s 11, with Brad Pitt, Matt Demon and the famous fountain show. It is really as mesmerising in real life as in reel. <br /><br /><em>Timings: Mon – Fri: Every 1/2hr from 3 – 8 p.m.(Sat 12-8pm) & every 15 minutes from 8 p.m. – midnight. Sundays: Fountain show begins at 11 a.m. and run every half hour until 7 p.m.</em>"
+                    paraText: "<h4>The Fountain Show at The Bellagio</h4><br />Remember the scene from the Ocean’s 11, with Brad Pitt, Matt Demon and the famous fountain show. It is really as mesmerising in real life as in reel. <br /><br /><em>Timings: Mon – Fri: Every 1/2hr from 3 – 8 p.m.(Sat 12-8pm) & every 15 minutes from 8 p.m. – midnight. Sundays: Fountain show begins at 11 a.m. and run every half hour until 7 p.m.</em>"
                 },
                 {
                     paraId: 3,
-                    paraText: "<br />The city simply never sleeps and neither does the enthusiasm of its people die with the setting sun. Whether it is noon, 12 midnight or 4am in the morning you will still find the casino floors full of people with hopeful eyes waiting for the win of the life time, the smiling waitress waiting for that hefty tip or the counterfeit Elvis on the street ever ready to be photographed with you. Whether it’s a warm sunny noon or spine-chilling cold winter evening, you will find the scantily dressed showgirl working for the generous cents along the strip. You could also spot a green giant stuffed man, feigned as the famous Hulk ever ready to amuse the kids and the other passersby. The list goes on and on..."
+                    paraText: "<h4>The Strip at Night</h4><br />The city simply never sleeps and neither does the enthusiasm of its people die with the setting sun. Whether it is noon, 12 midnight or 4am in the morning you will still find the casino floors full of people with hopeful eyes waiting for the win of the life time, the smiling waitress waiting for that hefty tip or the counterfeit Elvis on the street ever ready to be photographed with you. Whether it’s a warm sunny noon or spine-chilling cold winter evening, you will find the scantily dressed showgirl working for the generous cents along the strip. You could also spot a green giant stuffed man, feigned as the famous Hulk ever ready to amuse the kids and the other passersby. The list goes on and on..."
                 },
                 {
                     paraId: 4,
-                    paraText: "<br />Here is Vegas’s sweetest attraction and the most fun attraction…The M&M museum. I wanted all the toys and the ingeniously designed M&M dispensers, there was a motor cyclist, an aircraft, a police man and a stuffed toy to list a few...I couldn’t choose one, wish I could have it all. Here is the child in me, excited with the sight of colourful M&Ms even when I don’t like chocolates. I did buy some pressies for my young cousins and they were equally delighted. An absolute must, if you are out with a young one."
+                    paraText: "<h4>The Cosmopolitan</h4><br />The Cosmopolitan of Las Vegas is a destination in the heart of The Las Vegas Strip. This unique luxury resort & casino is unlike any other. Enjoy residential-styled living spaces with private terraces and breathtaking views of the Las Vegas skyline. Dining is reinvented with a one-of-a-kind restaurant collection featuring world-class chefs. Stylish design and art engage cultural sensibilities while a vibrant nightlife scene captivates perceptions. Combine it all with an eclectic mix of hand-selected boutiques, an unrivaled Pool District, a newly renovated casino and the serenity of Sahra Spa & Hammam to redefine your luxury resort experience."
                 },
                 {
                     paraId: 5,
-                    paraText: "<br />Time to head down to the musical and gaming capital of this city ‘The Fremont Street’. A pedestrian area in downtown Vegas famous for its energy, colours and music. While you stroll down the street you will notice numerous street performers or art sellers trying to catch your attention...I stopped to look over some of them and gosh! they are surely talented! Iconic wedding chapels, street food cafes, the famous gold and silver Pawn shop as featured in the famous TV show, the Pawn Stars and many such famous and sometime infamous spots adorn the downtown. Eat in one of the roadside cafes for a unique Fremont Street experience or dine in the famous and renowned Golden Nugget Hotel and Casino."
+                    paraText: "<h4>The M&M Museum</h4><br />Here is Vegas’s sweetest attraction and the most fun attraction…The M&M museum. I wanted all the toys and the ingeniously designed M&M dispensers, there was a motor cyclist, an aircraft, a police man and a stuffed toy to list a few...I couldn’t choose one, wish I could have it all. Here is the child in me, excited with the sight of colourful M&Ms even when I don’t like chocolates. I did buy some pressies for my young cousins and they were equally delighted. An absolute must, if you are out with a young one."
                 },
                 {
                     paraId: 6,
-                    paraText: "<br />Don’t miss the thrilling Slotzilla zip line experience, superhero style! Priced between $25-$45 (as of 2017). Or, dare to take the walking dead experience if you are brave enough to face zombies, errr I wasn’t. I can’t bear the thought of zombies, but I never claimed to be the adventurous sorts.<br /><br /><em>Travel Tips: Plan the Fremont Street visit for an evening as you wouldn’t want to miss out on the Viva Vision light show. It is displayed on a 1,500-foot-long and 90-foot-wide video screen and is set to music. The best part is...it is free for visitors! Yeahhhh! The show runs every hour from 6pm and lasts for about 6 mins.</em>"
+                    paraText: "<h4>The Freemont Street Experience</h4><br />Time to head down to the musical and gaming capital of this city ‘The Fremont Street’. A pedestrian area in downtown Vegas famous for its energy, colours and music. While you stroll down the street you will notice numerous street performers or art sellers trying to catch your attention...I stopped to look over some of them and gosh! they are surely talented! Iconic wedding chapels, street food cafes, the famous gold and silver Pawn shop as featured in the famous TV show, the Pawn Stars and many such famous and sometime infamous spots adorn the downtown. Eat in one of the roadside cafes for a unique Fremont Street experience or dine in the famous and renowned Golden Nugget Hotel and Casino."
                 },
                 {
                     paraId: 7,
-                    paraText: "<br />Visit to Freemont street is must even if you are in Vegas for a day. Don’t forget to read the ‘Stop over at Vegas’ blog if you only have 24hours in the city."
+                    paraText: "<br />Don’t miss the thrilling Slotzilla zip line experience, superhero style! Priced between $25-$45 (as of 2017). Or, dare to take the walking dead experience if you are brave enough to face zombies, errr I wasn’t. I can’t bear the thought of zombies, but I never claimed to be the adventurous sorts.<br /><br /><em>Travel Tips: Plan the Fremont Street visit for an evening as you wouldn’t want to miss out on the Viva Vision light show. It is displayed on a 1,500-foot-long and 90-foot-wide video screen and is set to music. The best part is...it is free for visitors! Yeahhhh! The show runs every hour from 6pm and lasts for about 6 mins.</em> Visit to Freemont street is must even if you are in Vegas for a day. Don’t forget to read the ‘Stop over at Vegas’ blog if you only have 24hours in the city."
                 },
                 {
                     paraId: 8,
-                    paraText: "<br />And, this is all I have for this famous, incredible and most extraordinary city from my bucket list. Vegas...it is!"
+                    // paraText: "<br />And, this is all I have for this famous, incredible and most extraordinary city from my bucket list. Vegas...it is!"
                 }
 
             ],
             blockQuotes: [{
                 blockQuoteId: 1,
-                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+                blockQuoteText: "Yes these heels are killing me but a couple of more drinks and I swear I shall forget I have feet !"
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                blockQuoteText: "What happens in Vegas stays in Vegas ... along with my dignity and liver"
             }]
         },
 
@@ -929,7 +958,7 @@ const blogList={
             readCount:3,
             catKey: 1001,
             catId:"usa",
-            relatedBlogId:[1005, 1006],
+            relatedBlogId:[1005, 1006, 10061],
             initContent:"It will take some effort not to notice her, even from 10000 feet up in the sky, as your flight starts to descend to The McCarran International Airport. An oasis of glittering ...",
             generalImageLib:{
                 bannerImgURL: "/images/category/usa/blogs/las-vegas/making-of-las-vegas/bannerImgURL.jpg",
@@ -1039,17 +1068,17 @@ const blogList={
                 },
                 {
                     paraId: 8,
-                    paraText: "<br />The trend started to change in 1966 when billionaire businessman Howard Hughes bought over a dozen hotels, slowly pushing out mobster-owned hotels that dominated the city. In 1989, Steve Wynn started a new trend in hotel design and construction: The Mega Hotel. He opened the Mirage, the first glamorous resort hotel in Las Vegas. Transformed over the next two decades, the Strip saw many developments inspired by iconic cities, such as New York, Paris, Rome, Luxor etc. Casino business were booming, tourists would flock to Vegas to see Frank Sinatra, Elvis Presley or Cirque du Soleil perform. By 1990, Las Vegas had more than 86,000 hotel rooms, with 13 of the 20 largest hotels on earth. <br /><br />The story of Vegas, from a tiny railway stopover in the middle of the Mojave Desert to becoming The Entertainment Capital of the World is remarkable. The story is written in blood and sweat of the workers at the dam, as much as, it is written in tears of those faceless young women who kept entertaining strangers through endless nights. The story of Vegas is about Elvis Presley’s performance in 1969 that turned his career around as much as it is about the human endeavour to build the first railway track in the middle of most desolate south Californian desert. <br /><br />The rest, as they say, is History."
+                    paraText: "<br />The trend started to change in 1966 when billionaire businessman Howard Hughes bought over a dozen hotels, slowly pushing out mobster-owned hotels that dominated the city. In 1989, Steve Wynn started a new trend in hotel design and construction: The Mega Hotel. He opened the Mirage, the first glamorous resort hotel in Las Vegas. Transformed over the next two decades, the Strip saw many developments inspired by iconic cities, such as New York, Paris, Rome, Luxor etc. Casino business were booming, tourists would flock to Vegas to see Frank Sinatra, Elvis Presley or Cirque du Soleil perform. By 1990, Las Vegas had more than 86,000 hotel rooms, with 13 of the 20 largest hotels on earth. <br /><br />The story of Vegas, from a tiny railway stopover in the middle of the Mojave Desert to becoming The Entertainment Capital of the World is remarkable. The story is written in blood and sweat of the workers at the dam, as much as, it is written in tears of those faceless young women who kept entertaining strangers through nights that ceased to end. The story of Vegas is about Elvis Presley’s performance in 1969 that turned his career around as much as it is about the human endeavour to build the first railway track in the middle of most desolate south Californian desert. <br /><br />The rest, as they say, is History."
                 }
 
             ],
             blockQuotes: [{
                 blockQuoteId: 1,
-                blockQuoteText: "Consectetur adipiscing elit, sed do num eiusmod tempor incididunt magina aliqua. Quis ipsum secto suspendise ultrces gravida"
+                blockQuoteText: "Las Vegas is a city built on hopes, dreams, and a little bit of crazy - Michael Mcdonald"
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                blockQuoteText: "No one thinks Las Vegas is real; it is illusion, but visitors willingly suspend disbelief and pretend - Hal Rothman"
             }]
         },
         
@@ -1324,82 +1353,82 @@ const blogList={
         },
         {
             blogId:1001,
-            title:"Island of The Gods",
-            author:"Madhurima Ranu",
-            date:6,
-            month:"APR",
-            year:2016,
-            readCount:6,
+            title:"The India Connection",
+            author:"Soumyadeep Ghosh",
+            date:11,
+            month:"JUN",
+            year:2018,
+            readCount:4,
             catKey: 1004,
             catId:"asiaandothers",
             relatedBlogId:[1002, 1007],
-            initContent:"Island of Gods, Bali is part of the Indonesian archipelago and just 8 degrees south of equator. Pure tropical bliss with temperatures averaging 22 degs. in the central and ...",
+            initContent:"As the winter approaches in India and one senses the chill in the northern wind, families would gather at the seaside temple town of Konark, in the eastern state of Odisha...",
             generalImageLib:{
-                bannerImgURL: "/images/category/asiaandafrica/blogs/bali/bannerImgURL.jpg",
-                authorImgURL: "/images/category/asiaandafrica/blogs/bali/authorImgURL.jpg",
-                titleImgURL: "/images/category/asiaandafrica/blogs/bali/titleImgURL.jpg",
-                smallTitleImgURL: "/images/category/asiaandafrica/blogs/bali/smallTitleImgURL.jpg",
-                mostReadImgURL: "/images/category/asiaandafrica/blogs/bali/mostReadImgURL.jpg",
-                similarPostImgURL:"/images/category/asiaandafrica/blogs/bali/similarPostImgURL.jpg"
+                bannerImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/bannerImgURL.jpg",
+                authorImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/authorImgURL.jpg",
+                titleImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/titleImgURL.jpg",
+                smallTitleImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/smallTitleImgURL.jpg",
+                mostReadImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/mostReadImgURL.jpg",
+                similarPostImgURL:"/images/category/asiaandafrica/blogs/bali/indiaandbali/similarPostImgURL.jpg",
             },
             blogImageLib:[{
                 blockId:1,
-                fwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL11.jpg",
-                fwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL11.jpg",
-                hwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL11.jpg",
-                hwHhImgURL12:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL12.jpg",
-                hwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL11.jpg",
-                hwFhImgURL12:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL12.jpg",
+                fwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL11.jpg",
+                fwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL11.jpg",
+                hwHhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL11.jpg",
+                hwHhImgURL12:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL12.jpg",
+                hwFhImgURL11:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL11.jpg",
+                hwFhImgURL12:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL12.jpg",
             
             },
             {
                 blockId:2,
-                fwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL21.jpg",
-                fwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL21.jpg",
-                hwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL21.jpg",
-                hwHhImgURL22:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL22.jpg",
-                hwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL21.jpg",
-                hwFhImgURL22:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL22.jpg",
+                fwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL21.jpg",
+                fwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL21.jpg",
+                hwHhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL21.jpg",
+                hwHhImgURL22:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL22.jpg",
+                hwFhImgURL21:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL21.jpg",
+                hwFhImgURL22:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL22.jpg",
             
             },
             {
                 blockId:3,
-                fwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL31.jpg",
-                fwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL31.jpg",
-                hwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL31.jpg",
-                hwHhImgURL32:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL32.jpg",
-                hwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL31.jpg",
-                hwFhImgURL32:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL32.jpg",
+                fwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL31.jpg",
+                fwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL31.jpg",
+                hwHhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL31.jpg",
+                hwHhImgURL32:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL32.jpg",
+                hwFhImgURL31:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL31.jpg",
+                hwFhImgURL32:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL32.jpg",
             
             },
             {
                 blockId:4,
-                fwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL41.jpg",
-                fwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL41.jpg",
-                hwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL41.jpg",
-                hwHhImgURL42:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL42.jpg",
-                hwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL41.jpg",
-                hwFhImgURL42:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL42.jpg",
+                fwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL41.jpg",
+                fwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL41.jpg",
+                hwHhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL41.jpg",
+                hwHhImgURL42:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL42.jpg",
+                hwFhImgURL41:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL41.jpg",
+                hwFhImgURL42:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL42.jpg",
             
             },
             {
                 blockId:5,
-                fwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL51.jpg",
-                fwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL51.jpg",
-                hwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL51.jpg",
-                hwHhImgURL52:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL52.jpg",
-                hwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL51.jpg",
-                hwFhImgURL52:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL52.jpg",
+                fwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL51.jpg",
+                fwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL51.jpg",
+                hwHhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL51.jpg",
+                hwHhImgURL52:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL52.jpg",
+                hwFhImgURL51:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL51.jpg",
+                hwFhImgURL52:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL52.jpg",
             
             },
             {
                 blockId:6,
-                fwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/content/fwHhImgURL61.jpg",
-                fwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/content/fwFhImgURL61.jpg",
-                hwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL61.jpg",
-                hwHhImgURL62:"/images/category/asiaandafrica/blogs/bali/content/hwHhImgURL62.jpg",
-                hwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL61.jpg",
-                hwFhImgURL62:"/images/category/asiaandafrica/blogs/bali/content/hwFhImgURL62.jpg",
+                fwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwHhImgURL61.jpg",
+                fwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/fwFhImgURL61.jpg",
+                hwHhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL61.jpg",
+                hwHhImgURL62:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwHhImgURL62.jpg",
+                hwFhImgURL61:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL61.jpg",
+                hwFhImgURL62:"/images/category/asiaandafrica/blogs/bali/indiaandbali/content/hwFhImgURL62.jpg",
             
             }],
             blogYTImageLib:[
@@ -1407,42 +1436,43 @@ const blogList={
                     blockId:1,
                     YTLinks:{
                         YTLink: "https://www.youtube.com/embed/qObSFfdfe7I",
-                        YTImgURL: "/images/category/asiaandafrica/blogs/bali/content/ytImgURL.jpg"
+                        YTImgURL: "/images/category/asiaandafrica/blogs/bali/indiaandbali/content/ytImgURL.jpg"
                     }
                 }
             ],
             blogParagraphs: [
                 {
                     paraId: 1,
-                    paraText: "Island of Gods, Bali is part of the Indonesian archipelago and just 8 degrees south of equator. Pure tropical bliss with temperatures averaging 22 degs. in the central and hilly areas and reaching up to 27 deg. in the coastal areas. Sunrise over the volcanic mountains in the north to lush terraced paddy fields in the central plain continues to the wild and glorious coastline in the south, Bali offers extraordinary panoramic views at every step. It is not possible to see everything this mesmerising Island has to offer but anything you may manage to witness, is still going to leave an everlasting impression on you for a very long time. \nOff all my travels across multiple countries and continents, this is that one trip which is going to stay on my head and heart for a long time. Everytime some asks me about my favourite holiday, I can’t stop myself from saying ‘Bali, it is!’. \nEven though Indonesia is predominantly a Muslim country, Bali is a Hindu dominant island. It’s culture, food, art and craft all have Hindu influence and this is evident by a number of beautifully constructed Temples across the island. \nSo even though I didn’t go to Bali for any spiritual or religious reasons, I couldn’t stop visiting one temple after another after another. Here is a short column on what I did in the God’s own island."
+                    paraText: "As the winter approaches in India and one senses the chill in the northern wind, families would gather at the seaside temple town of Konark, in the eastern state of Odisha. Women would place small paper boats in the water and watch them float away. As the cool breeze blow from the north, the full moon would make the crashing waves glimmer.  Immortalized through rituals, this is how the families of the ancient mariners would have bid goodbye to their loved ones on their voyage to the Balinese archipelago 2000 years ago. Known as “Bali Yatra” (Voyage to Bali), a fair is held every year in the month of November here in Cuttack, the present-day capital of Odisha."
                 },
                 {
                     paraId: 2,
-                    paraText: "<br /><h4>Day I - Ubud-Monkey Forest – Goa Gajah – Tirtha Empul</h4> We stayed in Ubud, which is an hour north of the Ngurah Rai International Airport and is also the centre of the Island. After a luxurious breakfast of lush tropical fruits and juices, we head out on our venture to discover this incredible island. First to the Sacred Monkey Forest Sanctuary. Set in the backdrop of the dense forests, Monkey forest sanctuary is home to three temples and several grey tailed macaques. Adorned with stone sculptures the temple and the temple ground gave me the feeling of being on an Indiana Jones movie…an ancient feel, tranquil jungle, stone platforms and sculptures covered with fern and mosses, an ancient mysterious water body and branches hanging so low that it almost touches the ground. <br /><br />Travel Tips: Don’t miss out the 14th Century Pura Dalem Agung Padanglegal – The temple of death, dedicated to Hindu God Shiva and the dragon staircase, adorned with hanging Banyan tree roots."
+                    paraText: "<br />Ancient seamen knew enough about the monsoon winds and the ocean currents to sail down the coast to Ceylon. In Ceylon, they would fill their dinghy with fresh supplies before setting sail to the northern tip of Sumatra. (Called Swarnadwipa or Island of Gold). The youngsters and the more daring lot would head further south hugging the western coast to Java (Called Yavadwipa or the Island of Grain) and Bali. Along with nutmeg and cinnamon, the Indian merchants would also carry the stories of Lord Rama, the prince of mythical state of Ayodhya. Stories on how he had sent Sugriva, the monkey God and his chief of army staff, to Yavadwipa to find his missing wife Seeta. The merchants carried with them the ancient knowledge, wisdom, scriptures, science, medicines and more than anything else their religion, Hindiusm – The Sanatan Dharma. While some continued the journey, few younger ones found love in these alien lands and settled down happily with Bali Aga or Bali Mula (aborigine Balinese woman).  Like a bonfire turns into a bushfire in no time, Hinduism soon started taking roots at a most unusual places of all, thousands of miles away from where it originated."
                 },
                 {
                     paraId: 3,
-                    paraText: "<br />My next stop was Goa Gajah. We grabbed a quick sandwich on the way so to make most of the day. Around 15mins taxi ride from the monkey forest/central Ubud, is this 11th century archaeologically significant Elephant caves, ‘Gajah’ is Elephant. Once at the site, please be aware that you would need to climb down few stairs, in case you have mobility restrictions. As you reach the bottom of the stairs, you will witness fascinating stone sculptures, rock carvings, stone bathing pools and fountains and with a menacing giant’s open mouth as the entrance, the central meditation cave. <br /><br /><em>Travel Tip: Sarong (wrap around skirt) is a must and can be borrowed at the ticketing office</em>"
+                    paraText: "<br />The earliest evidence of this historic bond, that survived the test of time, still lies at the Ujung Kulon National Park, West Java. An archaeological relic of Lord Ganesha, The Elephant God, from the 1st century AD was found on the summit of Mount Raksa in Panaotan Island. By the time Fa Hsien, the great Chinese scholar, reached the Balinese shore in 414 AD, Hinduism was already well entrenched in the archipelago."
                 },
+                
                 {
                     paraId: 4,
-                    paraText: "<br /><h4>Day II - Ubud – Taman Ayun – Ulun Danu Bratan – Tanha Lot </h4>I am certainly not a morning person, but when I am on holiday, I try to wake up early to make most of the day. After a quick breakfast of delicious banana pancakes (with sprinkle of grated coconut and palm sugar), we started for our tour to the west of Ubud, to visit the famous Taman Ayun Temple. About 19kms from Ubud central this temple is surrounded by several Meru towers, which are Pagoda like shrines and numerous water features. Away from the crowd and hustle bustle, the serene lush green temple ground is a very quiet and a peaceful place. I found it restful for my mind and body and equally refreshing for the soul. I could have sat here for hours uninterrupted, but my fascination for this wonderful island provoked me to get going to explore more. <br /><br /><em>Funfact: This temple garden is featured in the TV programme ‘Around the world in 80 gardens’. While in the garden, look out for a Barong in one of the out buildings</em>"
+                    paraText: "<br />Today the largest bastion of the Hindu religion resides in the magnificently picturesque island state of Bali, which has adopted Hinduism in its own way. It is called as Agama Hindu Dharma. It was originated from Java and is a blend of Shivaism and Buddhism. The religious and cultural impact of Hinduism on the Balinese island and her people are fascinating and are reflected in their lives, cultures and art forms. Take the example of the Mandala System, enforced by the kings in the 11th century. Seen in the structures of almost all Balinese temples, it divides the whole construction into 3 parts – (a) Jaba or the outer yard (b) Jaba Tengah or the middle yard and (c) Jeroan or the inner yard. The concept of Tri Mandala is inspired by the circle of life and the journey of the immortal soul as depicted in Hindu Puranas (a) Swarga Loka or The Kingdom of Gods (b) Martya Loka or The Human Kingdom and (c) The Patal Loka or The Home of The Fallen Gods and Demons. It may also be worthwhile to point out that each of the Balinese temple is associated with either of the three major Hindu Gods. Known as The Holy Trinity, Pura Puseh (Wisnu as the protector), Pura Desa (Brahma as creator) and Pura Dalem (Shiva as the destroyer) have captured and dominated the Balinese imagination from time immemorial. The reader may jump to our Travel Blog section to get to know some of the magnificent monuments dedicated to The Holy Trinity. These structures have stood firm against the test of time and have mesmerised tourists even since."
                 },
                 {
                     paraId: 5,
-                    paraText: "<br />We hit the roads and our guides, Bima and Adi started to build the curiosity with our next destination, the most pronounced and the most photographed landmark of Bali, the Ulun Danu Bratan temple. \nLocated about 50kms north of Ubud in Lake Bratan, this temple is encircled with the scenic backdrop of the mountain range of the Bedugul region. It had rained earlier that day and the clouds were almost touching the lake which was adding onto the heavenly setting of this place. The stunningly picturesque view was beyond imagination, and I possibly can’t describe the beauty in words. I didn’t want to leave, more so this time and spend the afternoon soaking these views but I had to. Bima promised that we would not be disappointed anywhere we go on this island and any corner we chose to visit, so I should better get my lazy bum up and going. \nBima told is a couple of folklores as we head back south enjoying the alluring views on the way. We took a detour through the tiered paddy fields and had our lunch overlooking the lush green fields, which has been brought to life just with that early morning rain."
+                    paraText: "The effect of religion in Balinese life is so pervasive that most domestic households are designed based on the principles of a ‘Sacred Place.’ The houses are meant to be built precisely in the direction of the sun rising up or the location of the volcanoes. Between 6th-8th centuries the influence of classical Hindu and Buddhist architectural styles were in abundance in construction of temples, houses, village courtyards and public places. The principle of Kaja Kelod, is one of the main guidelines of the Balinese architecture. Kaja meaning Facing the Volcanoes and Kelod meaning Facing the Sea. This concept is often used in planning the placement of houses or temples in the villages. Sacred buildings, such as temples are placed in the Kaja section. Normal buildings, such as residential houses are usually placed in the Kelod section. <br /><br /><em>Fun Fact: For houses to get legalised in Bali, it cannot exceed the height of a coconut tree (roughly 15 meters)</em>"
                 },
                 {
                     paraId: 6,
-                    paraText: "<br />Tanha Lot, which means Land in the sea is a beautiful Hindu shrine with unique offshore setting.  Built on a rock, with the backdrop of Indian ocean amidst constantly crashing waves, it epitomises the mesmerising island of Bali. According to mythology a man named Dang Hyang Nirartha built the temple to worship Bhatara Segara – the sea god and created a poisonous snake to protect it. I heard the locals saying that many sea snakes still nest under the base of the temple. Scary! I didn’t dare to go to the rock but I would recommend caution if you do. <br /><br /><em>Trvale Tip: There are many shops near the entrance selling items of local art and handicraft and munchies like roasted monkey nuts and sweetcorn. I recommend you watch the sunset so get some munchies, grab a seat before it goes too crowded and watch the sun go down while you devour the sweetcorn</em>"
+                    paraText: "<br />As one travels through the island, one would find it hard to remain oblivious to the wonderfully crafted Hindu deities all throughout the island. The unique craftmanship to etch fluidity on stones, wooden planks or on bronze is on display in abundance. They are everywhere - at forks, bends, crossroads, roundabouts, in front of banks, malls and in foyers. Lord Hanuman, holding mountain Dronagiri to bring the life-saving drug to save Lakshman's life or Lord Krishna teaching Arjuna in the battle-field of Kurukshetra or Kuber, The King of Yakshas, protecting his enormous wealth – each sculpture tells you stories, stories that sailed along with the ancient seamen from the distant land of India."
                 },
                 {
                     paraId: 7,
-                    paraText: "<br /><h4>Day III - Ubud Lotus Temple (and Cafe) – Uluwatu Temple </h4> I was woken up around 4am with loud thunderstorm, lightening and tropical rain and thought it was a little scary I think I have never seen rain that beautiful in my entire life. I sat there watching the droplets hit the pool with a splash and that frequent lightening drowning the entire villa with brightness. I was tired and drowsy but it was far too intriguing and fascinating to take me back to my bed. As we were up and about early, we decided to head to Ubud town to visit the Lotus temple. Situated between Ubud palace and Puri Lukisan museum, it is a beautiful premise with a large lotus pond lined with magnolia trees and the Pura Taman Kemuda Saraswati (Hindu god of art, culture and learning) temple standing tall in the centre. It also hosts a café on site which serves traditional Balinese breakfast/lunch/dinner. We took the seats overlooking the pond and enjoyed the famous Pisang Goreng, fried banana with grated coconut and palm sugar."
+                    paraText: "<br />On the south western coast of the island, on top of a cliff peeping over the Indian ocean, lies the Temple of Uluwatu, home of Lord Shiva (Rudra). Every evening, hundreds of men in black and white sarongs would sit in a lotus position to create a perfect silhouette in front of the setting sun."
                 },
                 {
                     paraId: 8,
-                    paraText: "<br />Before we could delay any further and make an excuse to stay back for lunch, Bima and Adi arrived to continue our journey to probably the last temple on our list. The famous Uluwatu temple and the Kecak dance performance. \nAlmost an hour and twenty mins from Ubud and very close to the International airport, Uluwatu temple lies in the southern part of the island. It is one of the very famous temples on the island and is made more famous due to its unique setting. Hanging on a cliff, approx.. 70mts above the crashing waves and facing the Indian ocean, Uluwatu temple is also home to numerous notorious monkeys. <br /><br /><em>Travel Tip: Remember the tip from the Monkey Forest Sanctuary, don’t keep items of jewellery, food, wallet, sunglasses or anything of that sort loose while you are on the premises. \nWait for the sunset, as you won’t see a backdrop as gorgeous and spell bounding as this, anywhere else in the world. Just around sunset, the cliff side open amphitheatre hosts the famous Kecak dance. It is a dance performance based on the Hindu epic ‘Ramayana’</em> <br />In this short duration, I have realised very easily why Bali is called ‘The land of thousand temples’. Unique architecture, magnificent history, intriguing folklores, fascinating locations, all put together these temples cast a spell on you which you can’t escape. And so in my heart I know I will be back, back to explore what I haven’t seen and what I haven’t experienced. \nI can’t recommend Bali enough to all of you readers, but hopefully through my blogs I have tried enough to at least convince you to shortlist this for your next holiday. Cheers to the mesmerising island of Bali!"
+                    paraText: "<br />As the actors enact the story of Raksasha King Ravana luring Seeta away amidst chanting around the mystical ceremonial flames, one’s mind would travel backward in time to one’s ancient past, when few good men would set sail on their dinghy boats on moonlit nights into the darkness of the Indian ocean. Along with spices and herbs, they would bring along their religion, culture and tales from their mythical land, tales that would live and flourish for thousands of years...<br /><em><strong>References:</strong>  <ul><li>Indian Influences on Balinese Culture: The Role of Hinduism and Buddhism in Present Day Bali - by Ketut Ardhana and Nyoman Wijaya</li><li>The role of Hinduism and Buddhism in promoting Indianness outside India: Scenarios of Southeast Asia – by Rahul Das</li><li>A Short History of Bali Yatra festival - Swarajya</li><li>Ramayana and Mahabharata are alive and well in Bali – Sunday Guardian Live</li></ul></em>"
                 }
 
             ],
@@ -1455,7 +1485,7 @@ const blogList={
                 //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
 
-        }
+        },
         
     ]
 }

@@ -362,6 +362,11 @@ const getStaticPaths = (context)=>{
             }
             },
             {params:{
+                        blogId:"10061",
+                        categoryId:"usa"
+            }
+            },
+            {params:{
                         blogId:"1005",
                         categoryId:"usa"
                     }
