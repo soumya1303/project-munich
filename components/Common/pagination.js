@@ -8,6 +8,11 @@ const Pagination = (props)=>{
     
     const pageCount =  blogCount%blogsPerPage === 0 ? blogCount/blogsPerPage : (blogCount-(blogCount%blogsPerPage))/blogsPerPage+1
 
+    /*
+        Logic explained:
+
+    */
+
     const paginatedBlogItemsList=[];
 
     var i=0;
@@ -19,25 +24,26 @@ const Pagination = (props)=>{
         for (var k=0; k<blogsPerPage; k++){
             props.blogList[i+k] !==undefined && blogItems.push(props.blogList[i+k])
         }
-        i=i+blogsPerPage;
+        
         var paginatedBlogItems = {
             id:id,
             pageNumber:pageNumber,
             blogItems:blogItems
         }
         paginatedBlogItemsList.push(paginatedBlogItems);
+
+        i = i + blogsPerPage;
     }
 
-    paginatedBlogItemsList.map((page)=>{
-        console.log(page)
-    })
+    
     
     return(
         <div className="pagination-div">
             <ul className="pagination">
                 {
                     paginatedBlogItemsList.map((e)=>{
-                        return (<PaginationLink 
+                        return (<PaginationLink
+                                    id="pagination_link_id"
                                     key={e.id} 
                                     pageNumber={e.pageNumber} 
                                     blogItems={e.blogItems} 
@@ -49,19 +55,6 @@ const Pagination = (props)=>{
         </div>
     )
     
-
-    /*
-    return (
-            <div className="pagination-div">
-                <ul className="pagination">
-                    <li><a className="page-number current" href="#">1</a></li>
-                    <li><a className="page-number" href="#">2</a></li>
-                    <li><a className="page-number" href="#">3</a></li>
-                    <li><a href="#">Older Post</a></li>
-                </ul>
-            </div>
-    )
-    */
 }
 
 export default Pagination;

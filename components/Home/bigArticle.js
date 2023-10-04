@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -6,18 +8,23 @@ import "aos/dist/aos.css";
 const BigArticle = (props)=>{
 
     return (
-            <article className="blog_post">
+            <article className="blog_post" id="big_article">
                 <div className="post_img" data-aos="overlay-left">
-                    <a href={`/category/${props.catId}/${props.blogId}`}><img src={props.imgSource} alt="blog" /></a>
+                    <Link href={`/category/${props.catId}/${props.blogId}`}>
+                        <Image src={props.imgSource} alt="blog" width={1170} height={710}/>
+                    </Link>
                     <div className="calendar">
-                        <a href={`/category/${props.catId}/${props.blogId}`}><span className="date">{props.date}</span><br />{props.month}</a>
+                        <Link href={`/category/${props.catId}/${props.blogId}`}>
+                            <span className="date">{props.date}</span><br />{props.month}
+                        </Link>
                     </div>
+                    
                 </div>
-                <div className="post_content">
+                <div className="post_content" id="big_article_post_content">
                     <div className="post_header">
-                        <div className="author"><a href="#"><i className="ion-android-create"></i>{props.author}</a></div>
-                        <h2 className="post_title">
-                            <a href={`/category/${props.catId}/${props.blogId}`}>{props.title}</a>
+                        <div className="author"><i className="ion-android-create"></i>{props.author}</div>
+                        <h2 className="post_title" id="big_article_post_title">
+                            <Link href={`/category/${props.catId}/${props.blogId}`}>{props.title}</Link>
                         </h2>
                     </div>
                     <div className="post_intro">
@@ -25,20 +32,20 @@ const BigArticle = (props)=>{
                     </div>
                     <div className="post_footer">
                         <div className="read_more" data-aos="fade-up" data-aos-duration="700">
-                            <a href={`/category/${props.catId}/${props.blogId}`}>{props.footer}</a>
+                            <Link href={`/category/${props.catId}/${props.blogId}`}>{props.footer}</Link>
                         </div>
                         <div className="post_share">
                             <ul className="share_list">
                                 <li data-aos="fade-up" data-aos-duration="500">
-                                    <a onClick={()=>{
+                                    <Link href="#big_article_post_title" onClick={()=>{
                                         window.open(`${props.masterURI.facebook.share}${props.masterURI.host.dev}/category/${props.catId}/${props.blogId}`, "", "width=500px, height=400px")
                                     }}>
                                         <i className="ion-social-facebook"></i>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li data-aos="fade-up" data-aos-duration="700"><a href="#"><i className="ion-social-twitter"></i></a></li>
                                 {/* <li data-aos="fade-up" data-aos-duration="900"><a href="#"><i className="ion-social-rss"></i></a></li> */}
-                                <li data-aos="fade-up" data-aos-duration="1100"><a href="#"><i className="ion-social-instagram"></i></a></li>
+                                {/* <li data-aos="fade-up" data-aos-duration="1100"><a href="#"><i className="ion-social-instagram"></i></a></li> */}
 
                             </ul>
                         </div>

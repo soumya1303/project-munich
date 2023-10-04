@@ -6,6 +6,9 @@ import MainBody from "../components/Common/mainBody";
 import MousePointer from "../components/Common/mousePointer";
 import BodyContent from "../components/Common/bodyContent";
 import TopContent from "../components/Common/topContent";
+import Pagination from "../components/Common/pagination";
+import SideBar from "../components/Common/sideBar";
+import FooterComponent from "../components/Common/footerComponent";
 
 import MainNavigation from "../components/Home/mainNavigation";
 import SocialHandleTopContainer from "../components/Home/socialHandleTopContainer";
@@ -24,9 +27,7 @@ import BigArticle from "../components/Home/bigArticle";
 import NewsLetter from "../components/Home/newsLetter";
 import MorePostWrapper from "../components/Home/morePostWrapper";
 import SmallArticleWrapper from "../components/Home/smallArticleWrapper";
-import Pagination from "../components/Common/pagination";
-import SideBar from "../components/Common/sideBar";
-import FooterComponent from "../components/Common/footerComponent";
+
 
 import blogList from "../public/blogListMaster";
 import categoryList from "../public/categoryListMaster";
@@ -108,7 +109,7 @@ const Home = (props)=> {
                 
                 <SliderImageWrapper>
                     {
-                      mostRecentThreeBlogs.map((b)=>{
+                        mostRecentThreeBlogs.map((b)=>{
                          
                         return <SwipeSlideImage key={b.blogId} imgSource={b.generalImageLib.authorImgURL}/>
                       })
