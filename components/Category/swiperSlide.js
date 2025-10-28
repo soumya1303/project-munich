@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const SwiperSlide = (props)=>{
     return (
         <React.Fragment>
@@ -10,13 +10,13 @@ const SwiperSlide = (props)=>{
                             <article className="blog_post">
                                 <div className="post_img">
                                     <div className="calendar">
-                                        <a href={`/category/${props.catId}/${props.blogId}`}><span className="date">{props.date}</span><br /> {props.month}</a>
+                                        <Link href={`/category/${props.catId}/${props.blogId}`}><span className="date">{props.date}</span><br /> {props.month}</Link>
                                     </div>
                                 </div>
                                 <div className="post_content">
                                     <div className="post_header">
                                         <h2 className="post_title">
-                                            <a href={`/category/${props.catId}/${props.blogId}`}>{props.title}</a>
+                                            <Link href={`/category/${props.catId}/${props.blogId}`}>{props.title}</Link>
                                         </h2>
                                     </div>
                                     <div className="post_intro">
@@ -24,7 +24,7 @@ const SwiperSlide = (props)=>{
                                     </div>
                                     <div className="post_footer">
                                         <div className="read_more">
-                                            <a href={`/category/${props.catId}/${props.blogId}`}>{props.footer}</a>
+                                            <Link href={`/category/${props.catId}/${props.blogId}`}>{props.footer}</Link>
                                         </div>
                                     </div>
                                 </div>

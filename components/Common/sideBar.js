@@ -1,4 +1,4 @@
-import React from "react";
+import {Fragment} from "react";
 import SideBarWrapper from "./sideBarWrapper";
 import AuthorProfileWrapper from "./authorProfileWrapper";
 import AboutAuthor from "./aboutAuthor";
@@ -14,7 +14,7 @@ const SideBar = (props)=>{
 
 
     return(
-        <React.Fragment>
+        <Fragment>
             <SideBarWrapper>
             
                 <AuthorProfileWrapper>
@@ -28,7 +28,7 @@ const SideBar = (props)=>{
                     </AboutAuthor>
                 </AuthorProfileWrapper>
                 
-                <Advert imgSource="/images/common/advert.png"/>
+                {/* <Advert imgSource="/images/common/advert.png"/> */}
 
                 <CategoryWrapper>
                     {
@@ -48,7 +48,7 @@ const SideBar = (props)=>{
 
                 <MostReadWrapper>
                     {
-                        props.recentBlogList.map((b)=>{
+                        props.mostReadBlogList.map((b)=>{
                             return (
                                 <MostReadPost 
                                     key={b.blogId}
@@ -63,7 +63,7 @@ const SideBar = (props)=>{
                 </MostReadWrapper>
 
             </SideBarWrapper>
-        </React.Fragment>
+        </Fragment>
     )
 
 }

@@ -1,11 +1,23 @@
-import React from "react";
 import Script from 'next/script';
+import { useState } from 'react';
 
+//Importing utility functions
+import parseDate from "../utilities/dateParser";
+import getInstaImages from "../utilities/instaImages";
+import getAllBlogs from "../utilities/allBlogs";
+import getAllCategories from "../utilities/allCategories";
+import getAuthorProfile from "../utilities/authorProfile";
+
+//Importing author UI components
 import MainBody from "../components/Common/mainBody";
-import PreLoader from "../components/Author/preLoader";
+import FooterComponent from "../components/Common/footerComponent";
 import BodyContent from "../components/Common/bodyContent";
 import TopContent from "../components/Common/topContent";
 import MousePointer from "../components/Common/mousePointer";
+import Pagination from '../components/Common/pagination';
+
+//Importing common UI components
+
 import MainNavigation from "../components/Author/mainNavigation";
 import AuthorHeader from "../components/Author/authorHeader";
 import MainContentWrapper from "../components/Author/mainContentWrapper";
@@ -13,28 +25,49 @@ import AuthorIntroWrapper from "../components/Author/authorIntroWrapper";
 import ImageContainer from "../components/Author/imageContainer";
 import ImageSwiperWrapper from "../components/Author/imageSwiperWrapper";
 import ImageSwiperSlide from "../components/Author/imageSwiperSlide";
-import Pagination from "../components/Author/pagination";
+//import Pagination from "../components/Author/pagination";
 import AuthorIntroTextContainer from "../components/Author/authorIntroTextContainer";
 import AuthorIntroText from "../components/Author/authorIntroText";
 import AuthorBottomWrapper from "../components/Author/authorBottomWrapper";
 import AuthorSignature from "../components/Author/authorSignature";
 import AuthorSocialProfile from "../components/Author/authorSocialProfile";
+import MorePostWrapper from "../components/Author/morePostWrapper";
+import SmallArticleWrapper from '../components/Author/smallArticleWrapper';
+import SubContentWrapper from "../components/Author/subContentWrapper";
+import SubContentLeftWrapper from "../components/Author/subContentLeftWrapper";
+
+import PreLoader from "../components/Author/preLoader";
 import AuthorPostsWrapper from "../components/Author/authorPostsWrapper";
 import PostSectionHeading from "../components/Author/postSectionHeading";
 import PostsFadeUpWrapper from "../components/Author/postsFadeUpWrapper";
 import PostsSwipperWrapper from  "../components/Author/postsSwipperWrapper";
 import SwipeCarousel from "../components/Author/swipeCarousel";
 import RecentSwipperPost from "../components/Author/recentSwipperPost";
-import FooterComponent from "../components/Common/footerComponent";
 
-import authorProfile from "../public/authorProfile";
-import blogList from "../public/blogListMaster";
-import categoryList from "../public/categoryListMaster";
-import instagramToken from "../public/instagramToken";
-import masterURI from "../public/masterURI";
 
-const Author = (props)=>{
+//Defining constants
+const INSTAGRAM_IMAGE_COUNT=6;
+const LATEST_X_BLOG_COUNT=6;
+const BLOGS_PAGINATION_PER_PAGE=2;
 
+const Author = ({authorProfileInfo, categoryList, blogList, instagramImgArr})=>{
+
+    var j=0;
+    const initPaginationItems=[];
+    blogList.forEach((b)=>{
+      if (j<BLOGS_PAGINATION_PER_PAGE){
+        initPaginationItems.push(b);
+      }
+      j++;
+    })
+
+    /* Managing state of paginated items to display items as per page number */
+  
+    const [paginationItems, setPaginationItems] = useState(initPaginationItems);
+
+    const handlePagination=(blogItems)=>{
+        setPaginationItems(blogItems);
+    }
 
     return (
         <MainBody>
@@ -43,7 +76,7 @@ const Author = (props)=>{
             <BodyContent>
                 
                 <TopContent>
-                    <MainNavigation imgSource="/images/common/logoTopLeft.png" catList={props.categoryList}/>
+                    <MainNavigation imgSource="/images/common/logoTopLeft.png" catList={categoryList}/>
                 </TopContent>
 
                 <AuthorHeader />
@@ -53,39 +86,43 @@ const Author = (props)=>{
                         <ImageContainer>
                             <ImageSwiperWrapper>
                                 {
-                                    props.authorProfileInfo.authMainImgLib.map((e)=>{
+                                        authorProfileInfo.authMainImgLib.map((e)=>{
                                         
                                         return <ImageSwiperSlide key={e.imgId} imgURL={e.imgSrc}/>
                                     })
                                 }
                             </ImageSwiperWrapper>
-                            <Pagination />
+                            {/* <Pagination /> */}
 
                         </ImageContainer>
 
                         <AuthorIntroTextContainer>
-                                <AuthorIntroText authProfileInfo = {props.authorProfileInfo}/>
+                                <AuthorIntroText authProfileInfo = {authorProfileInfo}/>
                                 <AuthorBottomWrapper>
-                                        <AuthorSignature imgSrc={props.authorProfileInfo.authSignatureImgSrc}/>
+                                        <AuthorSignature imgSrc={authorProfileInfo.authSignatureImgSrc}/>
                                         <AuthorSocialProfile />
                                 </AuthorBottomWrapper>
                         </AuthorIntroTextContainer>
                     
                     </AuthorIntroWrapper>
+
                     
-                    <AuthorPostsWrapper>
+                    
+                    {/* <AuthorPostsWrapper>
                         <PostSectionHeading />
                         <PostsFadeUpWrapper>
                             <PostsSwipperWrapper>
                                 {
-                                    props.recentBlogList.map((b)=>{
-                                        
+                                        recentBlogList.map((b)=>{
+
+                                        const dateObj = parseDate(b.created_dt);
+
                                         return <RecentSwipperPost 
                                                 key={b.blogId}
                                                 blogId={b.blogId}
                                                 catId={b.catId}
-                                                date={b.date}
-                                                month={`${b.month} ${b.year.toString().slice(2,4)}`}
+                                                date={dateObj.day}
+                                                month={`${dateObj.month} ${dateObj.year}`}
                                                 title={b.title}
                                                 imgSrc={b.generalImageLib.smallTitleImgURL}
                                                 author={b.author} />
@@ -95,13 +132,51 @@ const Author = (props)=>{
                             </PostsSwipperWrapper>
                             <SwipeCarousel />
                         </PostsFadeUpWrapper>
-                    </AuthorPostsWrapper>
+                    </AuthorPostsWrapper> */}
 
                 </MainContentWrapper>
 
+                    <SubContentWrapper>
+                        {/* <SubContentLeftWrapper> */}
+                            <MorePostWrapper>
+
+                            {
+                            
+                                paginationItems.map((b)=>{
+                                
+                                const dateObj = parseDate(b.created_dt);
+
+                                return <SmallArticleWrapper 
+                                        key={b.blogId}
+                                        blogId={b.blogId}
+                                        catId={b.catId}
+                                        date={dateObj.day}
+                                        month={`${dateObj.month} ${dateObj.year}`}
+                                        author={b.author}
+                                        title={b.title}
+                                        imgSource={b.generalImageLib.smallTitleImgURL}
+                                        itemsPerPage={BLOGS_PAGINATION_PER_PAGE}
+                                        />
+                            })
+                            }
+
+                            
+                            </MorePostWrapper>
+                    
+                            <Pagination 
+                            blogList={blogList} 
+                            itemsPerPage={BLOGS_PAGINATION_PER_PAGE} 
+                            onPageClick={handlePagination}
+                        
+                            />
+                        {/* </SubContentLeftWrapper> */}
+                    </SubContentWrapper>
+
+                
+
                 <FooterComponent 
                     logoImgSource="/images/common/logoBottomLeft.png"
-                    instagramImgArr={props.instagramImgArr}
+                    instagramImgArr={instagramImgArr}
                     imageLogoBig="/images/common/logo-big.png"
                 />
                 
@@ -118,49 +193,22 @@ const Author = (props)=>{
 export default Author;
 
 const getStaticProps = async ()=>{
-
-    const blogListArr = blogList.blogListArr;
-    var i=0;
-    const recentThreePostsByAuthor= [];
-    blogListArr.forEach((e)=>{
-            if (i<4){
-            if (e.author==="Madhurima Ranu"){
-                recentThreePostsByAuthor.push(e)
-                i++;
-            }
-            
-            }
-            
-    })
-
-    const resp = await fetch(`${instagramToken.uri}${instagramToken.tokens[1].tokenId}`, {
-        method:"GET",
-      });
-
-    const {data} = await resp.json();
     
-    const instaGramImgArr = data.filter((d)=>{
-        return d.media_type==="IMAGE"
-        
-    })
+    const categoryList=await getAllCategories();
 
-    const instaGramImgArrReduced=[];
-    var i=0;
-    instaGramImgArr.forEach((e)=>{
-        if (i<6){
-        instaGramImgArrReduced.push(e);
-        i++;
-        }
-    })
+    const instaArr=await getInstaImages(INSTAGRAM_IMAGE_COUNT);
+
+    const authorProfie=await getAuthorProfile();
+
+    const blogList=await getAllBlogs(LATEST_X_BLOG_COUNT);
 
     return (
         {
             props:{
-                masterURI:masterURI,
-                authorProfileInfo:authorProfile,
-                recentBlogList:recentThreePostsByAuthor,
-                categoryList:categoryList.categoryListArr,
-                instagramImgArr:instaGramImgArrReduced
+                authorProfileInfo:authorProfie,
+                blogList:blogList,
+                categoryList:categoryList,
+                instagramImgArr:instaArr
             }
         }
     )

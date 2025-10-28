@@ -1,10 +1,8 @@
 import React from "react";
-
+import Link from "next/link";
 const RenderSubMenu=(props)=>{
 
-    console.log(props.menuItem);
-
-    return (<li className="menu-item"><a href={`/category/${props.menuId}`}>{props.menuItem}</a></li>)
+    return (<li className="menu-item"><Link href={`/category/${props.menuId}`}>{props.menuItem}</Link></li>)
            
 }
 

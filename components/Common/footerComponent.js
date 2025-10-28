@@ -1,4 +1,4 @@
-import React from "react";
+import {memo} from "react";
 
 import MainFooterWrapper from "./mainFooterWrapper";
 import TopFooterWrapper from "./topFooterWrapper";
@@ -9,7 +9,7 @@ import InstagramItem from "./instagramItem";
 import StandardFooterElements from "./standardFooterElements";
 import BottomFooterCopyright from "./bottomFooterCopyright";
 
-const FooterComponent = (props)=>{
+const FooterComponent =  (props)=>{
 
     return(
         <MainFooterWrapper>

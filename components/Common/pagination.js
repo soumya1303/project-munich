@@ -1,18 +1,12 @@
-import React from "react";
+
 import PaginationLink  from "./paginationLink";
 
-const Pagination = (props)=>{
+const Pagination = ({blogList, itemsPerPage, onPageClick})=>{
+
+    var blogCount = blogList.length;    
     
-    var blogCount = props.blogList.length;
-    var blogsPerPage=2;
+    const pageCount =  blogCount%itemsPerPage === 0 ? blogCount/itemsPerPage : (blogCount-(blogCount%itemsPerPage))/itemsPerPage+1;
     
-    const pageCount =  blogCount%blogsPerPage === 0 ? blogCount/blogsPerPage : (blogCount-(blogCount%blogsPerPage))/blogsPerPage+1
-
-    /*
-        Logic explained:
-
-    */
-
     const paginatedBlogItemsList=[];
 
     var i=0;
@@ -21,8 +15,8 @@ const Pagination = (props)=>{
         var id=j;
         var pageNumber=j+1;
         var blogItems=[];
-        for (var k=0; k<blogsPerPage; k++){
-            props.blogList[i+k] !==undefined && blogItems.push(props.blogList[i+k])
+        for (var k=0; k<itemsPerPage; k++){
+            blogList[i+k] !==undefined && blogItems.push(blogList[i+k])
         }
         
         var paginatedBlogItems = {
@@ -32,11 +26,9 @@ const Pagination = (props)=>{
         }
         paginatedBlogItemsList.push(paginatedBlogItems);
 
-        i = i + blogsPerPage;
+        i = i + itemsPerPage;
     }
 
-    
-    
     return(
         <div className="pagination-div">
             <ul className="pagination">
@@ -47,7 +39,7 @@ const Pagination = (props)=>{
                                     key={e.id} 
                                     pageNumber={e.pageNumber} 
                                     blogItems={e.blogItems} 
-                                    onPageClick = {props.onPageClick}
+                                    onPageClick = {onPageClick}
                                     />)
                     })
                 }

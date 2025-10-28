@@ -1,15 +1,27 @@
-import React, {useState, useEffect} from "react";
-
+import {useState, Fragment} from "react";
 import Script from 'next/script';
+import Head from "next/head";
 
+//Importing utility functions
+import parseDate from "../utilities/dateParser";
+import getInstaImages from "../utilities/instaImages";
+import getAllBlogs from "../utilities/allBlogs";
+import getAllCategories from "../utilities/allCategories";
+import getAuthorProfile from "../utilities/authorProfile";
+import getMostReadBlogs from "../utilities/mostReadBlogs";
+
+
+//Importing common UI components
 import MainBody from "../components/Common/mainBody";
 import MousePointer from "../components/Common/mousePointer";
 import BodyContent from "../components/Common/bodyContent";
 import TopContent from "../components/Common/topContent";
 import Pagination from "../components/Common/pagination";
 import SideBar from "../components/Common/sideBar";
+import NewsLetter from "../components/Common/newsLetter";
 import FooterComponent from "../components/Common/footerComponent";
 
+//Importing home UI components
 import MainNavigation from "../components/Home/mainNavigation";
 import SocialHandleTopContainer from "../components/Home/socialHandleTopContainer";
 import ThemeSlider from "../components/Home/themeSlider";
@@ -24,23 +36,22 @@ import MainContentWrapper from "../components/Home/mainContentWrapper";
 import MainContentLeftWrapper from "../components/Home/mainContentLeftWrapper";
 import BlogList from "../components/Home/blogList";
 import BigArticle from "../components/Home/bigArticle";
-import NewsLetter from "../components/Home/newsLetter";
 import MorePostWrapper from "../components/Home/morePostWrapper";
 import SmallArticleWrapper from "../components/Home/smallArticleWrapper";
 
+//Defining constants
+const INSTAGRAM_IMAGE_COUNT=6;
+const MOST_RECENT_BLOG_COUNT=2;
+const RECENT_BLOG_COUNT=3;
+const EARLIER_BLOGS_PAGINATION_PER_PAGE=2;
+const MOST_READ_BLOG_COUNT_MAX_LIMIT=3;
 
-import blogList from "../public/blogListMaster";
-import categoryList from "../public/categoryListMaster";
-import authorProfie from "../public/authorProfile";
-import instagramToken from "../public/instagramToken";
-import masterURI from "../public/masterURI";
 
-const Home = (props)=> {
+const Home = ({blogList, categoryList, authorProfie, instagramImgArr, mostRead})=> {
 
-  const categoryListArr = props.categoryList.categoryListArr;
-  const blogList = props.blogList.blogListArr;
-  const mostRecentThreeBlogs= [];
-  const recentThreeBlogs=[];
+
+  const mostRecentBlogs= [];
+  const recentBlogs=[];
   const earlierBlogs=[];
 
   /* Pagination code starts here */
@@ -49,10 +60,10 @@ const Home = (props)=> {
 
   blogList.forEach((b)=>{
     
-    if(i<2){
-      mostRecentThreeBlogs.push(b);
-    }else if (i<5){
-      recentThreeBlogs.push(b);
+    if(i < MOST_RECENT_BLOG_COUNT){
+      mostRecentBlogs.push(b);
+    }else if (i<(MOST_RECENT_BLOG_COUNT+RECENT_BLOG_COUNT)){
+      recentBlogs.push(b);
     }else {
       earlierBlogs.push(b);
     }
@@ -62,12 +73,14 @@ const Home = (props)=> {
   var j=0;
   const initPaginationItems=[];
   earlierBlogs.forEach((b)=>{
-      if (j<2){
+      if (j<EARLIER_BLOGS_PAGINATION_PER_PAGE){
         initPaginationItems.push(b);
       }
       j++;
   })
 
+  /* Managing state of paginated items to display items as per page number */
+  
   const [paginationItems, setPaginationItems] = useState(initPaginationItems);
 
   const handlePagination=(blogItems)=>{
@@ -75,10 +88,8 @@ const Home = (props)=> {
   }
 
 
-  /* Pagination code ends here */
-
   return (
-    <React.Fragment>
+    <Fragment>
 
       <MainBody>
           {/* <PreLoader /> */}
@@ -86,21 +97,24 @@ const Home = (props)=> {
           <MousePointer />
           <BodyContent>
             <TopContent>
-              <MainNavigation imgSource="/images/common/logoTopLeft.png" catList={categoryListArr}/>
+              <MainNavigation imgSource="/images/common/logoTopLeft.png" catList={categoryList}/>
               <SocialHandleTopContainer />
               <ThemeSlider>
                 <SliderTextWrapper>
                     {
-                      mostRecentThreeBlogs.map((b)=>{
+                        mostRecentBlogs.map((b)=>{
+
+                        const dateObj = parseDate(b.created_dt);
+
                         return <SwipeSlide 
-                        key={b.blogId}
-                        blogId={b.blogId}
-                        catId={b.catId}
-                        date={b.date.toString()} 
-                        month={`${b.month} ${b.year.toString().slice(2,4)}`}
-                        title={b.title}
-                        initContent={b.initContent}
-                        footer="Continue Reading"
+                          key={b.blogId}
+                          blogId={b.blogId}
+                          catId={b.catId}
+                          date={dateObj.day}
+                          month={`${dateObj.month} ${dateObj.year}`}
+                          title={b.title}
+                          initContent={b.initContent}
+                          footer="Continue Reading"
                         />
                       })
                     }
@@ -109,9 +123,9 @@ const Home = (props)=> {
                 
                 <SliderImageWrapper>
                     {
-                        mostRecentThreeBlogs.map((b)=>{
+                        mostRecentBlogs.map((b)=>{
                          
-                        return <SwipeSlideImage key={b.blogId} imgSource={b.generalImageLib.authorImgURL}/>
+                        return <SwipeSlideImage key={b.blogId} imgSource={b.generalImageLib.heroImgURL}/>
                       })
                     }
                     
@@ -122,7 +136,7 @@ const Home = (props)=> {
             <FeaturCategoryWrapper>
 
                 {
-                  categoryListArr.map((c)=>{
+                  categoryList.map((c)=>{
                     return <FeatureCategoryItem 
                             key={c.catId}
                             imgSource={c.imgURL}
@@ -139,19 +153,22 @@ const Home = (props)=> {
                 <BlogList>
 
                   {
-                    recentThreeBlogs.map((b)=>{
+                      recentBlogs.map((b)=>{
+
+                      const dateObj = parseDate(b.created_dt);
+
                       return <BigArticle 
                               key={b.blogId}
                               blogId={b.blogId}
                               catId={b.catId}
-                              date={b.date.toString()}
-                              month={`${b.month} ${b.year.toString().slice(2,4)}`}
+                              date={dateObj.day}
+                              month={`${dateObj.month} ${dateObj.year}`}
                               author={b.author}
                               title={b.title}
                               initContent={b.initContent}
                               imgSource={b.generalImageLib.titleImgURL}
                               footer="CONTINUE READING "
-                              masterURI={props.masterURI}
+                              
                               />
                     })
                   }
@@ -163,17 +180,21 @@ const Home = (props)=> {
                 <MorePostWrapper>
 
                       {
-                        //earlierBlogs.map((b)=>{
-                        paginationItems.map((b)=>{
+                        
+                          paginationItems.map((b)=>{
+                          
+                          const dateObj = parseDate(b.created_dt);
+
                           return <SmallArticleWrapper 
                                   key={b.blogId}
                                   blogId={b.blogId}
                                   catId={b.catId}
-                                  date={b.date.toString()}
-                                  month={`${b.month} ${b.year.toString().slice(2,4)}`}
+                                  date={dateObj.day}
+                                  month={`${dateObj.month} ${dateObj.year}`}
                                   author={b.author}
                                   title={b.title}
                                   imgSource={b.generalImageLib.smallTitleImgURL}
+                                  itemsPerPage={EARLIER_BLOGS_PAGINATION_PER_PAGE}
                                   />
                         })
                       }
@@ -181,21 +202,26 @@ const Home = (props)=> {
                       
                 </MorePostWrapper>
                 
-                <Pagination blogList={earlierBlogs} onPageClick={handlePagination}/>
+                <Pagination 
+                    blogList={earlierBlogs} 
+                    itemsPerPage={EARLIER_BLOGS_PAGINATION_PER_PAGE} 
+                    onPageClick={handlePagination}
+                    
+                />
               
               </MainContentLeftWrapper>
 
               <SideBar 
-                authorProfie={props.authorProfie}
-                categoryList={props.categoryList.categoryListArr}
-                recentBlogList={mostRecentThreeBlogs}
+                authorProfie={authorProfie}
+                categoryList={categoryList}
+                mostReadBlogList={mostRead}
               />
 
             </MainContentWrapper>
 
             <FooterComponent 
               logoImgSource="/images/common/logoBottomLeft.png"
-              instagramImgArr={props.instagramImgArr}
+              instagramImgArr={instagramImgArr}
               imageLogoBig="/images/common/logo-big.png"
               
             />
@@ -207,41 +233,32 @@ const Home = (props)=> {
 
       </MainBody>
       
-    </React.Fragment>
+    </Fragment>
   )
 }
 
 export default Home;
 
-const getStaticProps = async ()=>{
+const getStaticProps = async (context)=>{
 
-  const resp = await fetch(`${instagramToken.uri}${instagramToken.tokens[1].tokenId}`, {
-    method:"GET",
-  });
-
-  const {data} = await resp.json();
+  const categoryList=await getAllCategories();
   
-  const instaGramImgArr = data.filter((d)=>{
-      return d.media_type==="IMAGE"
-      
-  })
+  const instaArr=await getInstaImages(INSTAGRAM_IMAGE_COUNT);
 
-  const instaGramImgArrReduced=[];
-  var i=0;
-  instaGramImgArr.forEach((e)=>{
-    if (i<6){
-      instaGramImgArrReduced.push(e);
-      i++;
-    }
-  })
+  const authorProfie=await getAuthorProfile();
 
+  const blogList=await getAllBlogs();
+
+  const mostRead=await getMostReadBlogs(MOST_READ_BLOG_COUNT_MAX_LIMIT);
+  
   return({
     props:{
-      masterURI:masterURI,
+      
       blogList:blogList,
       categoryList:categoryList,
       authorProfie:authorProfie,
-      instagramImgArr:instaGramImgArrReduced
+      instagramImgArr:instaArr,
+      mostRead:mostRead
     }
   })
 

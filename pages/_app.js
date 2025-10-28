@@ -20,15 +20,17 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 */
 
 /* Custom CSS */
+
 import "/styles/style.css";
 import "/styles/menu.css";
 import "/styles/ionicons/css/ionicons.css";
 import "/styles/plugins/swiper/swiper.css";
 import "/styles/font-awesome/css/font-awesome.css";
 
-import type { AppProps } from "next/app";
+//import type { AppProps } from "next/app";
 
-const App = ({ Component, pageProps }: AppProps)=> {
+// const App = ({ Component, pageProps }: AppProps)=> {
+  const App = ({ Component, pageProps } )=> {
 
   return (
   
@@ -39,10 +41,11 @@ const App = ({ Component, pageProps }: AppProps)=> {
         <meta charSet="utf-8"></meta>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-        <meta name="description" content="Life in a bagpack" />
+        <meta name="description" content="Welcome to our travel blog, Its Wanderful Life.  we an an Indian couple living in the UK for last two decades and writing the cronicles of our visits to countries near and far.We research destinations before we jump on to the plane. So far we have visited 30 odd countries across Europe, North & Central America, Asia and Africa. And this list keeps growing. Here you will find hottest destinations, what to expect, what to see, experience and eat. If we can inspire fellow travellers to explore the world at theor own pace we will consider our effort to be worthwhile." />
         <meta name="author" content="" />
 
-        <meta property="og:image" content={undefined!==pageProps.blogItem ? `${pageProps.masterURI.host.dev}${pageProps.blogItem.generalImageLib.titleImgURL}`:""}/>
+        {/* <meta property="og:image" content={undefined!==pageProps.blogItem ? `${pageProps.masterURI.host.dev}${pageProps.blogItem.generalImageLib.titleImgURL}`:""}/> */}
+        <meta property="og:image" content={undefined!==pageProps.blogItem ? `${process.env.host_server}${pageProps.blogItem.generalImageLib.titleImgURL}`:""}/>
         <meta property="og:title" content={undefined!==pageProps.blogItem ? pageProps.blogItem.title:""}/>
         <meta property="og:type" content="Blog"/>
         <meta property="og:description" content={undefined!==pageProps.blogItem ? pageProps.blogItem.initContent : ""}/>

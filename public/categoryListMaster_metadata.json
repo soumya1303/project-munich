@@ -1,0 +1,11 @@
+{
+    "categoryListArr":[
+        {
+            "catKey":"number",
+            "catId": "usa",
+            "catDesc": "United States",
+            "imgURL":"/images/category/usa/usa.jpg",
+            "postCount":"number"
+        }
+    ]
+} 

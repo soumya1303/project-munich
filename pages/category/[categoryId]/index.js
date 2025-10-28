@@ -1,13 +1,29 @@
-import React from "react";
+import {Fragment} from "react";
 import { useState } from "react";
 import Script from "next/script";
+import Head from "next/head";
 import {useRouter} from "next/router"; 
 
+//Importing utility functions
+import parseDate from "../../../utilities/dateParser";
+import getInstaImages from "../../../utilities/instaImages";
+import getCategoryByCatId from "../../../utilities/categoryByCatId"
+import getBlogsByCategoryId from "../../../utilities/blogsByCategoryId";
+import getAllCategories from "../../../utilities/allCategories";
+import getAuthorProfile from "../../../utilities/authorProfile";
+import getMostReadBlogs from "../../../utilities/mostReadBlogs"; 
+
+//Importing common UI components
 import MainBody from "../../../components/Common/mainBody";
 import MousePointer from "../../../components/Common/mousePointer";
 import BodyContent from "../../../components/Common/bodyContent";
 import TopContent from "../../../components/Common/topContent";
+import Pagination from "../../../components/Common/pagination";
+import SideBar from "../../../components/Common/sideBar";
+import FooterComponent from "../../../components/Common/footerComponent";
+import NewsLetter from "../../../components/Common/newsLetter";
 
+//Importing blog specific UI components
 import MainNavigation from "../../../components/Category/mainNavigation";
 import ThemeSliderWrapper from "../../../components/Category/themeSliderWrapper";
 import SwiperContainerWrapper from "../../../components/Category/swiperContainerWrapper";
@@ -20,24 +36,42 @@ import BigArticleWrapper from "../../../components/Category/BigArticleWrapper";
 import BigArticle from "../../../components/Category/bigArticle";
 import SmallArticleWrapper from "../../../components/Category/SmallArticleWrapper";
 import SmallArticle from "../../../components/Category/smallArticle";
-import Pagination from "../../../components/Common/pagination";
-import SideBar from "../../../components/Common/sideBar";
-import FooterComponent from "../../../components/Common/footerComponent";
 
-import blogList from "../../../public/blogListMaster";
-import categoryList from "../../../public/categoryListMaster";
-import authorProfie from "../../../public/authorProfile";
-import instagramToken from "../../../public/instagramToken";
-import masterURI from "../../../public/masterURI";
 
-const Category = (props)=>{
+//Defining constants
+const INSTAGRAM_IMAGE_COUNT=6;
+const MOST_RECENT_BLOG_COUNT=1;
+const RECENT_BLOG_COUNT=2;
+const EARLIER_BLOGS_PAGINATION_PER_PAGE=2;
+const MOST_READ_BLOG_COUNT_MAX_LIMIT=3;
+
+const Category = ({blogList, category, categoryList, instagramImgArr, authorProfie, mostRead})=>{
+
+
+    const mostRecentBlogs=[];
+    const recentBlogs=[];
+    const earlierBlogs=[];
+
+    var i=0;
+
+    blogList.forEach((b)=>{
+    
+        if(i < MOST_RECENT_BLOG_COUNT){
+            mostRecentBlogs.push(b);
+        }else if (i<(MOST_RECENT_BLOG_COUNT+RECENT_BLOG_COUNT)){
+            recentBlogs.push(b);
+        }else {
+            earlierBlogs.push(b);
+        }
+        i=i+1;
+    });
 
     /* Pagination code starts here */
 
     var j=0;
     const initPaginationItems=[];
-    props.recentBlogList.forEach((b)=>{
-      if (j<2){
+    earlierBlogs.forEach((b)=>{
+      if (j<EARLIER_BLOGS_PAGINATION_PER_PAGE){
         initPaginationItems.push(b);
       }
       j++;
@@ -52,26 +86,33 @@ const Category = (props)=>{
     /* Pagination code ends here */
 
     return(
-        <React.Fragment>
+        <Fragment>
+            <Head>
+                <title>{category.catDesc}</title>
+                <meta name="description" content={category.searchEngineText}/>
+            </Head>
             <MainBody>
                 <MousePointer />
                 <BodyContent>
                     
                     <TopContent>
-                        <MainNavigation imgSource="/images/common/logo-white.png" catList={props.categoryList}/>
+                        <MainNavigation imgSource="/images/common/logo-white.png" catList={categoryList}/>
                         <ThemeSliderWrapper>
                             <SwiperContainerWrapper>
                                 <SwiperWrapper>
 
                                     {
-                                        props.selectBlogList.map((b)=>{
+                                            mostRecentBlogs.map((b)=>{
+
+                                            const dateObj = parseDate(b.created_dt);
+
                                             return <SwiperSlide
                                                 key={b.blogId}
                                                 blogId={b.blogId}
                                                 catId={b.catId}
                                                 imgSource={b.generalImageLib.bannerImgURL}
-                                                date={b.date.toString()}
-                                                month={`${b.month} ${b.year.toString().slice(2,4)}`}
+                                                date={dateObj.day}
+                                                month={`${dateObj.month} ${dateObj.year}`}
                                                 title={b.title}
                                                 initContent={b.initContent}
                                                 footer="Continue Reading"
@@ -90,35 +131,40 @@ const Category = (props)=>{
                         <MainContentLeftWrapper>
                             <BigArticleWrapper>
                                 {
-                                    props.recentBlogList.map((b)=>{
+                                        recentBlogs.map((b)=>{
+                                        const dateObj = parseDate(b.created_dt);
                                         return <BigArticle
                                             key={b.blogId}
                                             blogId={b.blogId}
                                             catId={b.catId}
                                             imgSource={b.generalImageLib.titleImgURL}
-                                            date={b.date.toString()}
-                                            month={`${b.month} ${b.year.toString().slice(2,4)}`}
+                                            date={dateObj.day}
+                                            month={`${dateObj.month} ${dateObj.year}`}
                                             author={b.author}
                                             title={b.title}
                                             initContent={b.initContent}
                                             footer="Continue Reading"
-                                            masterURI={props.masterURI}
+                                            
                                             />
                                     })
                                 }
 
                             </BigArticleWrapper>
+
+                            <NewsLetter />
+
                             <SmallArticleWrapper>
 
                                     {
                                         paginationItems.map((b)=>{
+                                            const dateObj = parseDate(b.created_dt);
                                             return <SmallArticle
                                                 key={b.blogId}
                                                 blogId={b.blogId}
                                                 catId={b.catId}
                                                 imgSource={b.generalImageLib.smallTitleImgURL}
-                                                date={b.date.toString()}
-                                                month={`${b.month} ${b.year.toString().slice(2,4)}`}
+                                                date={dateObj.day}
+                                                month={`${dateObj.month} ${dateObj.year}`}
                                                 author={b.author}
                                                 title={b.title}
                                             />
@@ -128,20 +174,27 @@ const Category = (props)=>{
 
                             </SmallArticleWrapper>
 
-                            <Pagination blogList={props.recentBlogList} onPageClick={handlePagination}/>
+                            <Pagination 
+                                blogList={earlierBlogs} 
+                                itemsPerPage={EARLIER_BLOGS_PAGINATION_PER_PAGE} 
+                                onPageClick={handlePagination}
+                    
+                            />
+                        
+                        
                         </MainContentLeftWrapper>
 
                         <SideBar 
-                            authorProfie={props.authorProfie}
-                            categoryList={props.categoryList}
-                            recentBlogList={props.recentBlogList}
+                            authorProfie={authorProfie}
+                            categoryList={categoryList}
+                            mostReadBlogList={mostRead}
                         />
                         
                     </MainContentWrapper>
                     
                     <FooterComponent 
                         logoImgSource="/images/common/logoBottomLeft.png"
-                        instagramImgArr={props.instagramImgArr}
+                        instagramImgArr={instagramImgArr}
                         imageLogoBig="/images/common/logo-big.png"
                         
                     />
@@ -152,38 +205,21 @@ const Category = (props)=>{
 
             </MainBody>
 
-        </React.Fragment>
+        </Fragment>
     )
 }
 
 export default Category;
 
-const getStaticPaths = (context)=>{
-    return({
-        paths:[
-            {
-                params:{
-                    categoryId:"usa"
-                }
-            },
-            {
-                params:{
-                    categoryId:"brit"
-                }
-            },
-            {
-                params:{
-                    categoryId:"europe"
-                }
-            },
-            {
-                params:{
-                    categoryId:"asiaandothers"
-                }
-            }
-        ],
+const getStaticPaths = async ()=>{
+
+    const categoryList=await getAllCategories();
+
+    return ({
+        paths: categoryList.map((e)=>{return {params:{categoryId:e.catId}}}),
         fallback:true
-    })
+    });
+
 }
 
 const getStaticProps = async (context)=>
@@ -191,60 +227,41 @@ const getStaticProps = async (context)=>
 
     const catId = context.params.categoryId;
 
-    const selectBlogListArr = blogList.blogListArr.filter((b)=>{
-        return b.catId === catId
-        
-    })
-    
-    const selectBlogListArrReduced=[];
-    var n=0;
-    selectBlogListArr.forEach((b)=>{
-        if (n<2){
-            selectBlogListArrReduced.push(b)
-        }
-        n++;
-    })
+    const category=await getCategoryByCatId(catId);
 
-    const recentBlogListArr = [];
-    var i=0;
-    
-    selectBlogListArr.forEach((b)=>{
-        if (i<3){
-            recentBlogListArr.push(b)
-        }
-        i++;
-    })
-    
-    const resp = await fetch(`${instagramToken.uri}${instagramToken.tokens[1].tokenId}`, {
-        method:"GET",
-      });
+    const categoryList=await getAllCategories();
 
-    const {data} = await resp.json();
-    
-    const instaGramImgArr = data.filter((d)=>{
-        return d.media_type==="IMAGE"
-        
-    })
+    const blogList = await getBlogsByCategoryId(catId);
 
-    const instaGramImgArrReduced=[];
-    var j=0;
-    instaGramImgArr.forEach((e)=>{
-        if (j<6){
-            instaGramImgArrReduced.push(e);
-            j++;
-        }
-    })
+    const instaArr=await getInstaImages(INSTAGRAM_IMAGE_COUNT);
+
+    const authorProfie=await getAuthorProfile();
+
+    const mostRead=await getMostReadBlogs(MOST_READ_BLOG_COUNT_MAX_LIMIT);
+
+    if (!category || categoryList.length===0 || blogList.length===0){
+        return ({
+            props:{
+                notFound:true,
+
+            }
+            }
+            
+        )
+    }
 
     return(
         {
             props:  {
-                        selectBlogList:selectBlogListArrReduced,
-                        recentBlogList: recentBlogListArr,
-                        categoryList:categoryList.categoryListArr,
+                        category:category,
+                        categoryList:categoryList,
+                        blogList:blogList,
+                        instagramImgArr:instaArr,
                         authorProfie:authorProfie,
-                        instagramImgArr:instaGramImgArrReduced,
-                        masterURI:masterURI,
-                    }
+                        mostRead:mostRead
+                    },
+            revalidate:60000,
+            
         }
     )
   

@@ -1,0 +1,22 @@
+{
+    "name": "string", 
+    "introInitContent": "string",
+    "imgURL": "string",
+    "fbFollower":"number",
+    "twtrFollower":"number",
+    "instaFollower":"number",
+    "authMainImgLib":[
+        {
+            "imgId":"number",
+            "imgSrc":"string"
+        }
+    ],
+    "introParagraphs":[
+        {
+            "paraId":1,
+            "paraText":"number"
+        }
+    ],
+    "authSignatureImgSrc":"/images/author/signature.png"
+}
+

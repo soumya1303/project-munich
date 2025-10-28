@@ -16,7 +16,7 @@
                 "initContent": "Type: String",
                 "generalImageLib": {
                     "bannerImgURL": "Type: String Size: (1920 x 1044)",
-                    "authorImgURL": "Type: String Size: (876 x 1000)",
+                    "heroImgURL": "Type: String Size: (876 x 1000)",
                     "titleImgURL": "Type: String Size: (1170 x 710)",
                     "smallTitleImgURL": "Type: String Size: (370 x 467)",
                     "mostReadImgURL": "Type: String Size: (370 x 225)",

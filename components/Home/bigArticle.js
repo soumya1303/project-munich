@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
-import AOS from "aos";
+
 import "aos/dist/aos.css";
 
 const BigArticle = (props)=>{
@@ -11,7 +10,7 @@ const BigArticle = (props)=>{
             <article className="blog_post" id="big_article">
                 <div className="post_img" data-aos="overlay-left">
                     <Link href={`/category/${props.catId}/${props.blogId}`}>
-                        <Image src={props.imgSource} alt="blog" width={1170} height={710}/>
+                        <Image src={props.imgSource} alt="blog" width={772} height={470}/>
                     </Link>
                     <div className="calendar">
                         <Link href={`/category/${props.catId}/${props.blogId}`}>
@@ -38,7 +37,7 @@ const BigArticle = (props)=>{
                             <ul className="share_list">
                                 <li data-aos="fade-up" data-aos-duration="500">
                                     <Link href="#big_article_post_title" onClick={()=>{
-                                        window.open(`${props.masterURI.facebook.share}${props.masterURI.host.dev}/category/${props.catId}/${props.blogId}`, "", "width=500px, height=400px")
+                                        window.open(`${process.env.facebook_share_url}${process.env.host_server}/category/${props.catId}/${props.blogId}`, "", "width=500px, height=400px")
                                     }}>
                                         <i className="ion-social-facebook"></i>
                                     </Link>

@@ -1,12 +1,10 @@
 const blogList={
     blogListArr:[
         {
-            blogId:1009,
+            blogId:10021,
             title:"Cotswold Lavender Fields",
             author:"Madhurima Ranu",
-            date:17,
-            month:"JUL",
-            year:2019,
+            date:"17-JUL-2019",
             readCount:9,
             catKey: 1002,
             catId:"brit",
@@ -130,17 +128,14 @@ const blogList={
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
             }]
 
         },
         {
-            blogId:1011,
+            blogId:10031,
             title:"Montenegro in 48 Hours",
             author:"Madhurima Ranu",
-            date:6,
-            month:"FEB",
-            year:2019,
+            date:"06-FEB-2019",
             readCount:8,
             catKey: 1003,
             catId:"europe",
@@ -236,17 +231,15 @@ const blogList={
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                
             }]
 
         },
         {
-            blogId:1010,
+            blogId:10032,
             title:"Whirlwind Barcelona",
             author:"Madhurima Ranu",
-            date:12,
-            month:"DEC",
-            year:2018,
+            date:"12-DEC-2018",
             readCount:8,
             catKey: 1003,
             catId:"europe",
@@ -371,17 +364,15 @@ const blogList={
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                
             }]
 
         },
         {
-            blogId:1008,
+            blogId:10033,
             title:"Perast & Our Lady of the Rocks",
             author:"Madhurima Ranu",
-            date:6,
-            month:"AUG",
-            year:2018,
+            date:"06-AUG-2018",
             readCount:8,
             catKey: 1003,
             catId:"europe",
@@ -506,17 +497,15 @@ const blogList={
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                
             }]
 
         },
         {
-            blogId:1007,
+            blogId:10041,
             title:"Island of The Gods",
             author:"Madhurima Ranu",
-            date:6,
-            month:"APR",
-            year:2016,
+            date:"06-APR-2016",
             readCount:6,
             catKey: 1004,
             catId:"asiaandothers",
@@ -614,12 +603,10 @@ const blogList={
 
         },
         {
-            blogId:1006,
+            blogId:10011,
             title:"The Sin City",
             author:"Madhurima Ranu",
-            date:7,
-            month:"MAY",
-            year:2018,
+            date:"07-MAY-2018",
             readCount:14,
             catKey: 1001,
             catId:"usa",
@@ -724,16 +711,14 @@ const blogList={
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                
             }]
         },
         {
-            blogId:10061,
+            blogId:10012,
             title:"The Strip",
             author:"Madhurima Ranu",
-            date:7,
-            month:"MAY",
-            year:2018,
+            date:"07-MAY-2018",
             readCount:14,
             catKey: 1001,
             catId:"usa",
@@ -838,16 +823,14 @@ const blogList={
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                
             }]
         },
         {
-            blogId:1005,
+            blogId:10013,
             title:"Las Vegas - Dare You Miss",
             author:"Madhurima Ranu",
-            date:2,
-            month:"APR",
-            year:2018,
+            date:"02-APR-2018",
             readCount:11,
             catKey: 1001,
             catId:"usa",
@@ -934,7 +917,7 @@ const blogList={
                 },
                 {
                     paraId: 8,
-                    // paraText: "<br />And, this is all I have for this famous, incredible and most extraordinary city from my bucket list. Vegas...it is!"
+                    
                 }
 
             ],
@@ -949,12 +932,10 @@ const blogList={
         },
 
         {
-            blogId:1004,
+            blogId:10014,
             title:"Making Of Las Vegas",
             author:"Soumyadeep Ghosh",
-            date:13,
-            month:"MAR",
-            year:2018,
+            date:"13-MAR-2018",
             readCount:3,
             catKey: 1001,
             catId:"usa",
@@ -1083,12 +1064,10 @@ const blogList={
         },
         
         {
-            blogId:1003,
+            blogId:10034,
             title:"The Unfinished Temple",
             author:"Madhurima Ranu",
-            date:2,
-            month:"FEB",
-            year:2017,  
+            date:"02-FEB-2017",
             readCount:14,
             catKey: 1003,
             catId:"europe",
@@ -1212,17 +1191,15 @@ const blogList={
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                
             }]
 
         },
         {
-            blogId:1002,
+            blogId:10042,
             title:"The Musical Bali",
             author:"Madhurima Ranu",
-            date:17,
-            month:"JUN",
-            year:2016,
+            date:"17-JUN-2016",
             readCount:6,
             catKey: 1004,
             catId:"asiaandothers",
@@ -1347,17 +1324,15 @@ const blogList={
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                
             }]
 
         },
         {
-            blogId:1001,
+            blogId:10043,
             title:"The India Connection",
             author:"Soumyadeep Ghosh",
-            date:11,
-            month:"JUN",
-            year:2018,
+            date:"11-JUN-2018",
             readCount:4,
             catKey: 1004,
             catId:"asiaandothers",
@@ -1482,7 +1457,7 @@ const blogList={
             },
             {
                 blockQuoteId: 2,
-                //blockQuoteText: "Never in my life have I stayed in a place lit by so many stars as Perast —  Nolt"
+                
             }]
 
         },

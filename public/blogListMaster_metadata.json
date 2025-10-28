@@ -1,0 +1,56 @@
+{
+    "blogListArr":[
+        {
+            "blogId":"number",
+            "title":"string",
+            "author":"string",
+            "date":"number",
+            "month":"string",
+            "year":"number",
+            "readCount":"number",
+            "catKey": "number",
+            "catId":"string",
+            "relatedBlogId":[],
+            "initContent":"string",
+            "generalImageLib":{
+                "bannerImgURL": "string",
+                "authorImgURL": "string",
+                "titleImgURL": "string",
+                "smallTitleImgURL": "string",
+                "mostReadImgURL": "string",
+                "similarPostImgURL":"string"
+            },
+            "blogImageLib":[{
+                "blockId":"number",
+                "fullwidthImg":"string",
+                "halfwidthImg":"string",
+                "fwHhImgURL":"string",
+                "fwFhImgURL":"string",
+                "hwHhImgURL":"string",
+                "hwFhImgURL":"string",
+                
+            }],
+            "blogYTImageLib":[
+                {   
+                    "blockId":"number",
+                    "YTLinks":{
+                        "YTLink": "string",
+                        "YTImgURL": "string"
+                    }
+                }
+            ],
+            "blogParagraphs": [
+                {
+                    "paraId": "number",
+                    "paraText": "string"
+                }
+            ],
+            "blockQuotes": [{
+                "blockQuoteId": "number",
+                "blockQuoteText": "string"
+            }]
+
+        }
+        
+    ]
+}

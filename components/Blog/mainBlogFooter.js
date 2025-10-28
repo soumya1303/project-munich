@@ -9,7 +9,7 @@ const MainBlogFooter = (props)=>{
                         <li>Share:</li>
                         <li data-aos="fade-up" data-aos-duration="500">
                             <a  onClick={(e)=>{
-                               window.open(`${props.masterURI.facebook.share}${props.masterURI.host.dev}/category/${props.catId}/${props.blogId}`, "", "width=500px, height=400px") 
+                               window.open(`${process.env.facebook_share_url}${process.env.host_server}/category/${props.catId}/${props.blogId}`, "", "width=500px, height=400px") 
                             }} > 
                                 <i className="ion-social-facebook"></i>
                             </a>

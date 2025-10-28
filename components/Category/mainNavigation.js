@@ -1,6 +1,7 @@
 import React from "react";
 import RenderSubMenu from "./renderSubMenu";
-//import Link from "next/link";
+import Image from "next/image";
+import Link from "next/link";
 
 const MainNavigation = (props)=>{
 return (<React.Fragment>
@@ -9,13 +10,13 @@ return (<React.Fragment>
                     <div className="navigation">
                         <nav id="flexmenu">
                             <div className="logo">
-                                <a href="/"><img src={props.imgSource} alt="logo" /></a>
+                                <Link href="/"><Image src={props.imgSource} alt="websiteLogo" width={123} height={27}/></Link>
                             </div>
                             <div className="nav-inner">
                                 <div id="mobile-toggle" className="mobile-btn"></div>
                                 <ul className="main-menu">
-                                    <li className="menu-item active"><a href="/">Home</a></li>
-                                    <li className="menu-item"><a href="#">Regions</a>
+                                    <li className="menu-item"><Link href="/">Home</Link></li>
+                                    <li className="menu-item active">Regions
                                         <ul className="sub-menu">
                                             {
                                                 props.catList.map((c)=>{
@@ -25,7 +26,7 @@ return (<React.Fragment>
                                             
                                         </ul>
                                     </li>
-                                    <li className="menu-item"><a href="/author">Me</a></li>
+                                    <li className="menu-item"><Link href="/author">Me</Link></li>
                                     
                                 </ul>
                             </div>

@@ -2,7 +2,6 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -24,10 +23,11 @@
     "eslint-config-next": "13.2.4",
     "ionicons": "^7.1.0",
     "jquery": "^3.6.4",
+    "mongodb": "^6.19.0",
+    "mongoose": "^7.6.3",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "^6.10.0",
     "styled-components": "^5.3.9",
     "swiper": "^9.1.1",
     "typescript": "^5.0.2"

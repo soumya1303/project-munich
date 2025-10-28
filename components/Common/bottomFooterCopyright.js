@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const BottomFooterCopyright = ()=>{
 
     const date = new Date;
